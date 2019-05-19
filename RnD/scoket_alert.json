@@ -1,0 +1,33 @@
+{
+  requestId: '1000001572.276',
+  timestamp: 53332.645091,
+  response: {
+    opcode: 1,
+    mask: false,
+    payloadData: { 
+      "id": 28, 
+      "channel": "private_VTXqAgzwgHkj1UShzEJM07mKyWWyQKwsoLcg95JXRfU", 
+      "text": { "content": "{\\"
+        m\\ ":\\"
+        event\\ ",\\"
+        p\\ ":{\\"
+        id\\ ":643835388,\\"
+        aid\\ ":35491773,\\"
+        sym\\ ":\\"
+        BITSTAMP: BTCUSD\\ ",\\"
+        res\\ ":\\"
+        15\\ ",\\"
+        desc\\ ":\\"
+        btest\\ ",\\"
+        snd\\ ":false,\\"
+        snd_file\\ ":\\"
+        alert\\ / fired\\ ",\\"
+        snd_duration\\ ":0.0,\\"
+        popup\\ ":false,\\"
+        fire_time\\ ":1558261569,\\"
+        bar_time\\ ":1558260900,\\"
+        cross_int\\ ":false}}", 
+        "channel": "alert" } 
+      }
+  }
+}
