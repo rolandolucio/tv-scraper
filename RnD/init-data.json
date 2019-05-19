@@ -1,0 +1,4697 @@
+{
+  "layout": "s",
+  "charts": [
+    {
+      "panes": [
+        {
+          "sources": [
+            {
+              "type": "MainSeries",
+              "id": "L16rcV",
+              "state": {
+                "style": 1,
+                "esdShowDividends": true,
+                "esdShowSplits": true,
+                "esdShowEarnings": true,
+                "esdShowBreaks": false,
+                "esdBreaksStyle": {
+                  "color": "rgba( 235, 77, 92, 1)",
+                  "style": 2,
+                  "width": 1
+                },
+                "esdFlagSize": 2,
+                "showCountdown": true,
+                "showInDataWindow": false,
+                "visible": true,
+                "showPriceLine": true,
+                "priceLineWidth": 1,
+                "priceLineColor": "",
+                "baseLineColor": "#B2B5BE",
+                "showPrevClosePriceLine": true,
+                "prevClosePriceLineWidth": 1,
+                "prevClosePriceLineColor": "rgba(101, 101, 101, 1)",
+                "minTick": "default",
+                "extendedHours": false,
+                "dividendsAdjustment": false,
+                "sessVis": false,
+                "statusViewStyle": {
+                  "fontSize": 17,
+                  "showExchange": true,
+                  "showInterval": true,
+                  "symbolTextSource":"de\scription","showSymbolAsDe\scription": false
+                },
+                "candleStyle": {
+                  "upColor": "#53b987",
+                  "downColor": "#eb4d5c",
+                  "drawWick": true,
+                  "drawBorder": true,
+                  "borderColor": "#378658",
+                  "borderUpColor": "#53b987",
+                  "borderDownColor": "#eb4d5c",
+                  "wickColor": "#B5B5B8",
+                  "wickUpColor": "#336854",
+                  "wickDownColor": "#7f323f",
+                  "barColorsOnPrevClose": false
+                },
+                "hollowCandleStyle": {
+                  "upColor": "#53b987",
+                  "downColor": "#eb4d5c",
+                  "drawWick": true,
+                  "drawBorder": true,
+                  "borderColor": "#378658",
+                  "borderUpColor": "#53b987",
+                  "borderDownColor": "#eb4d5c",
+                  "wickColor": "#B5B5B8",
+                  "wickUpColor": "#336854",
+                  "wickDownColor": "#7f323f"
+                },
+                "haStyle": {
+                  "upColor": "#53b987",
+                  "downColor": "#eb4d5c",
+                  "drawWick": true,
+                  "drawBorder": true,
+                  "borderColor": "#378658",
+                  "borderUpColor": "#53b987",
+                  "borderDownColor": "#eb4d5c",
+                  "wickColor": "#B5B5B8",
+                  "wickUpColor": "#53b987",
+                  "wickDownColor": "#eb4d5c",
+                  "showRealLastPrice": false,
+                  "barColorsOnPrevClose": false,
+                  "inputs": {},
+                  "inputInfo": {}
+                },
+                "barStyle": {
+                  "upColor": "#53b987",
+                  "downColor": "#eb4d5c",
+                  "barColorsOnPrevClose": false,
+                  "dontDrawOpen": false,
+                  "thinBars": true
+                },
+                "hiloStyle": {
+                  "color": "#2196f3",
+                  "showBorders": true,
+                  "borderColor": "#2196f3",
+                  "showLabels": true,
+                  "labelColor": "#2196f3",
+                  "fontSize": 7
+                },
+                "lineStyle": {
+                  "color": "#6FB8F7",
+                  "linestyle": 0,
+                  "linewidth": 1,
+                  "priceSource": "close",
+                  "styleType": 2
+                },
+                "areaStyle": {
+                  "color1": "rgba(96, 96, 144, 0.5)",
+                  "color2": "rgba(1, 246, 245, 0.5)",
+                  "linecolor": "#0094FF",
+                  "linestyle": 0,
+                  "linewidth": 1,
+                  "priceSource": "close",
+                  "transparency": 50
+                },
+                "renkoStyle": {
+                  "upColor": "rgba(33, 33, 33, 1)",
+                  "downColor": "rgba(33, 33, 33, 1)",
+                  "borderUpColor": "rgba(0, 255, 0, 1)",
+                  "borderDownColor": "rgba(255, 0, 0, 1)",
+                  "upColorProjection": "rgba(0, 255, 255, 1)",
+                  "downColorProjection": "rgba(255, 0, 255, 1)",
+                  "borderUpColorProjection": "rgba(255, 255, 255, 1)",
+                  "borderDownColorProjection": "rgba(255, 255, 255, 1)",
+                  "wickUpColor": "#336854",
+                  "wickDownColor": "#7f323f",
+                  "inputs": {
+                    "source": "close",
+                    "boxSize": 11,
+                    "style": "ATR",
+                    "atrLength": 14,
+                    "wicks": true
+                  },
+                  "inputInfo": {
+                    "source": {
+                      "name": "Source"
+                    },
+                    "boxSize": {
+                      "name": "Box size"
+                    },
+                    "style": {
+                      "name": "Style"
+                    },
+                    "atrLength": {
+                      "name": "ATR Length"
+                    },
+                    "wicks": {
+                      "name": "Wicks"
+                    }
+                  }
+                },
+                "pbStyle": {
+                  "upColor": "#53b987",
+                  "downColor": "#eb4d5c",
+                  "borderUpColor": "#53b987",
+                  "borderDownColor": "#eb4d5c",
+                  "upColorProjection": "#336854",
+                  "downColorProjection": "#7f323f",
+                  "borderUpColorProjection": "#336854",
+                  "borderDownColorProjection": "#7f323f",
+                  "inputs": {
+                    "source": "close",
+                    "lb": 3
+                  },
+                  "inputInfo": {
+                    "source": {
+                      "name": "Source"
+                    },
+                    "lb": {
+                      "name": "Number of line"
+                    }
+                  }
+                },
+                "kagiStyle": {
+                  "upColor": "#53b987",
+                  "downColor": "#eb4d5c",
+                  "upColorProjection": "#336854",
+                  "downColorProjection": "#7f323f",
+                  "inputs": {
+                    "source": "close",
+                    "style": "ATR",
+                    "atrLength": 14,
+                    "reversalAmount": 1
+                  },
+                  "inputInfo": {
+                    "source": {
+                      "name": "Source"
+                    },
+                    "style": {
+                      "name": "Style"
+                    },
+                    "atrLength": {
+                      "name": "ATR Length"
+                    },
+                    "reversalAmount": {
+                      "name": "Reversal amount"
+                    }
+                  }
+                },
+                "pnfStyle": {
+                  "upColor": "#53b987",
+                  "downColor": "#eb4d5c",
+                  "upColorProjection": "#336854",
+                  "downColorProjection": "#7f323f",
+                  "inputs": {
+                    "sources": "Close",
+                    "reversalAmount": 3,
+                    "boxSize": 1,
+                    "style": "ATR",
+                    "atrLength": 14
+                  },
+                  "inputInfo": {
+                    "sources": {
+                      "name": "Source"
+                    },
+                    "boxSize": {
+                      "name": "Box size"
+                    },
+                    "reversalAmount": {
+                      "name": "Reversal amount"
+                    },
+                    "style": {
+                      "name": "Style"
+                    },
+                    "atrLength": {
+                      "name": "ATR Length"
+                    }
+                  }
+                },
+                "baselineStyle": {
+                  "baselineColor": "rgba( 117, 134, 150, 1)",
+                  "topFillColor1": "rgba( 83, 185, 135, 0.1)",
+                  "topFillColor2": "rgba( 83, 185, 135, 0.1)",
+                  "bottomFillColor1": "rgba( 235, 77, 92, 0.1)",
+                  "bottomFillColor2": "rgba( 235, 77, 92, 0.1)",
+                  "topLineColor": "rgba( 83, 185, 135, 1)",
+                  "bottomLineColor": "rgba( 235, 77, 92, 1)",
+                  "topLineWidth": 1,
+                  "bottomLineWidth": 1,
+                  "priceSource": "close",
+                  "transparency": 50,
+                  "baseLevelPercentage": 50
+                },
+                "rangeStyle": {
+                  "upColor": "rgba( 83, 185, 135, 1)",
+                  "downColor": "rgba( 255, 77, 92, 1)",
+                  "thinBars": true,
+                  "upColorProjection": "rgba( 169, 220, 195, 1)",
+                  "downColorProjection": "rgba( 245, 166, 174, 1)",
+                  "inputs": {
+                    "range": 10,
+                    "phantomBars": false
+                  },
+                  "inputInfo": {
+                    "range": {
+                      "name": "Range"
+                    },
+                    "phantomBars": {
+                      "name": "Phantom Bars"
+                    }
+                  }
+                },
+                "silentIntervalChange": false,
+                "symbol": "BITSTAMP:BTCUSD",
+                "shortName": "BTCUSD",
+                "timeframe": "",
+                "onWidget": false,
+                "interval": "15",
+                "showSessions": false,
+                "timezone": "UTC",
+                "showLastValue": true,
+                "priceAxisProperties": {
+                  "autoScale": true,
+                  "autoScaleDisabled": false,
+                  "lockScale": false,
+                  "percentage": false,
+                  "percentageDisabled": false,
+                  "log": false,
+                  "logDisabled": false,
+                  "alignLabels": true,
+                  "isInverted": false,
+                  "indexedTo100": false
+                }
+              },
+              "zorder": 54,
+              "haStyle": {
+                "studyId": "BarSetHeikenAshi@tv-basicstudies-60"
+              },
+              "renkoStyle": {
+                "studyId": "BarSetRenko@tv-prostudies-15"
+              },
+              "pbStyle": {
+                "studyId": "BarSetPriceBreak@tv-prostudies-15"
+              },
+              "kagiStyle": {
+                "studyId": "BarSetKagi@tv-prostudies-15"
+              },
+              "pnfStyle": {
+                "studyId": "BarSetPnF@tv-prostudies-15"
+              },
+              "rangeStyle": {
+                "studyId": "BarSetRange@tv-basicstudies-72"
+              }
+            },
+            {
+              "type": "Study",
+              "id": "84atzU",
+              "state": {
+                "palettes": {
+                  "volumePalette": {
+                    "colors": {
+                      "0": {
+                        "color": "rgba(111, 168, 220, 0.23)",
+                        "style": 0,
+                        "width": 1,
+                        "name": "Growing"
+                      },
+                      "1": {
+                        "color": "rgba(73, 133, 231, 0.2)",
+                        "style": 0,
+                        "width": 1,
+                        "name": "Falling"
+                      }
+                    }
+                  }
+                },
+                "styles": {
+                  "vol": {
+                    "linestyle": 0,
+                    "linewidth": 1,
+                    "plottype": 5,
+                    "trackPrice": false,
+                    "transparency": 87,
+                    "visible": true,
+                    "color": "#0496FF",
+                    "histogramBase": 0,
+                    "joinPoints": false,
+                    "title": "Volume"
+                  },
+                  "vol_ma": {
+                    "color": "rgba(255, 255, 255, 1)",
+                    "linestyle": 0,
+                    "linewidth": 1,
+                    "plottype": 0,
+                    "trackPrice": false,
+                    "transparency": 70,
+                    "visible": true,
+                    "histogramBase": 0,
+                    "joinPoints": false,
+                    "title": "Volume MA"
+                  }
+                },
+                "inputs": {
+                  "col_prev_close": false,
+                  "length": 20
+                },
+                "precision": "default",
+                "bands": {},
+                "area": {},
+                "graphics": {},
+                "showInDataWindow": true,
+                "visible": true,
+                "showStudyArguments": true,
+                "id": "Volume@tv-basicstudies",
+                "name": "Volume@tv-basicstudies",
+                "is_price_study": false,
+                "plots": {
+                  "0": {
+                    "id": "vol",
+                    "type": "line",
+                    "pinePlotIndex": 0
+                  },
+                  "1": {
+                    "id": "vol_color",
+                    "type": "colorer",
+                    "target": "vol",
+                    "palette": "volumePalette",
+                    "pinePlotIndex": 1
+                  },
+                  "2": {
+                    "id": "vol_ma",
+                    "type": "line",
+                    "pinePlotIndex": 2
+                  }
+                },
+                "shortId": "Volume",
+                "packageId": "tv-basicstudies",
+                "version": "88",
+                "fullId": "Volume@tv-basicstudies-88",
+                "productId": "tv-basicstudies","de\scription": "Volume",
+                "transparency": 87,
+                "_metainfoVersion": 47,"shortDe\scription": "Vol","de\scription_localized": "Volume",
+                "paneSize": "large",
+                "matchPriority": 1,
+                "matchIndex": 0,
+                "_serverMetaInfoVersion": 44,
+                "format": {
+                  "type": "volume"
+                }
+              },
+              "zorder": 48,
+              "metaInfo": {
+                "palettes": {
+                  "volumePalette": {
+                    "colors": {
+                      "0": {
+                        "name": "Growing"
+                      },
+                      "1": {
+                        "name": "Falling"
+                      }
+                    }
+                  }
+                },
+                "inputs": [
+                  {
+                    "defval": 20,
+                    "id": "length",
+                    "max": 2000,
+                    "min": 1,
+                    "name": "MA Length",
+                    "type": "integer"
+                  },
+                  {
+                    "defval": false,
+                    "id": "col_prev_close",
+                    "name": "Color based on previous close",
+                    "type": "bool"
+                  }
+                ],
+                "plots": [
+                  {
+                    "id": "vol",
+                    "type": "line"
+                  },
+                  {
+                    "id": "vol_color",
+                    "palette": "volumePalette",
+                    "target": "vol",
+                    "type": "colorer"
+                  },
+                  {
+                    "id": "vol_ma",
+                    "type": "line"
+                  }
+                ],
+                "graphics": {},
+                "defaults": {
+                  "inputs": {
+                    "col_prev_close": false,
+                    "length": 20
+                  },
+                  "palettes": {
+                    "volumePalette": {
+                      "colors": {
+                        "0": {
+                          "color": "#26a69a",
+                          "style": 0,
+                          "width": 1
+                        },
+                        "1": {
+                          "color": "#ef5350",
+                          "style": 0,
+                          "width": 1
+                        }
+                      }
+                    }
+                  },
+                  "styles": {
+                    "vol": {
+                      "linestyle": 0,
+                      "linewidth": 1,
+                      "plottype": 5,
+                      "trackPrice": false,
+                      "transparency": 50,
+                      "visible": true
+                    },
+                    "vol_ma": {
+                      "color": "#ff9850",
+                      "linestyle": 0,
+                      "linewidth": 1,
+                      "plottype": 0,
+                      "trackPrice": false,
+                      "transparency": 0,
+                      "visible": false
+                    }
+                  }
+                },
+                "_metainfoVersion": 47,"de\scription": "Volume",
+                "id": "Volume@tv-basicstudies-88",
+                "is_price_study": false,"shortDe\scription": "Vol",
+                "styles": {
+                  "vol": {
+                    "histogramBase": 0,
+                    "title": "Volume"
+                  },
+                  "vol_ma": {
+                    "histogramBase": 0,
+                    "title": "Volume MA"
+                  }
+                },"de\scription_localized": "Volume",
+                "shortId": "Volume",
+                "packageId": "tv-basicstudies",
+                "version": "88",
+                "fullId": "Volume@tv-basicstudies-88",
+                "productId": "tv-basicstudies",
+                "name": "Volume@tv-basicstudies",
+                "_serverMetaInfoVersion": 44,
+                "format": {
+                  "type": "volume"
+                }
+              }
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "NRcxEY",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 0,
+                "visible": true,
+                "symbol": "KRAKEN:XBTUSD",
+                "interval": "1M"
+              },
+              "points": [
+                {
+                  "time_t": 1380585600,
+                  "offset": -6,
+                  "price": 1253.230784830663
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 12,
+                  "price": 1213.607990265666
+                }
+              ],
+              "zorder": -7,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "1b45333b-a1ce-48b8-b93c-7360bcbb34e1",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726332012,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380585600,
+                  "offset": -6,
+                  "price": 817.3800446156965
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 12,
+                  "price": 777.7572500506994
+                }
+              ],
+              "zorder": -6,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "db6225f5-fa67-454c-a079-f357ff76ab26",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726346036,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380585600,
+                  "offset": -7,
+                  "price": 262.6609207057395
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 11,
+                  "price": 223.0381261407424
+                }
+              ],
+              "zorder": -5,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "2bd1a3b5-b56b-42ef-8948-ca0b65044c71",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726358321,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380585600,
+                  "offset": -2,
+                  "price": 19757.075846684245
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 16,
+                  "price": 19717.453052119246
+                }
+              ],
+              "zorder": -4,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "aad29bda-9137-428c-bd67-b17d399cd210",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726371334,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380585600,
+                  "offset": -2,
+                  "price": 13338.183127154736
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 16,
+                  "price": 13298.56033258974
+                }
+              ],
+              "zorder": -3,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "f17c4c1e-dd86-4ab6-95e7-a36586cff37d",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726490495,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380499200,
+                  "offset": -16,
+                  "price": 17066.95536597039
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 56,
+                  "price": 17027.332571405394
+                }
+              ],
+              "zorder": -2,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "9f4e9bcf-a73f-4778-9fad-13e776316d37",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726498109,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1381104000,
+                  "offset": 0,
+                  "price": 12172.84647264909
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 73,
+                  "price": 12133.961188637899
+                }
+              ],
+              "zorder": -1,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "688131f9-51e0-46be-bb31-b5dc655e9949",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726510947,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380499200,
+                  "offset": -4,
+                  "price": 14155.995957219839
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 68,
+                  "price": 14117.110673208648
+                }
+              ],
+              "zorder": 0,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "896bfcd0-a330-4c35-ac69-e75351b77637",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726523700,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380499200,
+                  "offset": -3,
+                  "price": 15050.357489477236
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 69,
+                  "price": 15011.472205466045
+                }
+              ],
+              "zorder": 1,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "5e700a5b-0465-4196-aae6-d4260d6a3db2",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726540347,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1380499200,
+                  "offset": -1,
+                  "price": 5795.659894813736
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 71,
+                  "price": 5756.774610802546
+                }
+              ],
+              "zorder": 2,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "e8e0035d-10cd-4a7d-a4ba-4fa15d17ce61",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726555210,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1390176000,
+                  "offset": 0,
+                  "price": 7701.038811362103
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 88,
+                  "price": 7662.153527350913
+                }
+              ],
+              "zorder": 3,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "e884744d-8d8f-4814-83f5-3c24ac404d55",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726577906,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1381104000,
+                  "offset": 0,
+                  "price": 7001.103699160663
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 73,
+                  "price": 6962.218415149473
+                }
+              ],
+              "zorder": 4,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "8b8a7645-2259-4876-8a25-5f7c58ece097",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726604753,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1385337600,
+                  "offset": 0,
+                  "price": 6573.36557503756
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 80,
+                  "price": 6534.48029102637
+                }
+              ],
+              "zorder": 5,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "cee25211-15bf-48cc-8a71-fd371df05c2e",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726625991,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1385337600,
+                  "offset": 0,
+                  "price": 10073.041136044767
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 80,
+                  "price": 10034.155852033577
+                }
+              ],
+              "zorder": 6,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "756dd43b-5ed0-474b-9974-ff6109cb8411",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726640164,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1385942400,
+                  "offset": 0,
+                  "price": 9450.876591865706
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 81,
+                  "price": 9411.991307854516
+                }
+              ],
+              "zorder": 7,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "ac414ede-d935-46d2-b6cf-b8d3b18d0eb6",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726661197,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XBTUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1387756800,
+                  "offset": 0,
+                  "price": 8439.859207574738
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 84,
+                  "price": 8400.973923563548
+                }
+              ],
+              "zorder": 8,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "f77d4b8e-f5f0-47b4-93bc-652b24bc76ab",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726793253,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -79,
+                  "price": 0.14539839789089415
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 66,
+                  "price": 0.1389676536199551
+                }
+              ],
+              "zorder": 9,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "d13e80fa-64c6-4312-a634-aec0d0cbf0d9",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726813379,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -78,
+                  "price": 0.2740132833096735
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 67,
+                  "price": 0.2675825390387345
+                }
+              ],
+              "zorder": 10,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "af7cb80e-c565-4413-976a-1cc7e522cb20",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726822738,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -83,
+                  "price": 3.2964630906509838
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 62,
+                  "price": 3.2900323463800447
+                }
+              ],
+              "zorder": 11,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "a5d14a6f-5eff-43ad-9f50-98b8989e328d",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726840013,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -82,
+                  "price": 1.8238226526059624
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 63,
+                  "price": 1.8173919083350234
+                }
+              ],
+              "zorder": 12,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "0584858c-6b6e-4399-9bdc-e3b3cf043073",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726864541,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -78,
+                  "price": 0.37047444737375784
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 67,
+                  "price": 0.36404370310281886
+                }
+              ],
+              "zorder": 13,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "80bd4e5a-13fd-420a-b606-b5757828fa70",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726899511,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -335,
+                  "price": 2.4668970796998577
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 291,
+                  "price": 2.4604663354289187
+                }
+              ],
+              "zorder": 14,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "4b47440d-22d2-490a-8d4b-e71b438293c4",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726922778,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -337,
+                  "price": 0.9749644088420201
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 289,
+                  "price": 0.9685336645710811
+                }
+              ],
+              "zorder": 15,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "08edc139-07e4-470e-bde4-8d6cc119e3d2",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726935809,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -335,
+                  "price": 0.8206265463394848
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 291,
+                  "price": 0.8141958020685458
+                }
+              ],
+              "zorder": 16,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "6153eabb-d74c-44dd-9653-9d0497c51407",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539726963558,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "BITFINEX:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -341,
+                  "price": 0.4797970999797201
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 285,
+                  "price": 0.4733663557087811
+                }
+              ],
+              "zorder": 17,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "fb5b9857-d79d-4e96-b761-46c714cda4ff",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727388039,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -51,
+                  "price": 0.14326880855810178
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 38,
+                  "price": 0.13673202088825792
+                }
+              ],
+              "zorder": 18,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "75621686-10f3-4cd9-8820-711a03f3b3e9",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727428411,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -51,
+                  "price": 0.2478574112756033
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 38,
+                  "price": 0.2543941989454471
+                }
+              ],
+              "zorder": 19,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "0b9e802d-f060-4d51-bbcf-f06687505e23",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727467265,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -53,
+                  "price": 3.3565218037029223
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 39,
+                  "price": 3.356521803702922
+                }
+              ],
+              "zorder": 20,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "1b75b607-a74d-4677-b4cc-1179009edd47",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727494940,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -53,
+                  "price": 1.8334818172211993
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 38,
+                  "price": 1.841418218656299
+                }
+              ],
+              "zorder": 21,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "36825dd7-632b-4b4f-9f71-7477533ae21a",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727525041,
+                "visible": true,
+                "interval": "1M",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1493596800,
+                  "offset": -52,
+                  "price": 0.36524755172771484
+                },
+                {
+                  "time_t": 1538352000,
+                  "offset": 38,
+                  "price": 0.3573111502926149
+                }
+              ],
+              "zorder": 22,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "072da4e0-abf4-4907-9451-66fea091bf60",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727568401,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -27,
+                  "price": 2.4691745379367687
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 72,
+                  "price": 2.5167929465473686
+                }
+              ],
+              "zorder": 23,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "cd4f7665-133b-4989-8034-58302200b136",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727602124,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -19,
+                  "price": 0.4692013762915901
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 78,
+                  "price": 0.4771377777266901
+                }
+              ],
+              "zorder": 24,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "5a1c1ee4-cc68-485e-bd7d-cca285034446",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727626838,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -20,
+                  "price": 0.8660214480465861
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 83,
+                  "price": 0.8501486451763861
+                }
+              ],
+              "zorder": 25,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "4fb979f9-bc08-4a83-bb34-923593350742",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 0.97)",
+                "linewidth": 4,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": true,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1539727651547,
+                "visible": true,
+                "interval": "1W",
+                "symbol": "KRAKEN:XRPUSD"
+              },
+              "points": [
+                {
+                  "time_t": 1494806400,
+                  "offset": -17,
+                  "price": 0.9612582652677849
+                },
+                {
+                  "time_t": 1539561600,
+                  "offset": 81,
+                  "price": 0.9453854623975851
+                }
+              ],
+              "zorder": 26,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "dGKwrT",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:XRPUSD",
+                "interval": "60",
+                "lastUpdateTime": 1539796158992
+              },
+              "points": [
+                {
+                  "time_t": 1539795600,
+                  "offset": 2,
+                  "price": 0.463103906915433
+                },
+                {
+                  "time_t": 1539795600,
+                  "offset": 6,
+                  "price": 0.2548986981359713
+                }
+              ],
+              "zorder": 27,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "YK5GUg",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:XBTUSD",
+                "interval": "60",
+                "lastUpdateTime": 1539796291589
+              },
+              "points": [
+                {
+                  "time_t": 1539795600,
+                  "offset": 6,
+                  "price": 6449.688014601501
+                },
+                {
+                  "time_t": 1539795600,
+                  "offset": 58,
+                  "price": 3567.8085249262767
+                }
+              ],
+              "zorder": 28,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "2CL623",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:BCHUSD",
+                "interval": "60",
+                "lastUpdateTime": 1540847090487
+              },
+              "points": [
+                {
+                  "time_t": 1540796400,
+                  "offset": 0,
+                  "price": 411.86848278669044
+                },
+                {
+                  "time_t": 1540843200,
+                  "offset": 4,
+                  "price": 254.35380151854616
+                }
+              ],
+              "zorder": 29,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "TzjGot",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:DASHUSD",
+                "interval": "60",
+                "lastUpdateTime": 1540846696185
+              },
+              "points": [
+                {
+                  "time_t": 1540756800,
+                  "offset": 0,
+                  "price": 148.02231226292386
+                },
+                {
+                  "time_t": 1540843200,
+                  "offset": 19,
+                  "price": 88.39066058444325
+                }
+              ],
+              "zorder": 30,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "KMTtvC",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:DASHUSD",
+                "interval": "60",
+                "lastUpdateTime": 0
+              },
+              "points": [
+                {
+                  "time_t": 1533823200,
+                  "offset": 0,
+                  "price": 206.01743484938112
+                },
+                {
+                  "time_t": 1533830400,
+                  "offset": 0,
+                  "price": 241.87263818993716
+                }
+              ],
+              "zorder": 31,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "gXWtKT",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:DASHUSD",
+                "interval": "60",
+                "lastUpdateTime": 1539796478269
+              },
+              "points": [
+                {
+                  "time_t": 1534413600,
+                  "offset": 0,
+                  "price": 189.5556119320189
+                },
+                {
+                  "time_t": 1534467600,
+                  "offset": 0,
+                  "price": 156.28161123198498
+                }
+              ],
+              "zorder": 32,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "Xm8LNb",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:DASHUSD",
+                "interval": "60",
+                "lastUpdateTime": 1539796511880
+              },
+              "points": [
+                {
+                  "time_t": 1522933200,
+                  "offset": 0,
+                  "price": 410.0450722110632
+                },
+                {
+                  "time_t": 1522900800,
+                  "offset": 0,
+                  "price": 340.1387009181552
+                }
+              ],
+              "zorder": 33,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "3avBQw",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:DASHUSD",
+                "interval": "60",
+                "lastUpdateTime": 0
+              },
+              "points": [
+                {
+                  "time_t": 1521306000,
+                  "offset": 0,
+                  "price": 314.2775820353309
+                },
+                {
+                  "time_t": 1521302400,
+                  "offset": 0,
+                  "price": 385.0859710223409
+                }
+              ],
+              "zorder": 34,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "Gw0Wl8",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "BINANCE:NEOUSDT",
+                "interval": "60",
+                "lastUpdateTime": 1539804746773
+              },
+              "points": [
+                {
+                  "time_t": 1539802800,
+                  "offset": 8,
+                  "price": 17.19745629689718
+                },
+                {
+                  "time_t": 1539802800,
+                  "offset": 15,
+                  "price": 10.232462198511435
+                }
+              ],
+              "zorder": 35,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "FqY4wX",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:ZECUSD",
+                "interval": "60",
+                "lastUpdateTime": 1540846883853
+              },
+              "points": [
+                {
+                  "time_t": 1540843200,
+                  "offset": 97,
+                  "price": 114.21614420467762
+                },
+                {
+                  "time_t": 1540530000,
+                  "offset": 0,
+                  "price": 72.05092146571532
+                }
+              ],
+              "zorder": 36,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "CApzFS",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "BITFINEX:NEOUSD",
+                "interval": "60",
+                "lastUpdateTime": 1540846999037
+              },
+              "points": [
+                {
+                  "time_t": 1540846800,
+                  "offset": 69,
+                  "price": 15.41900572830929
+                },
+                {
+                  "time_t": 1540792800,
+                  "offset": 0,
+                  "price": 9.821976663685724
+                }
+              ],
+              "zorder": 37,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "KaCVet",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "BITSTAMP:BCHUSD",
+                "interval": "60",
+                "lastUpdateTime": 1539956346499
+              },
+              "points": [
+                {
+                  "time_t": 1539954000,
+                  "offset": 22,
+                  "price": 429.62562861588697
+                },
+                {
+                  "time_t": 1539954000,
+                  "offset": 23,
+                  "price": 261.6729485895854
+                }
+              ],
+              "zorder": 39,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "qHQLBl",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "BITFINEX:LTCUSD",
+                "interval": "60",
+                "lastUpdateTime": 1540052773766
+              },
+              "points": [
+                {
+                  "time_t": 1540051200,
+                  "offset": 17,
+                  "price": 53.843305878244124
+                },
+                {
+                  "time_t": 1540029600,
+                  "offset": 0,
+                  "price": 32.9413118737461
+                }
+              ],
+              "zorder": 40,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "xCJLX2",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "KRAKEN:XMRUSD",
+                "interval": "60",
+                "lastUpdateTime": 1540846786915
+              },
+              "points": [
+                {
+                  "time_t": 1540803600,
+                  "offset": 0,
+                  "price": 99.834278675511
+                },
+                {
+                  "time_t": 1540843200,
+                  "offset": 11,
+                  "price": 59.483660416286234
+                }
+              ],
+              "zorder": 41,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "aXetrt",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "BITFINEX:XLMUSD",
+                "interval": "60",
+                "lastUpdateTime": 1540052937116
+              },
+              "points": [
+                {
+                  "time_t": 1540051200,
+                  "offset": 21,
+                  "price": 0.2523855349528363
+                },
+                {
+                  "time_t": 1540051200,
+                  "offset": 51,
+                  "price": 0.15404032107285434
+                }
+              ],
+              "zorder": 42,
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "LMP14u",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "BINANCE:LTCUSDT",
+                "interval": "15",
+                "lastUpdateTime": 1540142882471
+              },
+              "points": [
+                {
+                  "time_t": 1540128600,
+                  "offset": 14,
+                  "price": 54.15896738429805
+                },
+                {
+                  "time_t": 1540128600,
+                  "offset": 17,
+                  "price": 52.69543287566203
+                }
+              ],
+              "zorder": 43,
+              "linkKey": "KwzQmTgBKx1z",
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolPriceRange",
+              "id": "tCApRJ",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(242, 242, 242, 1)",
+                "linewidth": 1,
+                "font": "Verdana",
+                "textcolor": "rgba(242, 242, 242, 1)",
+                "fontsize": 10,
+                "fillLabelBackground": false,
+                "labelBackgroundColor": "rgba( 91, 133, 191, 0.9)",
+                "labelBackgroundTransparency": 30,
+                "fillBackground": false,
+                "backgroundColor": "rgba( 186, 218, 255, 0.4)",
+                "backgroundTransparency": 60,
+                "drawBorder": false,
+                "borderColor": "rgba( 102, 123, 139, 1)",
+                "extendLeft": false,
+                "extendRight": false,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "visible": true,
+                "symbol": "BINANCE:LTCUSDT",
+                "interval": "15",
+                "lastUpdateTime": 1540142910358
+              },
+              "points": [
+                {
+                  "time_t": 1540128600,
+                  "offset": 20,
+                  "price": 54.16586084320288
+                },
+                {
+                  "time_t": 1540128600,
+                  "offset": 24,
+                  "price": 51.457734514494554
+                }
+              ],
+              "zorder": 44,
+              "linkKey": "GWx1HAUMapWU",
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "gbqzG4",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 255, 255, 1)",
+                "linewidth": 2,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 366,
+                  "weeks": true,
+                  "months": true,
+                  "ranges": true
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1543150481971,
+                "visible": true,
+                "symbol": "BITFINEX:NEOUSD",
+                "interval": "60"
+              },
+              "points": [
+                {
+                  "time_t": 1543132800,
+                  "offset": 0,
+                  "price": 6.81598273785846
+                },
+                {
+                  "time_t": 1543147200,
+                  "offset": 28,
+                  "price": 6.81598273785846
+                }
+              ],
+              "zorder": 45,
+              "linkKey": "Ji8XkIYK9qJd",
+              "ownerSource": "L16rcV"
+            },
+            {
+              "type": "Study",
+              "id": "tDV9iE",
+              "state": {
+                "filledAreasStyle": {
+                  "fill_0": {
+                    "color": "#008080",
+                    "transparency": 95,
+                    "visible": true
+                  }
+                },
+                "palettes": {
+                  "palette_0": {
+                    "colors": {
+                      "0": {
+                        "color": "#FFFFFF",
+                        "style": 0,
+                        "width": 1,
+                        "name": "Color 0"
+                      }
+                    },
+                    "addDefaultColor": true,
+                    "valToIndex": {
+                      "0": 0
+                    }
+                  }
+                },
+                "styles": {
+                  "plot_0": {
+                    "color": "#FFFFFF",
+                    "linestyle": 0,
+                    "linewidth": 2,
+                    "plottype": 0,
+                    "trackPrice": false,
+                    "transparency": 35,
+                    "visible": true,
+                    "histogramBase": 0,
+                    "joinPoints": false,
+                    "title": "MA",
+                    "isHidden": false
+                  },
+                  "plot_1": {
+                    "color": "#008080",
+                    "linestyle": 0,
+                    "linewidth": 1,
+                    "plottype": 0,
+                    "trackPrice": false,
+                    "transparency": 35,
+                    "visible": true,
+                    "histogramBase": 0,
+                    "joinPoints": false,
+                    "title": "DC H",
+                    "isHidden": false
+                  },
+                  "plot_2": {
+                    "color": "#008080",
+                    "linestyle": 0,
+                    "linewidth": 1,
+                    "plottype": 0,
+                    "trackPrice": false,
+                    "transparency": 35,
+                    "visible": true,
+                    "histogramBase": 0,
+                    "joinPoints": false,
+                    "title": "DC L",
+                    "isHidden": false
+                  },
+                  "plot_3": {
+                    "color": "#008080",
+                    "linestyle": 0,
+                    "linewidth": 1,
+                    "plottype": 6,
+                    "trackPrice": false,
+                    "transparency": 35,
+                    "visible": true,
+                    "histogramBase": 0,
+                    "joinPoints": false,
+                    "title": "DC M",
+                    "isHidden": false
+                  },
+                  "plot_4": {
+                    "colordown": "#FF0000",
+                    "colorup": "#00FF00",
+                    "transparency": 40,
+                    "visible": true,
+                    "color": "#0496FF",
+                    "linestyle": 0,
+                    "linewidth": 2,
+                    "plottype": "arrows",
+                    "histogramBase": 0,
+                    "trackPrice": false,
+                    "joinPoints": false,
+                    "title": "Trigger Arrow",
+                    "isHidden": false,
+                    "maxHeight": 60,
+                    "minHeight": 50
+                  },
+                  "plot_5": {
+                    "visible": true,
+                    "color": "#0496FF",
+                    "linestyle": 0,
+                    "linewidth": 2,
+                    "plottype": "bar_colorer",
+                    "histogramBase": 0,
+                    "transparency": 0,
+                    "trackPrice": false,
+                    "joinPoints": false,
+                    "title": "Trigger Bar",
+                    "isHidden": false
+                  }
+                },
+                "inputs": {
+                  "in_0": true,
+                  "in_1": 13,
+                  "in_10": 42,
+                  "in_2": "ema",
+                  "in_3": true,
+                  "in_4": 21,
+                  "in_5": 13,
+                  "in_6": 1,
+                  "in_7": 1,
+                  "in_8": true,
+                  "in_9": 3,
+                  "pineId": "",
+                  "pineVersion": "",
+                  "text": "y7/dek1KLIzxjBoLenyjug==_dOSCE4c7kY3rNjB27es0jwgafbj7ZRI3NexQFv11Sirh7CeeFb7OAF+bDNYuFJCrWUfcI5TT0jMLLBKE9X17J5hNnSt7uldPD2JK/KnklH1XWdaIGIymwT22qWTeSHXfmgipDdFwSMBn37HaUKFZ9r0HAXmiy2Nl6aeJYvvUki0GfMVtcbLH2SwxAsCDHA2tshMfUFJDYSq2Bo2fMvMikbCRMi4slj4+EZ0lNGCg6mk3hhoUOnUtb4cQnhu4fl6h885ggg+0NlDwZTSxtGMLnyraUeFTAjy4Uc+tE+Lp0qmYR1r6pgjaM+l6jWeJDRHipx0SgShzPyytmHR6ZyN7S0XCG/QMWttMuo6vJlaBUmLi8hpZRRYyPi8Btunk+sYsu+GCF0ioqimC4qdV9WUdUtic0iP4TKY32h+lnZc3wBaHxdbvyTHoI97zGJoSRjOq33zpD3CH+UeVqAhtyTnAmiEVYQcysWeFtDWmT3v45z+5Fc2+W7v15son53tCMF/fS8009i6xQNZp1B9gIu5tUuqKvSTaMYAQKDqXZXEQa4AN1NvRdN8FBkhV8+cxG4pS9UcTbv1klGIZ4bDNUlj5odapfqIwn4qx+0/Uy0zAr5WeURXO9oGCJKGjSCr+9Z2FxlSLZupoHcTJozZQ4oFlOcefXT3OO6z43CC75690hR6Lmysg4esFn++E7+l/W8AqCAP8/drVls0Qib9CGxGJYRipG4fruX2R0pOf3hC34nIlComE6U0EkqLATrlYESe9XGewXD5wdvfMiwZ86xxJwCeabvFratmyFt0uUTguqyuRfRibEIyvKV00vNOBpg8zDqHfVSjkyk6nKXi8H8tpKipJQIkZjBRf+hNR39TAO/HtGm27qt+z1NAa3E2/WMU6QZy66kZwHTVO1yt2EejMo32mYBqatMV7PXHGXNlWKWsip8od5gZ2WWNHI4QKqYEe9zgB5B5mDrfpte7U1iFFgLvHgUsXac48VEM49ePc/0hC4G2u0+BGnfmeHd3NWobiyhWFddUDXp7CbjWGMgNhXJ+xbCSJH1PggiKHhuiuQ0CRNNNdOWJobEU+XewmOr/uaBH7xD1FV+fN1jEJ84mX8g37OXSmuJOhPLI9XvWo91VyLCZyiUDubqfhGfW8JzvYJBZ47vhQHsBq5cWY/myo7r4XmeZsEJfBZk0pTFX4UDiTjLq3Bbk1NQE5/bkdJacutbeeF4JP9sSoZQtPNsyiUHKscI9ShELW8NT5B+cXNNWeNaL7og+zBl1Kff8jSAi2N3w3zWps45pFhA4oyarmwv4DuZLj07RzA5GkPvUjClWeIdtSup88ASRMkLYUQ42+zYJzcw11sqifiUneO9wYD2Mv2kgh943UG7Py8VT9EJ0Mmqs3v940CBu0NacqPpOi3PoG2+MztRkMO1oqz0+XEUXR9yzRPAw17C9MwixukK1Q1K4KU6YYUjR3hcbNU78FWd3k/gxKIzTSqaAuYu2ZBCifLOeVppO3QGN08l+L0XxhbNP7KE2yK28MS4+gtVOKY1z7j2xMpppfhK+kph3WZDgawRrylMCoAJBQUHytlqtJNnXbyq8HRYGTEEiRzOvnOknPzciSn3gMnFPmxoKUFd+uK2ZtiShQruyD4s0tHgcQDYGcB+2NqleOXoKeQkS0jfTPDHRqmWvgn/V5fkN77Vh2WU6eu4IoKoTR9qpe9EWErpEWkwQBB/rjuzYxKvzfy/+bzLDaHT7qZYOMxlwLbMAQmWf6pVlCSuFUr3leRg7ntc9Isgx/EsPaVORV"
+                },
+                "bands": {},
+                "area": {},
+                "graphics": {},
+                "showInDataWindow": true,
+                "visible": true,
+                "showStudyArguments": true,
+                "precision": "default",
+                "plots": {
+                  "0": {
+                    "id": "plot_0",
+                    "type": "line",
+                    "pinePlotIndex": 0
+                  },
+                  "1": {
+                    "id": "plot_1",
+                    "type": "line",
+                    "pinePlotIndex": 1
+                  },
+                  "2": {
+                    "id": "plot_2",
+                    "type": "line",
+                    "pinePlotIndex": 2
+                  },
+                  "3": {
+                    "id": "plot_3",
+                    "type": "line",
+                    "pinePlotIndex": 3
+                  },
+                  "4": {
+                    "id": "plot_4",
+                    "type": "arrows",
+                    "pinePlotIndex": 4
+                  },
+                  "5": {
+                    "id": "plot_5",
+                    "palette": "palette_0",
+                    "type": "bar_colorer",
+                    "pinePlotIndex": 5
+                  }
+                },
+                "_metainfoVersion": 47,
+                "alerts": {
+                  "conditions": {
+                    "alert_0": {
+                      "message": "Augmented Renko Signal ",
+                      "pineVar": "var_28",
+                      "title": "Renko Signal"
+                    }
+                  }
+                },"de\scription": "Renko Rules , Single Period Fixed [Study]",
+                "filledAreas": {
+                  "0": {
+                    "id": "fill_0",
+                    "isHidden": false,
+                    "objAId": "plot_1",
+                    "objBId": "plot_2",
+                    "title": "DC Bg",
+                    "type": "plot_plot"
+                  }
+                },
+                "id":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-\scripting","isTV\Script": true,"isTV\ScriptStub": false,
+                "is_hidden_study": false,
+                "is_price_study": true,
+                "pine": {
+                  "digest": "32d87ae0607623031a34d703bf5b7dd913f064d8",
+                  "version": "234.0"
+                },"\scriptIdPart": "USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V","shortDe\scription": "RR,SPF[stdy]",
+                "shortId":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V",
+                "packageId":"tv-\scripting",
+                "version": "101",
+                "fullId":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-\scripting-101",
+                "productId":"tv-\scripting",
+                "name":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-\scripting",
+                "format": {
+                  "type": "inherit"
+                },
+                "_serverMetaInfoVersion": 47
+              },
+              "zorder": -8,
+              "metaInfo": {
+                "palettes": {
+                  "palette_0": {
+                    "addDefaultColor": true,
+                    "colors": {
+                      "0": {
+                        "name": "Color 0"
+                      }
+                    },
+                    "valToIndex": {
+                      "0": 0
+                    }
+                  }
+                },
+                "inputs": [
+                  {
+                    "defval": "PxWZ98q8YOcG8TcvB3NQpQ==_/1MGXeRz4C3Nq5wkAFvYjs4OD0u+7ntYTa7RlOv+guQ++pWflNMyJq1Imytz+LNv1s8nbtq0qs+Y0oQmOqbo3EnETcCH/atHNPbsUXrsmx8RxZqbF/DPx8oJ7TBPGH57YM235A+DMfigOPSGsKULnbRg3bf1/GWrvgkJsf6UDQYI4naRp4oo/REKJohiT8g9MamOa6NhAkCTHg+sSiG2bREDDpqoB/uVobXd99sFhAnOUpV+H8kE3Kft1MFzqTuMYTI5jV1L1OBhBlIJOpqHQV6fNaHbDsdft9uYjHrDgV3Xtjk3CV4kCM+hD1RpbiSyWLs4bq3umvAOdtKKnE/650BAjqzqtI9IA78m4GWZHNnbH68MHwWBar1UblquSUfY7uq+oOEiS4u2ed4SRl8GAZVQTPScgg7xNP5mriz/f2+ocWMVfx8fSBry8F0hoy4yFuyWmY9c8THzkVbocgOOKlNfGSfulVTlYmkgN3JTpZ5XfUhTwm8RXRq2a2S2ncp7BV4QCsYK6R1C9sAiY7/ghh4zwigcrSNB359exFgLw21hGIaIT7R2EthElRMLlniQjCoaRJXVkBHOJc1rPJtBJkXCouway2okpgbwLX+52o9VLDEFIXNwOLQnackOvBh5M7P6Or8V5fDDrohw6LNxdm4TZTu3cNeorBJLJcmCuvD/UgJjw9ikzZC+/z45Q40VvcKiiyr59Exk/moSYDqTlou1caBAuUzvqyAAPJJtQFP/RzTrScu8J4RW5A7Mzy/gCWj4hbvgkvNNHH6xyc5jHy141XKCslr3UUY3g3HWUqU7bFjJKmU1IBv+XthCorMdX4FMjEjKshrMiZXUtFlF4LhQMSN1bW9DWF4XhJHU1+qRYEbQD3MLlJGoEzodSJmg983GGc83rl5dG7EVrGA6AWN9HYkO9a040K2PDVLFvA9YaIFRvlaKz6LgRLgM+DQXegdCKHwpH9OvkW5H+0CqtMGnMHyIK39G2qBBBNrPRKfdo7yqzodNSx58A6O4B/LL+KbVsQGJZMbUK4/9AhyMn5L53YkOlVQQSdAATnih5lk5DkALDad8ZYcchuy9dfnzkZOnFJhZzgayIVlJIUG+Kc8PVbGZSRPrHqlrkBSj4jAbrCjdrB1vhMYXftjrzuxKBPA7WPkSckll/9FFRq+OhoPnBvKl7y9jMn9NkbD7umioJFqB4K0oxzbfcduxQ7bO9edI0NdSzoV+2ZrrqHzXrj43/pQxfadPk5WzT3vcW5H6817MhsuO0iiS3GKzd1RyzKqvpFrfjI5SwauuvoAsSP6tyuQVNJ/E4tKsGvxRMFwGBkKfetVkbOe6d+Hy+xGReTccTXZiH9sjAXZVu4HB8wE7c45+VQOqhY/DVyvXJki++k3PB9k30h1CLHBBs+xgJNVxQeg9JCqaDIGbMmjST8+/AZ3OKdDAwoZUabo+C7ANllEk0TJ3DPyGyBCpSXdtbNBqblB1uXNIg0XX5YOaSERxL+Dnr+S75L5Z18ST/k3yxgpXP5ZzbBlIdFO4fW/QtUMu95w4rl3mG0mQVO7jDPpgCDNWfoaJFfBtHc4ESqcOKLYYxUWs/SZnn0j1kZAXaK4m0iSVqvlZIaQfPD9mMHiDrJbfcGSr57MXniWXElOy/YrVoU6BF507uW/HU2sxFTIQz7IX9C7XMl0LIA9Ky+CYL2kR478s4c3R60aGoraevz8QvrC2QLi15t/0seMNbIrrfb7dxoVnkESBVmStazKcXcuaR/xOlvnuHEBxunxRmHetQjRUaItYTkuw",
+                    "id": "text",
+                    "isHidden": true,
+                    "name":"IL\Script",
+                    "type": "text"
+                  },
+                  {
+                    "defval": "",
+                    "id": "pineId",
+                    "isHidden": true,
+                    "name": "pineId",
+                    "type": "text"
+                  },
+                  {
+                    "defval": "",
+                    "id": "pineVersion",
+                    "isHidden": true,
+                    "name": "pineVersion",
+                    "type": "text"
+                  },
+                  {
+                    "defval": true,
+                    "id": "in_0",
+                    "isFake": true,
+                    "name": "MA Signal",
+                    "type": "bool"
+                  },
+                  {
+                    "defval": 13,
+                    "id": "in_1",
+                    "isFake": true,
+                    "max": 1000000000000,
+                    "min": -1000000000000,
+                    "name": "MA len",
+                    "type": "integer"
+                  },
+                  {
+                    "defval": "ema",
+                    "id": "in_2",
+                    "isFake": true,
+                    "name": "MA Type",
+                    "options": [
+                      "ema",
+                      "sma",
+                      "smma"
+                    ],
+                    "type": "text"
+                  },
+                  {
+                    "defval": true,
+                    "id": "in_3",
+                    "isFake": true,
+                    "name": "DC Signal",
+                    "type": "bool"
+                  },
+                  {
+                    "defval": 21,
+                    "id": "in_4",
+                    "isFake": true,
+                    "max": 1000000000000,
+                    "min": -1000000000000,
+                    "name": "DC Len",
+                    "type": "integer"
+                  },
+                  {
+                    "defval": 13,
+                    "id": "in_5",
+                    "isFake": true,
+                    "max": 1000000000000,
+                    "min": -1000000000000,
+                    "name": "DC Break Threshold",
+                    "type": "integer"
+                  },
+                  {
+                    "defval": 1,
+                    "id": "in_6",
+                    "isFake": true,
+                    "max": 1000000000000,
+                    "min": -1000000000000,
+                    "name": "DC Eval point from Bars before",
+                    "type": "integer"
+                  },
+                  {
+                    "defval": 1,
+                    "id": "in_7",
+                    "isFake": true,
+                    "max": 1000000000000,
+                    "min": -1000000000000,
+                    "name": "DC Break Confirm after consecutive Bars",
+                    "type": "integer"
+                  },
+                  {
+                    "defval": true,
+                    "id": "in_8",
+                    "isFake": true,
+                    "name": "ST Signal",
+                    "type": "bool"
+                  },
+                  {
+                    "defval": 3,
+                    "id": "in_9",
+                    "isFake": true,
+                    "max": 100,
+                    "min": 1,
+                    "name": "ST piv back",
+                    "type": "integer"
+                  },
+                  {
+                    "defval": 42,
+                    "id": "in_10",
+                    "isFake": true,
+                    "max": 200,
+                    "min": 1,
+                    "name": "ST ATR AVG",
+                    "type": "integer"
+                  }
+                ],
+                "plots": [
+                  {
+                    "id": "plot_0",
+                    "type": "line",
+                    "pinePlotIndex": 0
+                  },
+                  {
+                    "id": "plot_1",
+                    "type": "line",
+                    "pinePlotIndex": 1
+                  },
+                  {
+                    "id": "plot_2",
+                    "type": "line",
+                    "pinePlotIndex": 2
+                  },
+                  {
+                    "id": "plot_3",
+                    "type": "line",
+                    "pinePlotIndex": 3
+                  },
+                  {
+                    "id": "plot_4",
+                    "type": "arrows",
+                    "pinePlotIndex": 4
+                  },
+                  {
+                    "id": "plot_5",
+                    "palette": "palette_0",
+                    "type": "bar_colorer",
+                    "pinePlotIndex": 5
+                  }
+                ],
+                "graphics": {},
+                "defaults": {
+                  "filledAreasStyle": {
+                    "fill_0": {
+                      "color": "#008080",
+                      "transparency": 95,
+                      "visible": true
+                    }
+                  },
+                  "inputs": {
+                    "in_0": true,
+                    "in_1": 13,
+                    "in_10": 42,
+                    "in_2": "ema",
+                    "in_3": true,
+                    "in_4": 21,
+                    "in_5": 13,
+                    "in_6": 1,
+                    "in_7": 1,
+                    "in_8": true,
+                    "in_9": 3,
+                    "pineId": "",
+                    "pineVersion": "",
+                    "text": "PxWZ98q8YOcG8TcvB3NQpQ==_/1MGXeRz4C3Nq5wkAFvYjs4OD0u+7ntYTa7RlOv+guQ++pWflNMyJq1Imytz+LNv1s8nbtq0qs+Y0oQmOqbo3EnETcCH/atHNPbsUXrsmx8RxZqbF/DPx8oJ7TBPGH57YM235A+DMfigOPSGsKULnbRg3bf1/GWrvgkJsf6UDQYI4naRp4oo/REKJohiT8g9MamOa6NhAkCTHg+sSiG2bREDDpqoB/uVobXd99sFhAnOUpV+H8kE3Kft1MFzqTuMYTI5jV1L1OBhBlIJOpqHQV6fNaHbDsdft9uYjHrDgV3Xtjk3CV4kCM+hD1RpbiSyWLs4bq3umvAOdtKKnE/650BAjqzqtI9IA78m4GWZHNnbH68MHwWBar1UblquSUfY7uq+oOEiS4u2ed4SRl8GAZVQTPScgg7xNP5mriz/f2+ocWMVfx8fSBry8F0hoy4yFuyWmY9c8THzkVbocgOOKlNfGSfulVTlYmkgN3JTpZ5XfUhTwm8RXRq2a2S2ncp7BV4QCsYK6R1C9sAiY7/ghh4zwigcrSNB359exFgLw21hGIaIT7R2EthElRMLlniQjCoaRJXVkBHOJc1rPJtBJkXCouway2okpgbwLX+52o9VLDEFIXNwOLQnackOvBh5M7P6Or8V5fDDrohw6LNxdm4TZTu3cNeorBJLJcmCuvD/UgJjw9ikzZC+/z45Q40VvcKiiyr59Exk/moSYDqTlou1caBAuUzvqyAAPJJtQFP/RzTrScu8J4RW5A7Mzy/gCWj4hbvgkvNNHH6xyc5jHy141XKCslr3UUY3g3HWUqU7bFjJKmU1IBv+XthCorMdX4FMjEjKshrMiZXUtFlF4LhQMSN1bW9DWF4XhJHU1+qRYEbQD3MLlJGoEzodSJmg983GGc83rl5dG7EVrGA6AWN9HYkO9a040K2PDVLFvA9YaIFRvlaKz6LgRLgM+DQXegdCKHwpH9OvkW5H+0CqtMGnMHyIK39G2qBBBNrPRKfdo7yqzodNSx58A6O4B/LL+KbVsQGJZMbUK4/9AhyMn5L53YkOlVQQSdAATnih5lk5DkALDad8ZYcchuy9dfnzkZOnFJhZzgayIVlJIUG+Kc8PVbGZSRPrHqlrkBSj4jAbrCjdrB1vhMYXftjrzuxKBPA7WPkSckll/9FFRq+OhoPnBvKl7y9jMn9NkbD7umioJFqB4K0oxzbfcduxQ7bO9edI0NdSzoV+2ZrrqHzXrj43/pQxfadPk5WzT3vcW5H6817MhsuO0iiS3GKzd1RyzKqvpFrfjI5SwauuvoAsSP6tyuQVNJ/E4tKsGvxRMFwGBkKfetVkbOe6d+Hy+xGReTccTXZiH9sjAXZVu4HB8wE7c45+VQOqhY/DVyvXJki++k3PB9k30h1CLHBBs+xgJNVxQeg9JCqaDIGbMmjST8+/AZ3OKdDAwoZUabo+C7ANllEk0TJ3DPyGyBCpSXdtbNBqblB1uXNIg0XX5YOaSERxL+Dnr+S75L5Z18ST/k3yxgpXP5ZzbBlIdFO4fW/QtUMu95w4rl3mG0mQVO7jDPpgCDNWfoaJFfBtHc4ESqcOKLYYxUWs/SZnn0j1kZAXaK4m0iSVqvlZIaQfPD9mMHiDrJbfcGSr57MXniWXElOy/YrVoU6BF507uW/HU2sxFTIQz7IX9C7XMl0LIA9Ky+CYL2kR478s4c3R60aGoraevz8QvrC2QLi15t/0seMNbIrrfb7dxoVnkESBVmStazKcXcuaR/xOlvnuHEBxunxRmHetQjRUaItYTkuw"
+                  },
+                  "palettes": {
+                    "palette_0": {
+                      "colors": {
+                        "0": {
+                          "color": "#FFFFFF",
+                          "style": 0,
+                          "width": 1
+                        }
+                      }
+                    }
+                  },
+                  "styles": {
+                    "plot_0": {
+                      "color": "#FFFFFF",
+                      "linestyle": 0,
+                      "linewidth": 2,
+                      "plottype": 0,
+                      "trackPrice": false,
+                      "transparency": 35,
+                      "visible": true
+                    },
+                    "plot_1": {
+                      "color": "#008080",
+                      "linestyle": 0,
+                      "linewidth": 1,
+                      "plottype": 0,
+                      "trackPrice": false,
+                      "transparency": 35,
+                      "visible": true
+                    },
+                    "plot_2": {
+                      "color": "#008080",
+                      "linestyle": 0,
+                      "linewidth": 1,
+                      "plottype": 0,
+                      "trackPrice": false,
+                      "transparency": 35,
+                      "visible": true
+                    },
+                    "plot_3": {
+                      "color": "#008080",
+                      "linestyle": 0,
+                      "linewidth": 1,
+                      "plottype": 6,
+                      "trackPrice": false,
+                      "transparency": 35,
+                      "visible": true
+                    },
+                    "plot_4": {
+                      "colordown": "#FF0000",
+                      "colorup": "#00FF00",
+                      "transparency": 40,
+                      "visible": true
+                    }
+                  }
+                },
+                "_metainfoVersion": 47,
+                "alerts": {
+                  "conditions": {
+                    "alert_0": {
+                      "message": "Augmented Renko Signal ",
+                      "pineVar": "var_28",
+                      "title": "Renko Signal"
+                    }
+                  }
+                },"de\scription": "Renko Rules , Single Period Fixed [Study]",
+                "filledAreas": [
+                  {
+                    "id": "fill_0",
+                    "isHidden": false,
+                    "objAId": "plot_1",
+                    "objBId": "plot_2",
+                    "title": "DC Bg",
+                    "type": "plot_plot"
+                  }
+                ],
+                "format": {
+                  "type": "inherit"
+                },
+                "id":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-\scripting-101","isTV\Script": true,"isTV\ScriptStub": false,
+                "is_hidden_study": false,
+                "is_price_study": true,
+                "pine": {
+                  "digest": "32d87ae0607623031a34d703bf5b7dd913f064d8",
+                  "version": "234.0"
+                },"\scriptIdPart": "USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V","shortDe\scription": "RR,SPF[stdy]",
+                "styles": {
+                  "plot_0": {
+                    "histogramBase": 0,
+                    "isHidden": false,
+                    "joinPoints": false,
+                    "title": "MA"
+                  },
+                  "plot_1": {
+                    "histogramBase": 0,
+                    "isHidden": false,
+                    "joinPoints": false,
+                    "title": "DC H"
+                  },
+                  "plot_2": {
+                    "histogramBase": 0,
+                    "isHidden": false,
+                    "joinPoints": false,
+                    "title": "DC L"
+                  },
+                  "plot_3": {
+                    "histogramBase": 0,
+                    "isHidden": false,
+                    "joinPoints": false,
+                    "title": "DC M"
+                  },
+                  "plot_4": {
+                    "isHidden": false,
+                    "maxHeight": 60,
+                    "minHeight": 50,
+                    "title": "Trigger Arrow"
+                  },
+                  "plot_5": {
+                    "isHidden": false,
+                    "title": "Trigger Bar"
+                  }
+                },
+                "shortId":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V",
+                "packageId":"tv-\scripting",
+                "version": "101",
+                "fullId":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-\scripting-101",
+                "productId":"tv-\scripting",
+                "name":"\Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-\scripting",
+                "_serverMetaInfoVersion": 47
+              }
+            },
+            {
+              "type": "LineToolTrendLine",
+              "id": "XprbTM",
+              "state": {
+                "clonable": true,
+                "linecolor": "rgba(255, 0, 0, 1)",
+                "linewidth": 3,
+                "linestyle": 0,
+                "extendLeft": false,
+                "extendRight": false,
+                "leftEnd": 0,
+                "rightEnd": 0,
+                "font": "Verdana",
+                "textcolor": "rgba(182, 215, 168, 1)",
+                "fontsize": 12,
+                "bold": false,
+                "italic": false,
+                "snapTo45Degrees": true,
+                "alwaysShowStats": false,
+                "showMiddlePoint": false,
+                "showPriceRange": false,
+                "showBarsRange": false,
+                "showDateTimeRange": false,
+                "showDistance": false,
+                "showAngle": false,
+                "statsPosition": 2,
+                "intervalsVisibilities": {
+                  "seconds": true,
+                  "secondsFrom": 1,
+                  "secondsTo": 59,
+                  "minutes": true,
+                  "minutesFrom": 1,
+                  "minutesTo": 59,
+                  "hours": true,
+                  "hoursFrom": 1,
+                  "hoursTo": 24,
+                  "days": true,
+                  "daysFrom": 1,
+                  "daysTo": 1,
+                  "weeks": false,
+                  "months": false,
+                  "ranges": false
+                },
+                "frozen": false,
+                "_isActualInterval": true,
+                "fixedSize": true,
+                "lastUpdateTime": 1558176694511,
+                "visible": true,
+                "symbol": "BITSTAMP:BTCUSD",
+                "interval": "15"
+              },
+              "points": [
+                {
+                  "time_t": 1558153800,
+                  "offset": 0,
+                  "price": 7443.526242191506
+                },
+                {
+                  "time_t": 1558158300,
+                  "offset": 6,
+                  "price": 7443.526242191506
+                }
+              ],
+              "zorder": 46,
+              "linkKey": "VGq5vXPzYkuA",
+              "ownerSource": "L16rcV",
+              "alertId": 35436660
+            }
+          ],
+          "leftAxisesState": [],
+          "rightAxisesState": [
+            {
+              "state": {
+                "id": "RaFzvy3cYJ0d",
+                "m_priceRange": {
+                  "m_maxValue": 7493.85,
+                  "m_minValue": 7062.93
+                },
+                "m_isAutoScale": true,
+                "m_isPercentage": false,
+                "m_isIndexedTo100": false,
+                "m_isLog": false,
+                "m_isLockScale": false,
+                "m_isInverted": false,
+                "m_height": 862,
+                "m_topMargin": 0.05,
+                "m_bottomMargin": 0.05,
+                "alignLabels": true
+              },
+              "sources": [
+                "L16rcV",
+                "NRcxEY",
+                "1b45333b-a1ce-48b8-b93c-7360bcbb34e1",
+                "db6225f5-fa67-454c-a079-f357ff76ab26",
+                "2bd1a3b5-b56b-42ef-8948-ca0b65044c71",
+                "aad29bda-9137-428c-bd67-b17d399cd210",
+                "f17c4c1e-dd86-4ab6-95e7-a36586cff37d",
+                "9f4e9bcf-a73f-4778-9fad-13e776316d37",
+                "688131f9-51e0-46be-bb31-b5dc655e9949",
+                "896bfcd0-a330-4c35-ac69-e75351b77637",
+                "5e700a5b-0465-4196-aae6-d4260d6a3db2",
+                "e8e0035d-10cd-4a7d-a4ba-4fa15d17ce61",
+                "e884744d-8d8f-4814-83f5-3c24ac404d55",
+                "8b8a7645-2259-4876-8a25-5f7c58ece097",
+                "cee25211-15bf-48cc-8a71-fd371df05c2e",
+                "756dd43b-5ed0-474b-9974-ff6109cb8411",
+                "ac414ede-d935-46d2-b6cf-b8d3b18d0eb6",
+                "f77d4b8e-f5f0-47b4-93bc-652b24bc76ab",
+                "d13e80fa-64c6-4312-a634-aec0d0cbf0d9",
+                "af7cb80e-c565-4413-976a-1cc7e522cb20",
+                "a5d14a6f-5eff-43ad-9f50-98b8989e328d",
+                "0584858c-6b6e-4399-9bdc-e3b3cf043073",
+                "80bd4e5a-13fd-420a-b606-b5757828fa70",
+                "4b47440d-22d2-490a-8d4b-e71b438293c4",
+                "08edc139-07e4-470e-bde4-8d6cc119e3d2",
+                "6153eabb-d74c-44dd-9653-9d0497c51407",
+                "fb5b9857-d79d-4e96-b761-46c714cda4ff",
+                "75621686-10f3-4cd9-8820-711a03f3b3e9",
+                "0b9e802d-f060-4d51-bbcf-f06687505e23",
+                "1b75b607-a74d-4677-b4cc-1179009edd47",
+                "36825dd7-632b-4b4f-9f71-7477533ae21a",
+                "072da4e0-abf4-4907-9451-66fea091bf60",
+                "cd4f7665-133b-4989-8034-58302200b136",
+                "5a1c1ee4-cc68-485e-bd7d-cca285034446",
+                "4fb979f9-bc08-4a83-bb34-923593350742",
+                "dGKwrT",
+                "YK5GUg",
+                "2CL623",
+                "TzjGot",
+                "KMTtvC",
+                "gXWtKT",
+                "Xm8LNb",
+                "3avBQw",
+                "Gw0Wl8",
+                "FqY4wX",
+                "CApzFS",
+                "KaCVet",
+                "qHQLBl",
+                "xCJLX2",
+                "aXetrt",
+                "LMP14u",
+                "tCApRJ",
+                "gbqzG4",
+                "tDV9iE",
+                "XprbTM"
+              ]
+            }
+          ],
+          "overlayPriceScales": {
+            "84atzU": {
+              "id": "sImGgHlAV7Yd",
+              "m_priceRange": {
+                "m_maxValue": 223.30760924000012,
+                "m_minValue": 0
+              },
+              "m_isAutoScale": true,
+              "m_isPercentage": false,
+              "m_isIndexedTo100": false,
+              "m_isLog": false,
+              "m_isLockScale": false,
+              "m_isInverted": false,
+              "m_height": 862,
+              "m_topMargin": 0.75,
+              "m_bottomMargin": 0,
+              "alignLabels": true
+            }
+          },
+          "stretchFactor": 2000,
+          "mainSourceId": "L16rcV",
+          "priceScaleRatio": null
+        }
+      ],
+      "timeScale": {
+        "m_barSpacing": 7.40740740740741,
+        "m_rightOffset": 5
+      },
+      "chartProperties": {
+        "paneProperties": {
+          "background": "#131722",
+          "gridProperties": {
+            "color": "#363c4e",
+            "style": 0
+          },
+          "vertGridProperties": {
+            "color": "rgba(54, 60, 78, 0.2)",
+            "style": 0
+          },
+          "horzGridProperties": {
+            "color": "rgba(54, 60, 78, 0.2)",
+            "style": 0
+          },
+          "crossHairProperties": {
+            "color": "rgba( 152, 152, 152, 1)",
+            "style": 2,
+            "transparency": 0,
+            "width": 1
+          },
+          "topMargin": 5,
+          "bottomMargin": 5,
+          "axisProperties": {
+            "autoScale": true,
+            "autoScaleDisabled": false,
+            "lockScale": false,
+            "percentage": false,
+            "percentageDisabled": false,
+            "indexedTo100": false,
+            "log": false,
+            "logDisabled": false,
+            "alignLabels": true,
+            "isInverted": false
+          },
+          "legendProperties": {
+            "showStudyArguments": true,
+            "showStudyTitles": true,
+            "showStudyValues": true,
+            "showSeriesTitle": true,
+            "showSeriesOHLC": true,
+            "showLegend": true,
+            "showBarChange": true,
+            "showOnlyPriceSource": true
+          },
+          "leftAxisProperties": {
+            "autoScale": true,
+            "autoScaleDisabled": false,
+            "lockScale": false,
+            "percentage": false,
+            "percentageDisabled": false,
+            "indexedTo100": false,
+            "log": false,
+            "logDisabled": false,
+            "alignLabels": true,
+            "isInverted": false
+          },
+          "rightAxisProperties": {
+            "autoScale": true,
+            "autoScaleDisabled": false,
+            "lockScale": false,
+            "percentage": false,
+            "percentageDisabled": false,
+            "indexedTo100": false,
+            "log": false,
+            "logDisabled": false,
+            "alignLabels": true,
+            "isInverted": false
+          },
+          "overlayPropreties": {
+            "autoScale": true,
+            "autoScaleDisabled": false,
+            "lockScale": false,
+            "percentage": false,
+            "percentageDisabled": false,
+            "log": false,
+            "logDisabled": false,
+            "alignLabels": true
+          },
+          "rightOffset": {}
+        },
+        "scalesProperties": {
+          "backgroundColor": "#ffffff",
+          "lineColor": "#787878",
+          "textColor": "#D9D9D9",
+          "fontSize": 11,
+          "scaleSeriesOnly": false,
+          "showSeriesLastValue": true,
+          "seriesLastValueMode": 1,
+          "showSeriesPrevCloseValue": false,
+          "showStudyLastValue": false,
+          "showSymbolLabels": false,
+          "showStudyPlotLabels": false,
+          "barSpacing": 6,
+          "showLeftScale": false,
+          "showRightScale": true
+        },
+        "publishedChartsTimelineProperties": {
+          "type": "BarsMarksContainer",
+          "id": "GWC3CK",
+          "pinnedTooltips": {}
+        },
+        "chartEventsSourceProperties": {
+          "visible": false,
+          "futureOnly": true,
+          "breaks": {
+            "color": "rgba(85, 85, 85, 1)",
+            "visible": false,
+            "style": 2,
+            "width": 1
+          }
+        },
+        "priceScaleSelectionStrategyName": "auto"
+      },
+      "version": 2,
+      "timezone": "Etc/UTC",
+      "sessions": {
+        "properties": {
+          "graphics": {
+            "backgrounds": {
+              "outOfSession": {
+                "color": "rgba(255, 229, 153, 0.4)",
+                "transparency": 60,
+                "visible": false,
+                "name": "Extended Hours"
+              },
+              "inSession": {
+                "color": "rgba(111, 168, 220, 0.4)",
+                "transparency": 60,
+                "visible": false,
+                "name": "In Session"
+              }
+            },
+            "vertlines": {
+              "sessBreaks": {
+                "color": "#4985e7",
+                "style": 2,
+                "visible": false,
+                "width": 1,
+                "name": "Session Break"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

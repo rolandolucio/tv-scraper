@@ -1,0 +1,11 @@
+{
+  "esversion": 8,
+  "unused": true,
+  "ignoreDelimiters": [{ "start": "start-non-standard", "end": "end-non-standard" }],
+  "-W058": true,
+  "-W083": true,
+  "-W097": true,
+  "-W117": true,
+  "-W079": true,
+  "expr": true
+}
