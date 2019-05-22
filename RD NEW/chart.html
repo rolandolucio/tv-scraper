@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="is-authenticated is-pro is-not-trial theme-dark">
+
+<head>
+  <!--[if lt IE 10]>
+	<script type="text/javascript">
+		if (String(window.location).search('badbrowser') === -1) {
+			window.location = "/badbrowser/";
+		}
+	</script>
+	<![endif]-->
+
+  <meta charset="utf-8" />
+  <meta name="apple-itunes-app" content="app-id=1205990992" />
+  <meta property="al:ios:app_store_id" content="1205990992" />
+  <meta property="al:ios:app_name" content="TradingView - trading community, charts and quotes" />
+
+
+  <title>Live stock, index, futures, Forex and Bitcoin charts on TradingView</title>
+
+  <meta name="description" content="Interactive financial charts for analysis and generating trading ideas on TradingView!" />
+
+
+  <meta property="og:url" content="https://www.tradingview.com/chart/" />
+  <meta property="og:site_name" content="TradingView" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="https://www.tradingview.com/static/images/logo-v-1200x630.png" />
+  <meta property="og:image:secure_url" content="https://www.tradingview.com/static/images/logo-v-1200x630.png" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://www.tradingview.com/static/images/logo-v-1200x630.png" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:site" content="@TradingView" />
+  <meta name="twitter:url" content="https://www.tradingview.com/chart/" />
+  <meta http-equiv="X-UA-Compatible" content="IE=100" />
+
+
+  <link rel="canonical" href="https://www.tradingview.com/chart/" />
+  <link rel="dns-prefetch" href="https://s3.amazonaws.com">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="preconnect" href="//pine-facade.tradingview.com/pine-facade" crossorigin>
+
+  <meta name="ahrefs-site-verification" content="f729ff74def35be4b9b92072c0e995b40fcb9e1aece03fb174343a1b7a5350ce">
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://www.tradingview.com",
+      "logo": "https://www.tradingview.com/static/images/logo-151x151.png",
+      "name": "TradingView",
+      "sameAs": ["https://www.facebook.com/tradingview/",
+        "https://twitter.com/tradingview/",
+        "https://www.youtube.com/channel/UCfOflihrkOKDQZ_ZKtF2VfQ/",
+        "https://www.linkedin.com/company/tradingview/"
+      ]
+    }
+  </script>
+
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <meta name="skype_toolbar" content="skype_toolbar_parser_compatible" />
+
+  <meta name="application-name" content="TradingView" />
+  <meta name="msapplication-starturl" content="https://www.tradingview.com/chart/" />
+  <meta name="msapplication-task" content="name=Trading Ideas; action-uri=https://www.tradingview.com/; icon-uri=/static/images/favicon.ico" />
+  <meta name="msapplication-config" content="/static/images/favicon/browserconfig.xml" />
+
+  <link rel="mask-icon" href="/static/images/favicon/safari-pinned-tab.svg" color="#37a6ef" />
+
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="manifest" href="/static/images/favicon/manifest.json" />
+
+  <meta name="theme-color" content="#262b3e">
+
+  <meta name="apple-mobile-web-app-title" content="TradingView Site" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/images/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/images/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/images/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/images/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/images/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/images/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/images/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/images/favicon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon-180x180.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <link type="text/css" href="/static/bundles/main_chart.cba94429efa52d130cd6.css" rel="stylesheet" />
+
+  <link type="text/css" href="/static/bundles/print.313dc3811ad1c00f2c34.css" rel="stylesheet" media="print" />
+
+  <style type="text/css">
+    html,
+    body {
+      min-width: 320px;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    @media only screen and (max-width : 600px),
+    only screen and (max-height: 440px) {
+      .charts-popup-list .item.save-load-chart-title {
+        display: block;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+    // init data from server here
+    // it's gona be needed in main_chart entry point
+    var initData = window.initData || {};
+
+    initData.content = {
+      "layout": "s",
+      "charts": [{
+        "panes": [{
+          "sources": [{
+            "type": "MainSeries",
+            "id": "w9iQM2",
+            "state": {
+              "style": 9,
+              "esdShowDividends": true,
+              "esdShowSplits": true,
+              "esdShowEarnings": true,
+              "esdShowBreaks": false,
+              "esdBreaksStyle": {
+                "color": "rgba( 235, 77, 92, 1)",
+                "style": 2,
+                "width": 1
+              },
+              "esdFlagSize": 2,
+              "showCountdown": true,
+              "showInDataWindow": false,
+              "visible": true,
+              "showPriceLine": true,
+              "priceLineWidth": 1,
+              "priceLineColor": "",
+              "baseLineColor": "#B2B5BE",
+              "showPrevClosePriceLine": true,
+              "prevClosePriceLineWidth": 1,
+              "prevClosePriceLineColor": "rgba(101, 101, 101, 1)",
+              "minTick": "default",
+              "extendedHours": false,
+              "dividendsAdjustment": false,
+              "sessVis": false,
+              "statusViewStyle": {
+                "fontSize": 17,
+                "showExchange": true,
+                "showInterval": true,
+                "symbolTextSource": "de\scription",
+                "showSymbolAsDe\scription": false
+              },
+              "candleStyle": {
+                "upColor": "#53b987",
+                "downColor": "#eb4d5c",
+                "drawWick": true,
+                "drawBorder": true,
+                "borderColor": "#378658",
+                "borderUpColor": "#53b987",
+                "borderDownColor": "#eb4d5c",
+                "wickColor": "#B5B5B8",
+                "wickUpColor": "#336854",
+                "wickDownColor": "#7f323f",
+                "barColorsOnPrevClose": false
+              },
+              "hollowCandleStyle": {
+                "upColor": "#53b987",
+                "downColor": "#eb4d5c",
+                "drawWick": true,
+                "drawBorder": true,
+                "borderColor": "#378658",
+                "borderUpColor": "#53b987",
+                "borderDownColor": "#eb4d5c",
+                "wickColor": "#B5B5B8",
+                "wickUpColor": "#336854",
+                "wickDownColor": "#7f323f"
+              },
+              "haStyle": {
+                "upColor": "#53b987",
+                "downColor": "#eb4d5c",
+                "drawWick": true,
+                "drawBorder": true,
+                "borderColor": "#378658",
+                "borderUpColor": "#53b987",
+                "borderDownColor": "#eb4d5c",
+                "wickColor": "#B5B5B8",
+                "wickUpColor": "#53b987",
+                "wickDownColor": "#eb4d5c",
+                "showRealLastPrice": false,
+                "barColorsOnPrevClose": false,
+                "inputs": {},
+                "inputInfo": {}
+              },
+              "barStyle": {
+                "upColor": "#53b987",
+                "downColor": "#eb4d5c",
+                "barColorsOnPrevClose": false,
+                "dontDrawOpen": false,
+                "thinBars": true
+              },
+              "hiloStyle": {
+                "color": "#2196f3",
+                "showBorders": true,
+                "borderColor": "#2196f3",
+                "showLabels": true,
+                "labelColor": "#2196f3",
+                "fontSize": 7
+              },
+              "lineStyle": {
+                "color": "#6FB8F7",
+                "linestyle": 0,
+                "linewidth": 1,
+                "priceSource": "close",
+                "styleType": 2
+              },
+              "areaStyle": {
+                "color1": "rgba(96, 96, 144, 0.5)",
+                "color2": "rgba(1, 246, 245, 0.5)",
+                "linecolor": "#0094FF",
+                "linestyle": 0,
+                "linewidth": 1,
+                "priceSource": "close",
+                "transparency": 50
+              },
+              "renkoStyle": {
+                "upColor": "rgba(33, 33, 33, 1)",
+                "downColor": "rgba(33, 33, 33, 1)",
+                "borderUpColor": "rgba(0, 255, 0, 1)",
+                "borderDownColor": "rgba(255, 0, 0, 1)",
+                "upColorProjection": "rgba(0, 255, 255, 1)",
+                "downColorProjection": "rgba(255, 0, 255, 1)",
+                "borderUpColorProjection": "rgba(255, 255, 255, 1)",
+                "borderDownColorProjection": "rgba(255, 255, 255, 1)",
+                "wickUpColor": "#336854",
+                "wickDownColor": "#7f323f",
+                "inputs": {
+                  "source": "close",
+                  "boxSize": 11,
+                  "style": "ATR",
+                  "atrLength": 14,
+                  "wicks": true
+                },
+                "inputInfo": {
+                  "source": {
+                    "name": "Source"
+                  },
+                  "boxSize": {
+                    "name": "Box size"
+                  },
+                  "style": {
+                    "name": "Style"
+                  },
+                  "atrLength": {
+                    "name": "ATR Length"
+                  },
+                  "wicks": {
+                    "name": "Wicks"
+                  }
+                }
+              },
+              "pbStyle": {
+                "upColor": "#53b987",
+                "downColor": "#eb4d5c",
+                "borderUpColor": "#53b987",
+                "borderDownColor": "#eb4d5c",
+                "upColorProjection": "#336854",
+                "downColorProjection": "#7f323f",
+                "borderUpColorProjection": "#336854",
+                "borderDownColorProjection": "#7f323f",
+                "inputs": {
+                  "source": "close",
+                  "lb": 3
+                },
+                "inputInfo": {
+                  "source": {
+                    "name": "Source"
+                  },
+                  "lb": {
+                    "name": "Number of line"
+                  }
+                }
+              },
+              "kagiStyle": {
+                "upColor": "#53b987",
+                "downColor": "#eb4d5c",
+                "upColorProjection": "#336854",
+                "downColorProjection": "#7f323f",
+                "inputs": {
+                  "source": "close",
+                  "style": "ATR",
+                  "atrLength": 14,
+                  "reversalAmount": 1
+                },
+                "inputInfo": {
+                  "source": {
+                    "name": "Source"
+                  },
+                  "style": {
+                    "name": "Style"
+                  },
+                  "atrLength": {
+                    "name": "ATR Length"
+                  },
+                  "reversalAmount": {
+                    "name": "Reversal amount"
+                  }
+                }
+              },
+              "pnfStyle": {
+                "upColor": "#53b987",
+                "downColor": "#eb4d5c",
+                "upColorProjection": "#336854",
+                "downColorProjection": "#7f323f",
+                "inputs": {
+                  "sources": "Close",
+                  "reversalAmount": 3,
+                  "boxSize": 1,
+                  "style": "ATR",
+                  "atrLength": 14
+                },
+                "inputInfo": {
+                  "sources": {
+                    "name": "Source"
+                  },
+                  "boxSize": {
+                    "name": "Box size"
+                  },
+                  "reversalAmount": {
+                    "name": "Reversal amount"
+                  },
+                  "style": {
+                    "name": "Style"
+                  },
+                  "atrLength": {
+                    "name": "ATR Length"
+                  }
+                }
+              },
+              "baselineStyle": {
+                "baselineColor": "rgba( 117, 134, 150, 1)",
+                "topFillColor1": "rgba( 83, 185, 135, 0.1)",
+                "topFillColor2": "rgba( 83, 185, 135, 0.1)",
+                "bottomFillColor1": "rgba( 235, 77, 92, 0.1)",
+                "bottomFillColor2": "rgba( 235, 77, 92, 0.1)",
+                "topLineColor": "rgba( 83, 185, 135, 1)",
+                "bottomLineColor": "rgba( 235, 77, 92, 1)",
+                "topLineWidth": 1,
+                "bottomLineWidth": 1,
+                "priceSource": "close",
+                "transparency": 50,
+                "baseLevelPercentage": 50
+              },
+              "rangeStyle": {
+                "upColor": "rgba( 83, 185, 135, 1)",
+                "downColor": "rgba( 255, 77, 92, 1)",
+                "thinBars": true,
+                "upColorProjection": "rgba( 169, 220, 195, 1)",
+                "downColorProjection": "rgba( 245, 166, 174, 1)",
+                "inputs": {
+                  "range": 10,
+                  "phantomBars": false
+                },
+                "inputInfo": {
+                  "range": {
+                    "name": "Range"
+                  },
+                  "phantomBars": {
+                    "name": "Phantom Bars"
+                  }
+                }
+              },
+              "silentIntervalChange": false,
+              "symbol": "BITSTAMP:XRPUSD",
+              "shortName": "XRPUSD",
+              "timeframe": "",
+              "onWidget": false,
+              "interval": "15",
+              "showSessions": false,
+              "timezone": "UTC",
+              "showLastValue": true,
+              "priceAxisProperties": {
+                "autoScale": true,
+                "autoScaleDisabled": false,
+                "lockScale": false,
+                "percentage": false,
+                "percentageDisabled": false,
+                "log": true,
+                "logDisabled": false,
+                "alignLabels": true,
+                "isInverted": false,
+                "indexedTo100": false
+              }
+            },
+            "zorder": 5,
+            "haStyle": {
+              "studyId": "BarSetHeikenAshi@tv-basicstudies-60"
+            },
+            "renkoStyle": {
+              "studyId": "BarSetRenko@tv-prostudies-15"
+            },
+            "pbStyle": {
+              "studyId": "BarSetPriceBreak@tv-prostudies-15"
+            },
+            "kagiStyle": {
+              "studyId": "BarSetKagi@tv-prostudies-15"
+            },
+            "pnfStyle": {
+              "studyId": "BarSetPnF@tv-prostudies-15"
+            },
+            "rangeStyle": {
+              "studyId": "BarSetRange@tv-basicstudies-72"
+            }
+          }, {
+            "type": "Study",
+            "id": "EC0m4B",
+            "state": {
+              "palettes": {
+                "volumePalette": {
+                  "colors": {
+                    "0": {
+                      "color": "rgba(111, 168, 220, 0.77)",
+                      "style": 0,
+                      "width": 1,
+                      "name": "Growing"
+                    },
+                    "1": {
+                      "color": "rgba(73, 133, 231, 0.78)",
+                      "style": 0,
+                      "width": 1,
+                      "name": "Falling"
+                    }
+                  }
+                }
+              },
+              "styles": {
+                "vol": {
+                  "linestyle": 0,
+                  "linewidth": 1,
+                  "plottype": 5,
+                  "trackPrice": false,
+                  "transparency": 87,
+                  "visible": true,
+                  "color": "#0496ff",
+                  "histogramBase": 0,
+                  "joinPoints": false,
+                  "title": "Volume"
+                },
+                "vol_ma": {
+                  "color": "#ffffff",
+                  "linestyle": 0,
+                  "linewidth": 1,
+                  "plottype": 0,
+                  "trackPrice": false,
+                  "transparency": 70,
+                  "visible": true,
+                  "histogramBase": 0,
+                  "joinPoints": false,
+                  "title": "Volume MA"
+                }
+              },
+              "inputs": {
+                "col_prev_close": false,
+                "length": 20
+              },
+              "precision": "default",
+              "bands": {},
+              "area": {},
+              "graphics": {},
+              "showInDataWindow": true,
+              "visible": true,
+              "showStudyArguments": true,
+              "id": "Volume@tv-basicstudies",
+              "name": "Volume@tv-basicstudies",
+              "is_price_study": false,
+              "plots": {
+                "0": {
+                  "id": "vol",
+                  "type": "line",
+                  "pinePlotIndex": 0
+                },
+                "1": {
+                  "id": "vol_color",
+                  "type": "colorer",
+                  "target": "vol",
+                  "palette": "volumePalette",
+                  "pinePlotIndex": 1
+                },
+                "2": {
+                  "id": "vol_ma",
+                  "type": "line",
+                  "pinePlotIndex": 2
+                }
+              },
+              "shortId": "Volume",
+              "packageId": "tv-basicstudies",
+              "version": "88",
+              "fullId": "Volume@tv-basicstudies-88",
+              "productId": "tv-basicstudies",
+              "de\scription": "Volume",
+              "transparency": 87,
+              "_metainfoVersion": 47,
+              "shortDe\scription": "Vol",
+              "de\scription_localized": "Volume",
+              "paneSize": "large",
+              "matchPriority": 1,
+              "matchIndex": 0,
+              "_serverMetaInfoVersion": 44,
+              "format": {
+                "type": "volume"
+              }
+            },
+            "zorder": 4,
+            "metaInfo": {
+              "palettes": {
+                "volumePalette": {
+                  "colors": {
+                    "0": {
+                      "name": "Growing"
+                    },
+                    "1": {
+                      "name": "Falling"
+                    }
+                  }
+                }
+              },
+              "inputs": [{
+                "defval": 20,
+                "id": "length",
+                "max": 2000,
+                "min": 1,
+                "name": "MA Length",
+                "type": "integer"
+              }, {
+                "defval": false,
+                "id": "col_prev_close",
+                "name": "Color based on previous close",
+                "type": "bool"
+              }],
+              "plots": [{
+                "id": "vol",
+                "type": "line"
+              }, {
+                "id": "vol_color",
+                "palette": "volumePalette",
+                "target": "vol",
+                "type": "colorer"
+              }, {
+                "id": "vol_ma",
+                "type": "line"
+              }],
+              "graphics": {},
+              "defaults": {
+                "inputs": {
+                  "col_prev_close": false,
+                  "length": 20
+                },
+                "palettes": {
+                  "volumePalette": {
+                    "colors": {
+                      "0": {
+                        "color": "#26a69a",
+                        "style": 0,
+                        "width": 1
+                      },
+                      "1": {
+                        "color": "#ef5350",
+                        "style": 0,
+                        "width": 1
+                      }
+                    }
+                  }
+                },
+                "styles": {
+                  "vol": {
+                    "linestyle": 0,
+                    "linewidth": 1,
+                    "plottype": 5,
+                    "trackPrice": false,
+                    "transparency": 50,
+                    "visible": true
+                  },
+                  "vol_ma": {
+                    "color": "#ff9850",
+                    "linestyle": 0,
+                    "linewidth": 1,
+                    "plottype": 0,
+                    "trackPrice": false,
+                    "transparency": 0,
+                    "visible": false
+                  }
+                }
+              },
+              "_metainfoVersion": 47,
+              "de\scription": "Volume",
+              "id": "Volume@tv-basicstudies-88",
+              "is_price_study": false,
+              "shortDe\scription": "Vol",
+              "styles": {
+                "vol": {
+                  "histogramBase": 0,
+                  "title": "Volume"
+                },
+                "vol_ma": {
+                  "histogramBase": 0,
+                  "title": "Volume MA"
+                }
+              },
+              "de\scription_localized": "Volume",
+              "shortId": "Volume",
+              "packageId": "tv-basicstudies",
+              "version": "88",
+              "fullId": "Volume@tv-basicstudies-88",
+              "productId": "tv-basicstudies",
+              "name": "Volume@tv-basicstudies",
+              "_serverMetaInfoVersion": 44,
+              "format": {
+                "type": "volume"
+              }
+            }
+          }],
+          "leftAxisesState": [],
+          "rightAxisesState": [{
+            "state": {
+              "id": "VHNMjmEKfz8t",
+              "m_priceRange": {
+                "m_maxValue": 3.6122963259520975,
+                "m_minValue": 3.590072392173602
+              },
+              "m_isAutoScale": true,
+              "m_isPercentage": false,
+              "m_isIndexedTo100": false,
+              "m_isLog": true,
+              "m_isLockScale": false,
+              "m_isInverted": false,
+              "m_height": 860,
+              "m_topMargin": 0.05,
+              "m_bottomMargin": 0.05,
+              "alignLabels": true
+            },
+            "sources": ["w9iQM2"]
+          }],
+          "overlayPriceScales": {
+            "EC0m4B": {
+              "id": "7BAMElNfaR9b",
+              "m_priceRange": {
+                "m_maxValue": 3574706.2160296817,
+                "m_minValue": 0
+              },
+              "m_isAutoScale": true,
+              "m_isPercentage": false,
+              "m_isIndexedTo100": false,
+              "m_isLog": false,
+              "m_isLockScale": false,
+              "m_isInverted": false,
+              "m_height": 860,
+              "m_topMargin": 0.75,
+              "m_bottomMargin": 0,
+              "alignLabels": true
+            }
+          },
+          "stretchFactor": 2000,
+          "mainSourceId": "w9iQM2",
+          "priceScaleRatio": null
+        }],
+        "timeScale": {
+          "m_barSpacing": 6.666666666666667,
+          "m_rightOffset": 10
+        },
+        "chartProperties": {
+          "paneProperties": {
+            "background": "#131722",
+            "gridProperties": {
+              "color": "#363c4e",
+              "style": 0
+            },
+            "vertGridProperties": {
+              "color": "rgba(54, 60, 78, 0.2)",
+              "style": 0
+            },
+            "horzGridProperties": {
+              "color": "rgba(54, 60, 78, 0.2)",
+              "style": 0
+            },
+            "crossHairProperties": {
+              "color": "rgba( 152, 152, 152, 1)",
+              "style": 2,
+              "transparency": 0,
+              "width": 1
+            },
+            "topMargin": 5,
+            "bottomMargin": 5,
+            "axisProperties": {
+              "autoScale": true,
+              "autoScaleDisabled": false,
+              "lockScale": false,
+              "percentage": false,
+              "percentageDisabled": false,
+              "indexedTo100": false,
+              "log": false,
+              "logDisabled": false,
+              "alignLabels": true,
+              "isInverted": false
+            },
+            "legendProperties": {
+              "showStudyArguments": true,
+              "showStudyTitles": true,
+              "showStudyValues": true,
+              "showSeriesTitle": true,
+              "showSeriesOHLC": true,
+              "showLegend": false,
+              "showBarChange": true,
+              "showOnlyPriceSource": true
+            },
+            "leftAxisProperties": {
+              "autoScale": true,
+              "autoScaleDisabled": false,
+              "lockScale": false,
+              "percentage": false,
+              "percentageDisabled": false,
+              "indexedTo100": false,
+              "log": false,
+              "logDisabled": false,
+              "alignLabels": true,
+              "isInverted": false
+            },
+            "rightAxisProperties": {
+              "autoScale": true,
+              "autoScaleDisabled": false,
+              "lockScale": false,
+              "percentage": false,
+              "percentageDisabled": false,
+              "indexedTo100": false,
+              "log": false,
+              "logDisabled": false,
+              "alignLabels": true,
+              "isInverted": false
+            },
+            "overlayPropreties": {
+              "autoScale": true,
+              "autoScaleDisabled": false,
+              "lockScale": false,
+              "percentage": false,
+              "percentageDisabled": false,
+              "log": false,
+              "logDisabled": false,
+              "alignLabels": true
+            },
+            "rightOffset": {}
+          },
+          "scalesProperties": {
+            "backgroundColor": "#ffffff",
+            "lineColor": "#787878",
+            "textColor": "#D9D9D9",
+            "fontSize": 11,
+            "scaleSeriesOnly": false,
+            "showSeriesLastValue": true,
+            "seriesLastValueMode": 1,
+            "showSeriesPrevCloseValue": false,
+            "showStudyLastValue": false,
+            "showSymbolLabels": false,
+            "showStudyPlotLabels": false,
+            "barSpacing": 6,
+            "showLeftScale": false,
+            "showRightScale": true
+          },
+          "publishedChartsTimelineProperties": {
+            "type": "BarsMarksContainer",
+            "id": "p3raxi",
+            "pinnedTooltips": {}
+          },
+          "chartEventsSourceProperties": {
+            "visible": true,
+            "futureOnly": true,
+            "breaks": {
+              "color": "rgba(85, 85, 85, 1)",
+              "visible": false,
+              "style": 2,
+              "width": 1
+            }
+          },
+          "priceScaleSelectionStrategyName": "auto"
+        },
+        "version": 2,
+        "timezone": "Etc/UTC",
+        "sessions": {
+          "properties": {
+            "graphics": {
+              "backgrounds": {
+                "outOfSession": {
+                  "color": "rgba(255, 229, 153, 0.4)",
+                  "transparency": 60,
+                  "visible": false
+                }
+              },
+              "vertlines": {
+                "sessBreaks": {
+                  "color": "#4985e7",
+                  "style": 2,
+                  "visible": false,
+                  "width": 1
+                }
+              }
+            }
+          }
+        }
+      }]
+    };
+    initData.defSymbol = "";
+    initData.defInterval = "";
+    initData.defStyle = "".replace(/\D/g, '');
+    initData.name = "BOT_ALERTS";
+    initData.description = "BOT_ALERTS";
+    initData.uid = "aw518iAg";
+    initData.chart_id = 13211672;
+    initData.onfeatures = false;
+    initData.tradingHost = "//papertrading.tradingview.com/trading";
+    initData.sharing_enabled = false;
+
+    initData.metaInfo = {
+      id: 13211672,
+      name: "BOT_ALERTS",
+      description: "BOT_ALERTS",
+      uid: "aw518iAg",
+      username: "RoTrade",
+      tags: "",
+      lastModified: 1558465625,
+    };
+
+    initData.readOnly = initData.chart_id === '' && initData.uid !== '';
+    initData.defStyle = initData.defStyle ? parseInt(initData.defStyle) : null;
+    initData.addonId = "";
+    initData.theme = "dark";
+
+    window.SYMBOL_MAPPER_URL = 'https://symlist-trading.tradingview.com';
+    window.TRADING_REST_SERVER_URL = 'https://rest-demo.tradingview.com/tradingview/v1';
+  </script>
+
+  <script defer crossorigin="anonymous" type="text/javascript" src="/static/bundles/runtime.921423d0fdcce37b0676.js"></script>
+  <script defer crossorigin="anonymous" type="text/javascript" src="/static/bundles/vendors.3f498c2723dcb6a3912a.js"></script>
+  <script defer crossorigin="anonymous" type="text/javascript" src="/static/bundles/main_chart.57f52e2dba3d79a5ebe4.js"></script>
+
+  <script type="text/javascript">
+    window.initData = window.initData || {};
+    window.initData.api_host = 'payflowlink.paypal.com';
+    window.initData.fxcm_cfd = false;
+    window.initData.price_alerts_url = '//alerts.tradingview.com/alerts/';
+    window.initData.screener_alerts_base_url = '//scanner-alerts.tradingview.com/screener_alerts/';
+    window.initData.currentLocaleInfo = {
+      "geoip_code": "us",
+      "language": "en",
+      "name_on_widgets": "English",
+      "show_on_widgets": true,
+      "flag": "us",
+      "iso_639_3": "eng",
+      "priority": 1000,
+      "global_name": "English",
+      "iso": "en",
+      "is_site_locale": true,
+      "language_name": "English",
+      "is_only_recommended_tw_autorepost": true
+    };
+    window.initData.snowplowSettings = {
+      collectorId: 'tv_cf',
+      url: 'snowplow-pixel.tradingview.com',
+      params: {
+        appId: 'tradingview',
+      },
+      enabled: true,
+    }
+
+    var __initialEnabledFeaturesets = ['tv_production'];
+    var environment = 'battle';
+    window.WEBPACK_PUBLIC_PATH = '/static/bundles/';
+
+    var is_authenticated = true;
+    var user = {
+      "id": 1108433,
+      "username": "RoTrade",
+      "first_name": "Rolando",
+      "last_name": "Lucio",
+      "has_email": true,
+      "date_joined": "2017-07-01T14:43:00.237380",
+      "userpic": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220,0,20,20%22%20width=%2239%22%20height=%2239%22%3E%3Crect%20height=%2220%22%20width=%2220%22%20fill=%22hsl%28159,25%25,50%25%29%22/%3E%3Ctext%20fill=%22white%22%20x=%2210%22%20y=%2214.8%22%20font-size=%2214%22%20font-family=%22Trebuchet%20MS,Arial,sans-serif%22%20text-anchor=%22middle%22%3ER%3C/text%3E%3C/svg%3E",
+      "userpic_mid": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220,0,20,20%22%20width=%2280%22%20height=%2280%22%3E%3Crect%20height=%2220%22%20width=%2220%22%20fill=%22hsl%28159,25%25,50%25%29%22/%3E%3Ctext%20fill=%22white%22%20x=%2210%22%20y=%2214.8%22%20font-size=%2214%22%20font-family=%22Trebuchet%20MS,Arial,sans-serif%22%20text-anchor=%22middle%22%3ER%3C/text%3E%3C/svg%3E",
+      "userpic_big": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220,0,20,20%22%20width=%22171%22%20height=%22171%22%3E%3Crect%20height=%2220%22%20width=%2220%22%20fill=%22hsl%28159,25%25,50%25%29%22/%3E%3Ctext%20fill=%22white%22%20x=%2210%22%20y=%2214.8%22%20font-size=%2214%22%20font-family=%22Trebuchet%20MS,Arial,sans-serif%22%20text-anchor=%22middle%22%3ER%3C/text%3E%3C/svg%3E",
+      "status": "",
+      "private_channel": "VTXqAgzwgHkj1UShzEJM07mKyWWyQKwsoLcg95JXRfU",
+      "session_hash": "d1d36054d3d38643200696a404d150fc66bf0166f169f5d14a6e18c5932836b1",
+      "saved_charts": 56,
+      "published_charts": 4,
+      "notification_popup": true,
+      "notification_sound": true,
+      "notification_count": {
+        "following": 0,
+        "user": 0
+      },
+      "following": 0,
+      "followers": 3,
+      "reputation": 30.0,
+      "max_user_language_reputation": 30.0,
+      "has_stocktwits": false,
+      "has_twitter": false,
+      "has_youtube": false,
+      "ignore_list": {
+        "3751908": "lanwaltmekelb"
+      },
+      "pub_chat_post_permission": true,
+      "settings": {
+        "study_Script$USER;bOXp5v3xA0j5ymsFxuV1AsDy2MGuBeNf@tv-scripting": "{}",
+        "screener-crypto.filterSetId": "66543",
+        "alerts.creating.sound_file": "alert/fired",
+        "screener-crypto.interval-id": "1h",
+        "chat.show_snapshot_preview": "true",
+        "savedwatch.lB4zjcdtdrOY": "{\"auto\":false,\"symbols\":[\"BITMEX:XBTUSD\",\"(KRAKEN:BCHUSD+BITFINEX:BCHUSD+POLONIEX:BCHUSDT)/3\",\"BINANCE:ICXBTC\",\"BINANCE:ICXUSDT\",\"BINANCE:XEMBTC\",\"BINANCE:ZENBTC\",\"KRAKEN:ETCUSD\",\"POLONIEX:DASHBTC\",\"(BITFINEX:DSHUSD+KRAKEN:DASHUSD)/2\",\"BINANCE:TUSDBTC\",\"FX_IDC:USDMXN\",\"(BITFINEX:XRPUSD+KRAKEN:XRPUSD)/2\"],\"title\":\"ORDERS\"}",
+        "study_Script$USER;8UsOVhJYzCCh96J3M5LRHofR9FO9ijEA@tv-scripting": "{}",
+        "study_Script$USER;IESuV6QdYVe0rTnhX2prvSLj2oMoxic8@tv-scripting": "{}",
+        "screener.sort_direction": "desc",
+        "linetoolpolyline": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba( 53, 53, 53, 1)\",\"linewidth\":2,\"linestyle\":0,\"fillBackground\":true,\"backgroundColor\":\"rgba(21, 56, 153, 0.12)\",\"transparency\":50,\"frozen\":false}",
+        "savedwatch.T3OwRwc5F2Og": "{\"auto\":false,\"symbols\":[\"(FRED:M1+FRED:M2)*FRED:MULT\",\"(FRED:M1+FRED:M2)*FRED:MULT/TVC:DXY\",\"(KRAKEN:XBTUSD+BITFINEX:BTCUSD+POLONIEX:BTCUSDT+BITMEX:XBTUSD)/4\",\"(BITFINEX:XRPUSD+KRAKEN:XRPUSD)/2\",\"TVC:US10Y\",\"TVC:DXY\",\"FX:EURUSD\",\"FX:USDMXN\",\"FX:XAUUSD/31.1\",\"TVC:GOLDSILVER\",\"TVC:GOLD\",\"OANDA:XAGUSD\",\"SP:SPX\",\"CBOE:VIX\",\"DJ:DJI\",\"TVC:IXIC\",\"NASDAQ:AMZN\",\"DJ:DJCI\",\"NYSE:XOI\",\"DJ:DJT\"],\"title\":\"INDEXES\"}",
+        "linetoolcirclelines": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"trendline\":{\"visible\":true,\"color\":\"rgba( 128, 128, 128, 1)\",\"linewidth\":1,\"linestyle\":2},\"linecolor\":\"rgba(28, 158, 255, 1)\",\"linewidth\":1,\"linestyle\":2,\"frozen\":true}",
+        "screener-forex.sort_direction": "desc",
+        "drawings": "{\"magnet\":false,\"stayInDrawingMode\":false,\"drawOnAllCharts\":true,\"crossHairColor\":\"rgba( 183, 183, 183, 1)\",\"crossHairStyle\":2,\"crossHairWidth\":1}",
+        "properties_dialog.active_tab.drawing": "Style",
+        "widgetbar.layout-settings": "{\"widgets\":{\"watchlist\":[{\"id\":\"watchlist.zHizsHwgqlyT\",\"heightRatio\":1.5}],\"detail\":[{\"id\":\"detail.Dr1Wj3WBXzDB\",\"heightRatio\":0}],\"news\":[{\"id\":\"news.kkBLiTiKvDvK\",\"heightRatio\":0}],\"alerts_manage\":[{\"id\":\"alerts_manage.CDxUhGtesSlr\"}],\"alerts_log\":[{\"id\":\"alerts_log.C2aqFdfNyJLd\"}],\"hotlist\":[{\"id\":\"hotlist.ipFzuY9MbuI2\"},{\"id\":\"hotlist.dkmT4bReF7jQ\"},{\"id\":\"hotlist.64pb99sxXO3T\"}],\"reuters_calendar\":[{\"id\":\"reuters_calendar.lkYiLDwvWlb8\"}],\"earnings_calendar\":[{\"id\":\"earnings_calendar.0TaWe2ONhO5K\"}],\"notes\":[{\"id\":\"notes.CHRaH26oFHkr\"}],\"chat\":[{\"id\":\"chat.RY8dOVqHbTj2\"}],\"publicchats\":[{\"id\":\"publicchats.2x9QQYpVp6o6\"}],\"messages\":[{\"id\":\"messages.ErkgtRcISkgg\"}],\"notifications_following\":[{\"id\":\"notifications_following.6iA1CWrUFwBN\"}],\"notifications_user\":[{\"id\":\"notifications_user.OBUG4lvv1QtC\"}]},\"settings\":{\"width\":271,\"version\":2}}",
+        "linetoolprediction": "{\"singleChartOnly\":true,\"linecolor\":\"rgba( 28, 115, 219, 1)\",\"linewidth\":2,\"sourceBackColor\":\"rgba(241, 241, 241, 0.74)\",\"sourceTextColor\":\"rgba(110, 110, 110, 0.46)\",\"sourceStrokeColor\":\"rgba(110, 110, 110, 0)\",\"targetStrokeColor\":\"rgba(47, 168, 255, 0.28)\",\"targetBackColor\":\"rgba(11, 111, 222, 0.48)\",\"targetTextColor\":\"rgba( 255, 255, 255, 1)\",\"successBackground\":\"rgba( 54, 160, 42, 0.9)\",\"successTextColor\":\"rgba( 255, 255, 255, 1)\",\"failureBackground\":\"rgba( 231, 69, 69, 0.5)\",\"failureTextColor\":\"rgba( 255, 255, 255, 1)\",\"intermediateBackColor\":\"rgba( 234, 210, 137, 1)\",\"intermediateTextColor\":\"rgba( 109, 77, 34, 1)\",\"transparency\":10,\"centersColor\":\"rgba( 32, 32, 32, 1)\",\"status\":0,\"frozen\":true,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"_isActualInterval\":true,\"fixedSize\":true}",
+        "StudyTemplates.quicks": "[\"Volume\"]",
+        "NavigationButtons.visibility": "visibleOnMouseOver",
+        "savedwatch.j4iF9ktpWiIO": "{\"auto\":false,\"symbols\":[\"BITFINEX:BTCUSD+BITFINEX:BCHUSD+BITFINEX:XMRUSD+BITFINEX:DSHUSD+BITFINEX:ZECUSD+BITFINEX:LTCUSD+128*BITFINEX:XRPUSD+128*KRAKEN:XLMUSD\",\"BITFINEX:NEOUSD+2*BINANCE:GASUSD+BITFINEX:ETHUSD+BITFINEX:ETCUSD+32*BINANCE:ICXUSD+256*POLONIEX:XEMUSD+8*BITFINEX:EOSUSD+256*BINANCE:ADAUSD\",\"(KRAKEN:ETHUSD+BITFINEX:ETHUSD)/2+(BITFINEX:ETCUSD+KRAKEN:ETCUSD)/2\",\"BITFINEX:LTCUSD+128*BITFINEX:XRPUSD+128*BITFINEX:XLMUSD\",\"BITFINEX:XMRUSD+BITFINEX:DSHUSD+BITFINEX:ZECUSD\",\"(KRAKEN:XBTUSD+BITFINEX:BTCUSD+POLONIEX:BTCUSDT+BITMEX:XBTUSD)/4+(KRAKEN:BCHUSD+BITFINEX:BCHUSD+POLONIEX:BCHUSDT)/3\",\"(KRAKEN:XBTUSD+BITFINEX:BTCUSD+POLONIEX:BTCUSDT+BITMEX:XBTUSD)/4\",\"BITSTAMP:BTCUSD\",\"(KRAKEN:BCHUSD+BITFINEX:BCHUSD+POLONIEX:BCHUSDT)/3\",\"(BITFINEX:ETHUSD+KRAKEN:ETHUSD+COINBASE:ETHUSD+BITSTAMP:ETHUSD)/4\"],\"title\":\"indexes c2usd\"}",
+        "linetoolellipse": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(255, 0, 0, 1)\",\"fillBackground\":true,\"backgroundColor\":\"rgba(73, 133, 231, 0.41)\",\"transparency\":50,\"linewidth\":1,\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "linetooltrendline": "{\"clonable\":true,\"linecolor\":\"rgba(255, 0, 0, 1)\",\"linewidth\":3,\"linestyle\":0,\"extendLeft\":false,\"extendRight\":false,\"leftEnd\":0,\"rightEnd\":0,\"font\":\"Verdana\",\"textcolor\":\"rgba(182, 215, 168, 1)\",\"fontsize\":12,\"bold\":false,\"italic\":false,\"snapTo45Degrees\":true,\"alwaysShowStats\":false,\"showMiddlePoint\":false,\"showPriceRange\":false,\"showBarsRange\":false,\"showDateTimeRange\":false,\"showDistance\":false,\"showAngle\":false,\"statsPosition\":2,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":1,\"weeks\":false,\"months\":false,\"ranges\":false},\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true,\"lastUpdateTime\":1542660465347}",
+        "studyMarket.technicalTabIsOpen": "false",
+        "screener-forex.fieldSetId": "overview",
+        "study_OBV@tv-basicstudies": "{\"styles\":{\"OnBalanceVolume\":{\"color\":\"rgba(255, 140, 10, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":0,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"OnBalanceVolume\"}},\"inputs\":{},\"palettes\":{},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"OnBalanceVolume\",\"type\":\"line\"}},\"_metainfoVersion\":44,\"description\":\"On Balance Volume\",\"id\":\"OBV@tv-basicstudies\",\"is_price_study\":false,\"shortDescription\":\"OBV\",\"description_localized\":\"On Balance Volume\",\"shortId\":\"OBV\",\"packageId\":\"tv-basicstudies\",\"version\":\"76\",\"fullId\":\"OBV@tv-basicstudies-76\",\"productId\":\"tv-basicstudies\",\"name\":\"OBV@tv-basicstudies\"}",
+        "publicchats.activechat": "bitcoin",
+        "widgetbar.widget.reuters_calendar.lkYiLDwvWlb8": "{\"currencyFilter\":[\"USD\",\"EUR\",\"JPY\",\"AUD\",\"DEM\",\"GBP\",\"CAD\",\"FRF\",\"ITL\",\"NZD\",\"ESP\",\"MXN\",\"CHF\",\"TRL\",\"ZAR\"],\"importanceFilter\":[1]}",
+        "symboledit.filter": "",
+        "widgetbar.widget.news.kkBLiTiKvDvK": "{\"provider\":{\"base\":\"yahoo\",\"ru\":\"djforex\",\"en\":\"yahoo\",\"tr\":\"bloomberght\",\"pl\":\"yahoo\",\"kr\":\"edali\",\"id\":\"keuangan\"},\"category\":\"all\"}",
+        "screener-crypto.fieldSetId": "36228",
+        "study_Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting_234_0": "{\"filledAreasStyle\":{\"fill_0\":{\"color\":\"rgba(0, 128, 128, 0.05)\",\"transparency\":95,\"visible\":true}},\"palettes\":{\"palette_0\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 255, 255, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"}},\"addDefaultColor\":true,\"valToIndex\":{\"0\":0}}},\"styles\":{\"plot_0\":{\"color\":\"rgba(255, 255, 255, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"MA\",\"isHidden\":false},\"plot_1\":{\"color\":\"rgba(0, 128, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC H\",\"isHidden\":false},\"plot_2\":{\"color\":\"rgba(0, 128, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC L\",\"isHidden\":false},\"plot_3\":{\"color\":\"rgba(0, 128, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC M\",\"isHidden\":false},\"plot_4\":{\"colordown\":\"rgba(255, 0, 0, 0.6)\",\"colorup\":\"rgba(0, 255, 0, 0.6)\",\"transparency\":40,\"visible\":true,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"arrows\",\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Trigger Arrow\",\"isHidden\":false,\"maxHeight\":60,\"minHeight\":50},\"plot_5\":{\"visible\":true,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"bar_colorer\",\"histogramBase\":0,\"transparency\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Trigger Bar\",\"isHidden\":false}},\"inputs\":{\"in_0\":true,\"in_1\":13,\"in_10\":42,\"in_2\":\"ema\",\"in_3\":false,\"in_4\":21,\"in_5\":13,\"in_6\":1,\"in_7\":1,\"in_8\":false,\"in_9\":3},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"line\"},\"1\":{\"id\":\"plot_1\",\"type\":\"line\"},\"2\":{\"id\":\"plot_2\",\"type\":\"line\"},\"3\":{\"id\":\"plot_3\",\"type\":\"line\"},\"4\":{\"id\":\"plot_4\",\"type\":\"arrows\"},\"5\":{\"id\":\"plot_5\",\"palette\":\"palette_0\",\"type\":\"bar_colorer\"}},\"_metainfoVersion\":45,\"alerts\":{\"conditions\":{\"alert_0\":{\"message\":\"Augmented Renko Signal \",\"pineVar\":\"var_28\",\"title\":\"Renko Signal\"}}},\"description\":\"Renko Rules , Single Period Fixed [Study]\",\"filledAreas\":{\"0\":{\"id\":\"fill_0\",\"isHidden\":false,\"objAId\":\"plot_1\",\"objBId\":\"plot_2\",\"title\":\"DC Bg\",\"type\":\"plot_plot\"}},\"id\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"32d87ae0607623031a34d703bf5b7dd913f064d8\",\"version\":\"234.0\"},\"scriptIdPart\":\"USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V\",\"shortDescription\":\"RR,SPF[stdy]\",\"shortId\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V\",\"packageId\":\"tv-scripting\",\"version\":\"101\",\"fullId\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting-101\",\"productId\":\"tv-scripting\",\"name\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting\"}",
+        "properties_dialog.active_tab.chart": "Events",
+        "chart.lastUsedStyle": "1",
+        "study_StrategyScript$USER;pbMOfhznqukul0sJZyni2TjtHfJMLWMK@tv-scripting": "{}",
+        "chart.favoriteDrawings": "[\"LineToolParallelChannel\"]",
+        "study_Script$USER;5qSnwviJwFL27H17X5sLWaVL9ELJiigl@tv-scripting": "{}",
+        "alerts.creating.show_popup": "false",
+        "widgetbar.widget.earnings_calendar.0TaWe2ONhO5K": "{}",
+        "savedwatch.siEDcaOgx5xJ": "{\"auto\":false,\"symbols\":[\"(COINBASE:BTCUSD+BITSTAMP:BTCUSD)/2\"],\"title\":\"RL_CRYPTO_INDEX\"}",
+        "alerts.widget.show_for_curren_resolution_only": "true",
+        "alerts.show_for_curren_resolution_only": "true",
+        "upsale.shown_popup:1": "1",
+        "linetoolfibretracement": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":false,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":4,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":false},\"clonable\":true,\"showCoeffs\":true,\"showPrices\":true,\"font\":\"Verdana\",\"fillBackground\":false,\"transparency\":80,\"extendLines\":false,\"horzLabelsAlign\":\"left\",\"vertLabelsAlign\":\"middle\",\"reverse\":false,\"coeffsAsPercents\":false,\"trendline\":{\"visible\":true,\"color\":\"rgba(255, 255, 255, 1)\",\"linewidth\":1,\"linestyle\":2},\"levelsStyle\":{\"linewidth\":1,\"linestyle\":1},\"level1\":{\"coeff\":0,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level2\":{\"coeff\":0.236,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level3\":{\"coeff\":0.382,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level4\":{\"coeff\":0.5,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level5\":{\"coeff\":0.618,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level6\":{\"coeff\":0.9,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level7\":{\"coeff\":1,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level8\":{\"coeff\":1.618,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":true},\"level9\":{\"coeff\":2.618,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level10\":{\"coeff\":3.618,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level11\":{\"coeff\":4.236,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level12\":{\"coeff\":1.272,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level13\":{\"coeff\":1.414,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level16\":{\"coeff\":2,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level14\":{\"coeff\":2.272,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level15\":{\"coeff\":2.414,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level17\":{\"coeff\":3,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level18\":{\"coeff\":3.272,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level19\":{\"coeff\":3.414,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level20\":{\"coeff\":4,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level21\":{\"coeff\":4.272,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level22\":{\"coeff\":4.414,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level23\":{\"coeff\":4.618,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"level24\":{\"coeff\":4.764,\"color\":\"rgba(255, 255, 255, 1)\",\"visible\":false},\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "study_StrategyScript$USER;Dto346a0wuCGs26QlF7c9G6vgLIVALet@tv-scripting": "{}",
+        "study_Script$USER;SkgqUiZ5DWSADJAd7oKsZh01qw6l45iQ@tv-scripting": "{}",
+        "widgetbar.widget.chat.RY8dOVqHbTj2": "{\"room\":\"bitcoin\"}",
+        "study_Script$USER;CmNfMFdqGr0XJNMq4sH0om6hUWa4YyNN@tv-scripting": "{}",
+        "alerts.creating.send_true_sms": "false",
+        "linetooltext": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(61, 133, 198, 1)\",\"font\":\"Verdana\",\"fontsize\":20,\"fillBackground\":false,\"backgroundColor\":\"rgba( 91, 133, 191, 0.9)\",\"backgroundTransparency\":70,\"drawBorder\":false,\"borderColor\":\"rgba( 102, 123, 139, 1)\",\"bold\":true,\"italic\":false,\"locked\":false,\"fixedSize\":true,\"wordWrap\":false,\"wordWrapWidth\":400,\"frozen\":false,\"_isActualInterval\":true}",
+        "globalNotification_uk": "2320",
+        "Paper.Paper.PositionModifyingOrders": "{}",
+        "screener.fields_order": "[\"name\",\"change\",\"Recommend.All\",\"exchange\"]",
+        "linetooltrendangle": "{\"singleChartOnly\":true,\"clonable\":true,\"linecolor\":\"rgba( 21, 153, 128, 1)\",\"linewidth\":1,\"linestyle\":0,\"snapTo45Degrees\":true,\"font\":\"Verdana\",\"textcolor\":\"rgba( 21, 119, 96, 1)\",\"fontsize\":12,\"bold\":true,\"italic\":false,\"alwaysShowStats\":false,\"showMiddlePoint\":false,\"showPriceRange\":false,\"showBarsRange\":false,\"extendRight\":false,\"extendLeft\":false,\"frozen\":false,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"angle\":{},\"_isActualInterval\":true,\"fixedSize\":true}",
+        "study_StrategyScript$USER;XeyWYV8cmVrAEEPPbFYVcoTRhZHGWD1f@tv-scripting": "{}",
+        "savedwatch.e9CWckcbNTxG": "{\"auto\":false,\"symbols\":[\"POLONIEX:USDTUSDC\",\"POLONIEX:BTCUSDT\",\"POLONIEX:BTCUSDC\",\"POLONIEX:BCHUSDT\",\"POLONIEX:DASHBTC\",\"POLONIEX:DASHUSDT\",\"POLONIEX:XRPUSDT\"],\"title\":\"POLONIEX\"}",
+        "chart.bottom-widgetbar": "{\"activeWidget\":\"text_notes\",\"height\":508,\"mode\":\"minimized\"}",
+        "study_StrategyScript$USER;5qSnwviJwFL27H17X5sLWaVL9ELJiigl@tv-scripting": "{}",
+        "study_Overlay@tv-basicstudies": "{\"inputs\":{\"symbol\":\"TVC:TRJEFFCRB\"},\"style\":3,\"showPriceLine\":false,\"candleStyle\":{\"upColor\":\"rgba( 107, 165, 131, 1)\",\"downColor\":\"rgba( 215, 84, 66, 1)\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"rgba( 55, 134, 88, 1)\",\"borderUpColor\":\"rgba( 34, 84, 55, 1)\",\"borderDownColor\":\"rgba( 91, 26, 19, 1)\",\"wickColor\":\"rgba( 115, 115, 117, 1)\",\"wickUpColor\":\"rgba( 115, 115, 117, 1)\",\"wickDownColor\":\"rgba( 115, 115, 117, 1)\",\"barColorsOnPrevClose\":false},\"hollowCandleStyle\":{\"upColor\":\"rgba( 107, 165, 131, 1)\",\"downColor\":\"rgba( 215, 84, 66, 1)\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"rgba( 55, 134, 88, 1)\",\"borderUpColor\":\"rgba( 34, 84, 55, 1)\",\"borderDownColor\":\"rgba( 91, 26, 19, 1)\",\"wickColor\":\"rgba( 115, 115, 117, 1)\",\"wickUpColor\":\"rgba( 115, 115, 117, 1)\",\"wickDownColor\":\"rgba( 115, 115, 117, 1)\",\"barColorsOnPrevClose\":false},\"barStyle\":{\"upColor\":\"rgba( 107, 165, 131, 1)\",\"downColor\":\"rgba( 215, 84, 66, 1)\",\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false},\"lineStyle\":{\"color\":\"rgba( 3, 3, 247, 1)\",\"linestyle\":0,\"linewidth\":1,\"priceSource\":\"close\",\"styleType\":2},\"areaStyle\":{\"color1\":\"rgba( 96, 96, 144, 0.5)\",\"color2\":\"rgba( 1, 246, 245, 0.5)\",\"linecolor\":\"rgba(255, 255, 255, 1)\",\"linestyle\":0,\"linewidth\":1,\"priceSource\":\"close\",\"transparency\":50},\"baselineStyle\":{\"baselineColor\":\"rgba( 117, 134, 150, 1)\",\"topFillColor1\":\"rgba( 83, 185, 135, 0.1)\",\"topFillColor2\":\"rgba( 83, 185, 135, 0.1)\",\"bottomFillColor1\":\"rgba( 235, 77, 92, 0.1)\",\"bottomFillColor2\":\"rgba( 235, 77, 92, 0.1)\",\"topLineColor\":\"rgba( 83, 185, 135, 1)\",\"bottomLineColor\":\"rgba( 235, 77, 92, 1)\",\"topLineWidth\":1,\"bottomLineWidth\":1,\"priceSource\":\"close\",\"transparency\":50,\"baseLevelPercentage\":50},\"styles\":{\"open\":{\"visible\":true,\"color\":\"rgba( 255, 0, 0, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"histogramBase\":0,\"transparency\":50,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"open\"},\"high\":{\"visible\":true,\"color\":\"rgba( 255, 0, 0, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"histogramBase\":0,\"transparency\":50,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"high\"},\"low\":{\"visible\":true,\"color\":\"rgba( 255, 0, 0, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"histogramBase\":0,\"transparency\":50,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"low\"},\"close\":{\"visible\":true,\"color\":\"rgba( 255, 0, 0, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"histogramBase\":0,\"transparency\":50,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"close\"}},\"palettes\":{},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"open\",\"type\":\"line\"},\"1\":{\"id\":\"high\",\"type\":\"line\"},\"2\":{\"id\":\"low\",\"type\":\"line\"},\"3\":{\"id\":\"close\",\"type\":\"line\"}},\"_metainfoVersion\":44,\"description\":\"Overlay\",\"id\":\"Overlay@tv-basicstudies\",\"is_hidden_study\":true,\"is_price_study\":false,\"shortDescription\":\"Ovl\",\"description_localized\":\"Overlay\",\"shortId\":\"Overlay\",\"packageId\":\"tv-basicstudies\",\"version\":\"71\",\"fullId\":\"Overlay@tv-basicstudies-71\",\"productId\":\"tv-basicstudies\",\"name\":\"Overlay@tv-basicstudies\"}",
+        "linetoolbeziercubic": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(255, 255, 255, 1)\",\"linewidth\":1,\"fillBackground\":false,\"backgroundColor\":\"rgba( 21, 56, 153, 0.5)\",\"transparency\":50,\"linestyle\":0,\"extendLeft\":false,\"extendRight\":false,\"leftEnd\":0,\"rightEnd\":1,\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "globalNotification_es": "2891",
+        "linetoolballoon": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(0, 0, 0, 1)\",\"backgroundColor\":\"rgba(255, 255, 255, 1)\",\"borderColor\":\"rgba(255, 0, 255, 1)\",\"fontWeight\":\"bold\",\"fontsize\":12,\"font\":\"Arial\",\"transparency\":30,\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "ObjectsTreeDialog.tab": "0",
+        "chartevents-standalone": "{\"currencyFilter\":[\"USD\",\"EUR\",\"JPY\",\"AUD\",\"DEM\",\"GBP\",\"CAD\",\"FRF\",\"ITL\",\"NZD\",\"ESP\",\"MXN\",\"CHF\",\"TRL\",\"ZAR\"],\"importanceFilter\":[0,1]}",
+        "chartproperties": "{\"timezone\":\"Etc/UTC\",\"dataWindowProperties\":{\"background\":\"rgba( 255, 254, 206, 0.2)\",\"border\":\"rgba( 96, 96, 144, 1)\",\"font\":\"Verdana\",\"fontBold\":false,\"fontItalic\":false,\"fontSize\":10,\"transparency\":80,\"visible\":true},\"paneProperties\":{\"background\":\"#131722\",\"gridProperties\":{\"color\":\"#363c4e\",\"style\":0},\"vertGridProperties\":{\"color\":\"rgba(54, 60, 78, 0.2)\",\"style\":0},\"horzGridProperties\":{\"color\":\"rgba(54, 60, 78, 0.2)\",\"style\":0},\"crossHairProperties\":{\"color\":\"rgba( 152, 152, 152, 1)\",\"style\":2,\"transparency\":0,\"width\":1},\"topMargin\":5,\"bottomMargin\":5,\"leftAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"indexedTo100\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false},\"rightAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"indexedTo100\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false},\"legendProperties\":{\"showStudyArguments\":true,\"showStudyTitles\":true,\"showStudyValues\":true,\"showSeriesTitle\":true,\"showSeriesOHLC\":true,\"showLegend\":false,\"showBarChange\":true,\"showOnlyPriceSource\":true},\"overlayPropreties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true},\"rightOffset\":{}},\"scalesProperties\":{\"showLeftScale\":false,\"showRightScale\":true,\"backgroundColor\":\"#ffffff\",\"lineColor\":\"#787878\",\"textColor\":\"#D9D9D9\",\"fontSize\":11,\"scaleSeriesOnly\":false,\"showSeriesLastValue\":true,\"seriesLastValueMode\":1,\"showSeriesPrevCloseValue\":false,\"showStudyLastValue\":false,\"showSymbolLabels\":false,\"showStudyPlotLabels\":false,\"barSpacing\":6},\"mainSeriesProperties\":{\"style\":1,\"esdShowDividends\":true,\"esdShowSplits\":true,\"esdShowEarnings\":true,\"esdShowBreaks\":false,\"esdBreaksStyle\":{\"color\":\"rgba( 235, 77, 92, 1)\",\"style\":2,\"width\":1},\"esdFlagSize\":2,\"showCountdown\":true,\"showInDataWindow\":true,\"visible\":true,\"showPriceLine\":true,\"priceLineWidth\":1,\"priceLineColor\":\"rgba(255, 255, 255, 1)\",\"baseLineColor\":\"#B2B5BE\",\"showPrevClosePriceLine\":false,\"prevClosePriceLineWidth\":1,\"prevClosePriceLineColor\":\"rgba( 85, 85, 85, 1)\",\"minTick\":\"default\",\"extendedHours\":false,\"dividendsAdjustment\":false,\"sessVis\":false,\"statusViewStyle\":{\"fontSize\":17,\"showExchange\":true,\"showInterval\":true,\"showSymbolAsDescription\":false},\"candleStyle\":{\"upColor\":\"rgba(33, 33, 33, 1)\",\"downColor\":\"rgba(255, 255, 255, 1)\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"rgba(255, 255, 255, 1)\",\"borderDownColor\":\"rgba(255, 255, 255, 1)\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"rgba(255, 255, 255, 1)\",\"wickDownColor\":\"rgba(255, 255, 255, 1)\",\"barColorsOnPrevClose\":false},\"hollowCandleStyle\":{\"upColor\":\"rgba(255, 255, 255, 1)\",\"downColor\":\"#ef5350\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"rgba(255, 255, 255, 1)\",\"borderDownColor\":\"#ef5350\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"rgba(255, 255, 255, 1)\",\"wickDownColor\":\"#ef5350\"},\"haStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"#26a69a\",\"wickDownColor\":\"#ef5350\",\"showRealLastPrice\":false,\"barColorsOnPrevClose\":false,\"inputs\":{},\"inputInfo\":{}},\"barStyle\":{\"upColor\":\"rgba(255, 255, 255, 1)\",\"downColor\":\"rgba(255, 255, 255, 1)\",\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false,\"thinBars\":false},\"lineStyle\":{\"color\":\"rgba(255, 255, 255, 1)\",\"linestyle\":0,\"linewidth\":1,\"priceSource\":\"close\",\"styleType\":2},\"areaStyle\":{\"color1\":\"rgba(33, 150, 243, 0.05)\",\"color2\":\"rgba(33, 150, 243, 0.05)\",\"linecolor\":\"#2196f3\",\"linestyle\":0,\"linewidth\":3,\"priceSource\":\"close\",\"transparency\":95},\"priceAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"indexedTo100\":false,\"log\":false,\"logDisabled\":false,\"isInverted\":false,\"alignLabels\":true},\"renkoStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"borderUpColorProjection\":\"#336854\",\"borderDownColorProjection\":\"#7f323f\",\"wickUpColor\":\"#26a69a\",\"wickDownColor\":\"#ef5350\",\"inputs\":{\"source\":\"close\",\"boxSize\":3,\"style\":\"ATR\",\"atrLength\":14,\"wicks\":true},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR Length\"},\"wicks\":{\"name\":\"Wicks\"}}},\"pbStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"borderUpColorProjection\":\"#336854\",\"borderDownColorProjection\":\"#7f323f\",\"inputs\":{\"source\":\"close\",\"lb\":3},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"lb\":{\"name\":\"Number of line\"}}},\"kagiStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"source\":\"close\",\"style\":\"ATR\",\"atrLength\":14,\"reversalAmount\":1},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR Length\"},\"reversalAmount\":{\"name\":\"Reversal amount\"}}},\"pnfStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"sources\":\"Close\",\"reversalAmount\":3,\"boxSize\":1,\"style\":\"ATR\",\"atrLength\":14},\"inputInfo\":{\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"reversalAmount\":{\"name\":\"Reversal amount\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR Length\"}}},\"baselineStyle\":{\"baselineColor\":\"rgba( 117, 134, 150, 1)\",\"topFillColor1\":\"rgba( 38, 166, 154, 0.05)\",\"topFillColor2\":\"rgba( 38, 166, 154, 0.05)\",\"bottomFillColor1\":\"rgba( 239, 83, 80, 0.05)\",\"bottomFillColor2\":\"rgba( 239, 83, 80, 0.05)\",\"topLineColor\":\"rgba( 38, 166, 154, 1)\",\"bottomLineColor\":\"rgba( 239, 83, 80, 1)\",\"topLineWidth\":3,\"bottomLineWidth\":3,\"priceSource\":\"close\",\"transparency\":50,\"baseLevelPercentage\":50},\"rangeStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"thinBars\":true,\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"range\":10,\"phantomBars\":false},\"inputInfo\":{\"range\":{\"name\":\"Range\"},\"phantomBars\":{\"name\":\"Phantom Bars\"}}},\"silentIntervalChange\":false,\"lockScale\":false,\"symbol\":\"BITSTAMP:BTCUSD\",\"shortName\":\"\",\"timeframe\":\"\",\"onWidget\":false,\"interval\":\"6M\",\"showSessions\":false,\"timezone\":\"UTC\",\"showLastValue\":true},\"symbolWatermarkProperties\":{\"color\":\"rgba( 85, 85, 85, 0)\",\"transparency\":100},\"chartEventsSourceProperties\":{\"visible\":true,\"futureOnly\":true,\"breaks\":{\"color\":\"rgba(85, 85, 85, 1)\",\"visible\":false,\"style\":2,\"width\":1}},\"tradingProperties\":{\"showPositions\":true,\"showOrders\":true,\"showExecutions\":true,\"extendLeft\":true,\"lineLength\":5,\"lineWidth\":1,\"lineStyle\":2},\"alertsProperties\":{\"labels\":{\"visible\":true,\"color\":\"rgba( 215, 84, 66, 1)\",\"highlightColor\":\"rgba( 255, 255, 51, 1)\",\"hoverColor\":\"rgba( 245, 227, 135, 1)\",\"line\":{\"visible\":true,\"style\":2,\"width\":1}},\"fakeLabels\":{\"visible\":true,\"color\":\"rgba( 119, 119, 119, 1)\",\"line\":{\"visible\":true,\"style\":2,\"width\":1}},\"drawingIcon\":{\"color\":\"rgba( 170, 170, 170, 1)\"}},\"editorFontsList\":{\"0\":\"Verdana\",\"1\":\"Courier New\",\"2\":\"Times New Roman\",\"3\":\"Arial\"},\"volumePaneSize\":\"large\",\"timeScale\":{\"barSpacing\":6,\"rightOffset\":5,\"defaultRightOffset\":10}}",
+        "IntervalWidget.quicks": "[\"15\",\"60\",\"240\",\"720\",\"1D\",\"3D\",\"1W\",\"1M\"]",
+        "study_Script$USER;jQsabDIFniSn1SZgnhluufCMN23Y2gGg@tv-scripting": "{}",
+        "StyleWidget.quicks": "[4,8,2,0,1]",
+        "study_StrategyScript$USER;N437On5jlRQtkO7RWB7F2fH4WrpgmtOk@tv-scripting": "{}",
+        "screener-forex.filterSetId": "top_gainers",
+        "study_Script$USER;sCc5RRzHvQC4zlda68X0WFJEtZB7xurD@tv-scripting": "{}",
+        "trading.POLONIEX.server": "0",
+        "current_theme.name": "dark",
+        "chartproperties.mainSeriesProperties": "{\"style\":9,\"esdShowDividends\":true,\"esdShowSplits\":true,\"esdShowEarnings\":true,\"esdShowBreaks\":false,\"esdBreaksStyle\":{\"color\":\"rgba( 235, 77, 92, 1)\",\"style\":2,\"width\":1},\"esdFlagSize\":2,\"showCountdown\":true,\"showInDataWindow\":false,\"showPriceLine\":true,\"priceLineWidth\":1,\"priceLineColor\":\"\",\"baseLineColor\":\"#B2B5BE\",\"showPrevClosePriceLine\":true,\"prevClosePriceLineWidth\":1,\"prevClosePriceLineColor\":\"rgba(101, 101, 101, 1)\",\"extendedHours\":false,\"dividendsAdjustment\":false,\"sessVis\":false,\"statusViewStyle\":{\"fontSize\":17,\"showExchange\":true,\"showInterval\":true,\"symbolTextSource\":\"description\",\"showSymbolAsDescription\":false},\"candleStyle\":{\"upColor\":\"#53b987\",\"downColor\":\"#eb4d5c\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#53b987\",\"borderDownColor\":\"#eb4d5c\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"#336854\",\"wickDownColor\":\"#7f323f\",\"barColorsOnPrevClose\":false},\"hollowCandleStyle\":{\"upColor\":\"#53b987\",\"downColor\":\"#eb4d5c\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#53b987\",\"borderDownColor\":\"#eb4d5c\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"#336854\",\"wickDownColor\":\"#7f323f\"},\"haStyle\":{\"upColor\":\"#53b987\",\"downColor\":\"#eb4d5c\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#53b987\",\"borderDownColor\":\"#eb4d5c\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"#53b987\",\"wickDownColor\":\"#eb4d5c\",\"showRealLastPrice\":false,\"barColorsOnPrevClose\":false,\"inputs\":{},\"inputInfo\":{}},\"barStyle\":{\"upColor\":\"#53b987\",\"downColor\":\"#eb4d5c\",\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false,\"thinBars\":true},\"hiloStyle\":{\"color\":\"#2196f3\",\"showBorders\":true,\"borderColor\":\"#2196f3\",\"showLabels\":true,\"labelColor\":\"#2196f3\",\"fontSize\":7},\"lineStyle\":{\"color\":\"#6FB8F7\",\"linestyle\":0,\"linewidth\":1,\"priceSource\":\"close\",\"styleType\":2},\"areaStyle\":{\"color1\":\"rgba(96, 96, 144, 0.5)\",\"color2\":\"rgba(1, 246, 245, 0.5)\",\"linecolor\":\"#0094FF\",\"linestyle\":0,\"linewidth\":1,\"priceSource\":\"close\",\"transparency\":50},\"renkoStyle\":{\"upColor\":\"rgba(33, 33, 33, 1)\",\"downColor\":\"rgba(33, 33, 33, 1)\",\"borderUpColor\":\"rgba(0, 255, 0, 1)\",\"borderDownColor\":\"rgba(255, 0, 0, 1)\",\"upColorProjection\":\"rgba(0, 255, 255, 1)\",\"downColorProjection\":\"rgba(255, 0, 255, 1)\",\"borderUpColorProjection\":\"rgba(255, 255, 255, 1)\",\"borderDownColorProjection\":\"rgba(255, 255, 255, 1)\",\"wickUpColor\":\"#336854\",\"wickDownColor\":\"#7f323f\",\"inputs\":{\"source\":\"close\",\"boxSize\":11,\"style\":\"ATR\",\"atrLength\":14,\"wicks\":true},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR Length\"},\"wicks\":{\"name\":\"Wicks\"}}},\"pbStyle\":{\"upColor\":\"#53b987\",\"downColor\":\"#eb4d5c\",\"borderUpColor\":\"#53b987\",\"borderDownColor\":\"#eb4d5c\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"borderUpColorProjection\":\"#336854\",\"borderDownColorProjection\":\"#7f323f\",\"inputs\":{\"source\":\"close\",\"lb\":3},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"lb\":{\"name\":\"Number of line\"}}},\"kagiStyle\":{\"upColor\":\"#53b987\",\"downColor\":\"#eb4d5c\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"source\":\"close\",\"style\":\"ATR\",\"atrLength\":14,\"reversalAmount\":1},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR Length\"},\"reversalAmount\":{\"name\":\"Reversal amount\"}}},\"pnfStyle\":{\"upColor\":\"#53b987\",\"downColor\":\"#eb4d5c\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"sources\":\"Close\",\"reversalAmount\":3,\"boxSize\":1,\"style\":\"ATR\",\"atrLength\":14},\"inputInfo\":{\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"reversalAmount\":{\"name\":\"Reversal amount\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR Length\"}}},\"baselineStyle\":{\"baselineColor\":\"rgba( 117, 134, 150, 1)\",\"topFillColor1\":\"rgba( 83, 185, 135, 0.1)\",\"topFillColor2\":\"rgba( 83, 185, 135, 0.1)\",\"bottomFillColor1\":\"rgba( 235, 77, 92, 0.1)\",\"bottomFillColor2\":\"rgba( 235, 77, 92, 0.1)\",\"topLineColor\":\"rgba( 83, 185, 135, 1)\",\"bottomLineColor\":\"rgba( 235, 77, 92, 1)\",\"topLineWidth\":1,\"bottomLineWidth\":1,\"priceSource\":\"close\",\"transparency\":50,\"baseLevelPercentage\":50},\"rangeStyle\":{\"upColor\":\"rgba( 83, 185, 135, 1)\",\"downColor\":\"rgba( 255, 77, 92, 1)\",\"thinBars\":true,\"upColorProjection\":\"rgba( 169, 220, 195, 1)\",\"downColorProjection\":\"rgba( 245, 166, 174, 1)\",\"inputs\":{\"range\":10,\"phantomBars\":false},\"inputInfo\":{\"range\":{\"name\":\"Range\"},\"phantomBars\":{\"name\":\"Phantom Bars\"}}},\"silentIntervalChange\":false,\"symbol\":\"BITSTAMP:BTCUSD\",\"shortName\":\"BTCUSD\",\"timeframe\":\"\",\"onWidget\":false,\"interval\":\"1W\",\"showSessions\":false,\"timezone\":\"UTC\",\"showLastValue\":true,\"priceAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"percentageDisabled\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false,\"indexedTo100\":false}}",
+        "study_Script$USER;azKiKtHRZDthcazt4yGtd4nHMktBeomW@tv-scripting": "{}",
+        "replay.manager.autoplayDelay": "100",
+        "study_StrategyScript$USER;SkgqUiZ5DWSADJAd7oKsZh01qw6l45iQ@tv-scripting": "{}",
+        "linetoolcrossline": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(255, 0, 255, 0.82)\",\"linewidth\":1,\"linestyle\":0,\"showPrice\":true,\"showTime\":true,\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "hint.themeSwitcher": "true",
+        "trading_floating_toolbar.position": "{\"left\":911,\"top\":53}",
+        "widgetbar.widget.hotlist.64pb99sxXO3T": "{\"exchangeByLocale\":{\"en\":\"US\",\"ae\":\"DFM\",\"cl\":\"BCS\",\"ee\":\"OMXTSE\",\"ca\":\"TSX\",\"it\":\"MIL\",\"vi_VN\":\"HOSE\",\"ch\":\"SIX\",\"au\":\"ASX\",\"il\":\"TASE\",\"in\":\"BSE\",\"co\":\"BVC\",\"th_TH\":\"SET\",\"id\":\"IDX\",\"es\":\"BME\",\"ru\":\"MOEX\",\"nl\":\"EURONEXTAMS\",\"pt\":\"EURONEXTLIS\",\"no\":\"OSL\",\"tr\":\"BIST\",\"nz\":\"NZX\",\"ng\":\"NSENG\",\"lv\":\"OMXRSE\",\"lt\":\"OMXVSE\",\"pe\":\"BVL\",\"eg\":\"EGX\",\"pl\":\"GPW\",\"be\":\"EURONEXTBRU\",\"fr\":\"EURONEXT\",\"dk\":\"OMXCOP\",\"zh_TW\":\"TWSE\",\"bh\":\"BAHRAIN\",\"ar_AE\":\"TADAWUL\",\"ms_MY\":\"MYX\",\"hk\":\"HKEX\",\"br\":\"BMFBOVESPA\",\"de_DE\":\"XETR\",\"fi\":\"OMXHEX\",\"ja\":\"TSE\",\"is\":\"OMXICE\",\"za\":\"JSE\",\"zh_CN\":\"SZSE\",\"rs\":\"BELEX\",\"us\":\"NASDAQ\",\"sv_SE\":\"OMXSTO\",\"qa\":\"QSE\",\"kr\":\"KRX\",\"ar\":\"BCBA\",\"uk\":\"LSE\",\"sg\":\"SGX\",\"mx\":\"BMV\",\"default\":\"US\",\"eu\":\"EURONEXT\",\"sa\":\"TADAWUL\",\"se\":\"OMXSTO\",\"tw\":\"TWSE\",\"at\":\"VIE\",\"de\":\"XETR\"},\"groupByLocale\":{\"default\":\"percent_change_loosers\"}}",
+        "trading.tradingPanelOpened": "false",
+        "screener.fieldSetId": "dividends",
+        "screener.sort_field": "market_cap_basic",
+        "linetoolpricerange": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(242, 242, 242, 1)\",\"linewidth\":1,\"font\":\"Verdana\",\"textcolor\":\"rgba(242, 242, 242, 1)\",\"fontsize\":10,\"fillLabelBackground\":false,\"labelBackgroundColor\":\"rgba( 91, 133, 191, 0.9)\",\"labelBackgroundTransparency\":30,\"fillBackground\":false,\"backgroundColor\":\"rgba( 186, 218, 255, 0.4)\",\"backgroundTransparency\":60,\"drawBorder\":false,\"borderColor\":\"rgba( 102, 123, 139, 1)\",\"extendLeft\":false,\"extendRight\":false,\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "symboledit.show_quandl_notification": "false",
+        "trading.tradingPanelActivePage": "domPanel",
+        "savedwatch.H9up5qK5LLKH": "{\"auto\":false,\"symbols\":[\"(OANDA:XAGUSD+FX_IDC:XAGUSD+FOREXCOM:XAGUSD)/3*1024+(FX_IDC:XAUUSD+OANDA:XAUUSD+FOREXCOM:XAUUSD)/3\",\"FX:XAGUSD*1024+FX:XAUUSD+OANDA:XPDUSD+OANDA:XPTUSD\",\"0.013*(30*FX:XAGUSD+FX:XAUUSD)\",\"((OANDA:XAGUSD+FX_IDC:XAGUSD)/2*1024+(OANDA:XAUUSD+FX_IDC:XAUUSD)/2)/((KRAKEN:XBTUSD+BITFINEX:BTCUSD)/2+(KRAKEN:BCHUSD+BITFINEX:BCHUSD)/2)\",\"0.035*FX:XAUUSD+0.0175*OANDA:XPDUSD+0.01*OANDA:XPTUSD+0.9375*FX_IDC:XAGUSD\",\"TVC:GOLD\",\"FX:XAUUSD/31.1\",\"FX_IDC:XPDUSD\",\"FX_IDC:XPTUSD\",\"TVC:SILVER\",\"TVC:GOLDSILVER\",\"FX:XAUUSD/OANDA:XPDUSD\",\"OANDA:XPDUSD/FX_IDC:XAGUSD\",\"FX:XAUUSD/OANDA:XPTUSD\",\"OANDA:XPTUSD/FX_IDC:XAGUSD\",\"OANDA:XPDUSD/OANDA:XPTUSD\"],\"title\":\"METALS\"}",
+        "linetool5pointspattern": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba( 204, 40, 149, 1)\",\"textcolor\":\"rgba( 255, 255, 255, 1)\",\"fillBackground\":true,\"backgroundColor\":\"rgba(204, 40, 149, 0.12)\",\"font\":\"Verdana\",\"fontsize\":12,\"bold\":false,\"italic\":false,\"transparency\":50,\"linewidth\":1,\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "trading.dom.profitViewType": "2",
+        "chart.lastUsedTimeBasedResolution": "15",
+        "studyMarket.favorites.extra": "{}",
+        "notesAndIdeas.favorites": "[5433577]",
+        "study_MACD@tv-basicstudies": "{\"styles\":{\"histogram\":{\"color\":\"rgba(255, 0, 110, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":1,\"trackPrice\":false,\"transparency\":0,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Histogram\"},\"macd\":{\"color\":\"rgba(0, 148, 255, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":0,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"MACD\"},\"signal\":{\"color\":\"rgba(255, 106, 0, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":0,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Signal\"}},\"inputs\":{\"fast length\":12,\"signal smoothing\":9,\"simple ma(oscillator)\":false,\"simple ma(signal line)\":false,\"slow length\":26,\"source\":\"close\"},\"palettes\":{},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"histogram\",\"type\":\"line\"},\"1\":{\"id\":\"macd\",\"type\":\"line\"},\"2\":{\"id\":\"signal\",\"type\":\"line\"}},\"_metainfoVersion\":44,\"description\":\"MACD\",\"id\":\"MACD@tv-basicstudies\",\"is_price_study\":false,\"shortDescription\":\"MACD\",\"description_localized\":\"MACD\",\"shortId\":\"MACD\",\"packageId\":\"tv-basicstudies\",\"version\":\"76\",\"fullId\":\"MACD@tv-basicstudies-76\",\"productId\":\"tv-basicstudies\",\"name\":\"MACD@tv-basicstudies\"}",
+        "screener-forex.sort_field": "change",
+        "screener-forex.fields_order": "[\"name\",\"close\",\"change\",\"change_abs\",\"sector\",\"country\",\"bid\",\"ask\",\"high\",\"low\",\"Recommend.All\"]",
+        "study_Script$PUB;983@tv-scripting_-1": "{\"filledAreasStyle\":{\"fill_0\":{\"color\":\"rgba(0, 0, 255, 0.25)\",\"transparency\":75,\"visible\":false}},\"palettes\":{\"palette_0\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 255, 255, 0.65)\",\"style\":0,\"width\":2,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(255, 140, 10, 0.65)\",\"style\":0,\"width\":1,\"name\":\"Color 1\"}},\"valToIndex\":{\"0\":0,\"1\":1}},\"palette_1\":{\"colors\":{\"0\":{\"color\":\"rgba(28, 158, 255, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"}},\"addDefaultColor\":true,\"valToIndex\":{\"2\":0}},\"palette_2\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 140, 10, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"}},\"addDefaultColor\":true,\"valToIndex\":{\"3\":0}}},\"styles\":{\"plot_0\":{\"color\":\"rgba(69, 129, 142, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Upper Band\",\"isHidden\":false},\"plot_1\":{\"color\":\"rgba(69, 129, 142, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"lower Band\",\"isHidden\":false},\"plot_2\":{\"color\":\"#3BB3E4\",\"linestyle\":0,\"linewidth\":3,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_4\":{\"color\":\"rgba(255, 69, 33, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Zeroline\",\"isHidden\":false},\"plot_5\":{\"visible\":false,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"bar_colorer\",\"histogramBase\":0,\"transparency\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Bar Color\",\"isHidden\":false},\"plot_6\":{\"visible\":false,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"bar_colorer\",\"histogramBase\":0,\"transparency\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Bar Color\",\"isHidden\":false}},\"inputs\":{\"in_0\":10,\"in_1\":1,\"in_2\":12,\"in_3\":26,\"in_4\":9},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"line\",\"pinePlotIndex\":0},\"1\":{\"id\":\"plot_1\",\"type\":\"line\",\"pinePlotIndex\":1},\"2\":{\"id\":\"plot_2\",\"type\":\"line\",\"pinePlotIndex\":2},\"3\":{\"id\":\"plot_3\",\"palette\":\"palette_0\",\"target\":\"plot_2\",\"type\":\"colorer\",\"pinePlotIndex\":3},\"4\":{\"id\":\"plot_4\",\"type\":\"line\",\"pinePlotIndex\":4},\"5\":{\"id\":\"plot_5\",\"palette\":\"palette_1\",\"type\":\"bar_colorer\",\"pinePlotIndex\":5},\"6\":{\"id\":\"plot_6\",\"palette\":\"palette_2\",\"type\":\"bar_colorer\",\"pinePlotIndex\":6}},\"_metainfoVersion\":45,\"description\":\"AK MACD BB v 1.00\",\"filledAreas\":{\"0\":{\"id\":\"fill_0\",\"isHidden\":false,\"objAId\":\"plot_0\",\"objBId\":\"plot_1\",\"title\":\"Fill\",\"type\":\"plot_plot\"}},\"id\":\"Script$PUB;983@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":false,\"pine\":{\"digest\":\"9b719788d721cdf9ad0006be949c7598b88f3328\",\"version\":\"-1\"},\"scriptIdPart\":\"PUB;983\",\"shortDescription\":\"AK MACD BB v 1.00\",\"shortId\":\"Script$PUB;983\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"Script$PUB;983@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"Script$PUB;983@tv-scripting\"}",
+        "CompareAddDialog.tab": "1",
+        "trading.qty.FX:EURUSD": "16000",
+        "study_Script$USER;0cUUfyHNaWsltKspn8Lssot3c7BRKpbo@tv-scripting": "{}",
+        "study_Volume@tv-basicstudies": "{\"palettes\":{\"volumePalette\":{\"colors\":{\"0\":{\"color\":\"rgba(111, 168, 220, 0.77)\",\"style\":0,\"width\":1,\"name\":\"Growing\"},\"1\":{\"color\":\"rgba(73, 133, 231, 0.78)\",\"style\":0,\"width\":1,\"name\":\"Falling\"}}}},\"styles\":{\"vol\":{\"linestyle\":0,\"linewidth\":1,\"plottype\":5,\"trackPrice\":false,\"transparency\":87,\"visible\":true,\"color\":\"#0496FF\",\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Volume\"},\"vol_ma\":{\"color\":\"rgba(255, 255, 255, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":70,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Volume MA\"}},\"inputs\":{\"col_prev_close\":false,\"length\":20},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"id\":\"Volume@tv-basicstudies\",\"name\":\"Volume@tv-basicstudies\",\"is_price_study\":false,\"plots\":{\"0\":{\"id\":\"vol\",\"type\":\"line\",\"pinePlotIndex\":0},\"1\":{\"id\":\"vol_color\",\"type\":\"colorer\",\"target\":\"vol\",\"palette\":\"volumePalette\",\"pinePlotIndex\":1},\"2\":{\"id\":\"vol_ma\",\"type\":\"line\",\"pinePlotIndex\":2}},\"shortId\":\"Volume\",\"packageId\":\"tv-basicstudies\",\"version\":\"81\",\"fullId\":\"Volume@tv-basicstudies-81\",\"productId\":\"tv-basicstudies\",\"description\":\"Volume\",\"transparency\":87,\"_metainfoVersion\":44,\"shortDescription\":\"Vol\",\"description_localized\":\"Volume\",\"paneSize\":\"large\",\"matchPriority\":1,\"matchIndex\":0}",
+        "linetooltimecycles": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":false,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":false,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":3,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(21, 153, 128, 0.11)\",\"linewidth\":1,\"fillBackground\":true,\"backgroundColor\":\"rgba(207, 226, 243, 0.36)\",\"transparency\":50,\"linestyle\":1,\"frozen\":false,\"_isActualInterval\":false,\"fixedSize\":true}",
+        "linetoolpricelabel": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(0, 0, 0, 1)\",\"backgroundColor\":\"rgba( 255, 255, 255, 0.7)\",\"borderColor\":\"rgba(255, 140, 10, 1)\",\"fontWeight\":\"bold\",\"fontsize\":11,\"font\":\"Arial\",\"transparency\":30,\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "studyMarket.favorites": "[\"DONCH@tv-basicstudies\",\"STD;Ichimoku%1Cloud\",\"MAExp@tv-basicstudies\",\"MACD@tv-basicstudies\",\"RSI@tv-basicstudies\",\"Volume@tv-basicstudies\",\"ATR@tv-basicstudies\",\"OBV@tv-basicstudies\",\"PUB;1255\",\"PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm\",\"STD;Average%1Directional%1Index\",\"USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V\",\"PUB;983\",\"PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65\",\"PUB;2706\",\"PUB;KlZjozpHIWIoDjVB13ClpETQ8PdPrplT\",\"VbPFixed@tv-volumebyprice\",\"MASimple@tv-basicstudies\",\"STD;Smoothed%1Moving%1Average\",\"PUB;zaxilfG6KPr250WYyizoNgiokH1RO2wr\",\"STD;MACD\"]",
+        "linetoolriskrewardshort": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba( 88, 88, 88, 1)\",\"linewidth\":1,\"font\":\"Verdana\",\"textcolor\":\"rgba(255, 255, 255, 1)\",\"fontsize\":12,\"fillLabelBackground\":true,\"labelBackgroundColor\":\"rgba( 88, 88, 88, 1)\",\"labelBackgroundTransparency\":0,\"fillBackground\":true,\"stopBackground\":\"rgba( 255, 0, 0, 0.2)\",\"profitBackground\":\"rgba( 0, 160, 0, 0.2)\",\"stopBackgroundTransparency\":80,\"profitBackgroundTransparency\":80,\"drawBorder\":false,\"borderColor\":\"rgba( 102, 123, 139, 1)\",\"compact\":false,\"riskDisplayMode\":\"percents\",\"accountSize\":1000,\"risk\":\"41.00\",\"frozen\":false,\"entryPrice\":{},\"stopPrice\":{},\"targetPrice\":{},\"riskSize\":410,\"qty\":2,\"amountTarget\":1255.46,\"amountStop\":689.02,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "privatemessages.chatmaximized": "true",
+        "widgetbar.widget.alerts_log.C2aqFdfNyJLd": "{}",
+        "linetoolabcd": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(0, 255, 0, 1)\",\"textcolor\":\"rgba( 255, 255, 255, 1)\",\"font\":\"Verdana\",\"fontsize\":12,\"bold\":false,\"italic\":false,\"linewidth\":1,\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "privatemessages.activechat": "pm_gHWHlMBcfcikP2ZU",
+        "linetoolicon": "{\"singleChartOnly\":true,\"clonable\":true,\"color\":\"rgba(255, 255, 255, 1)\",\"size\":54.82445818576947,\"icon\":61573,\"angle\":1.5707963267948966,\"scale\":1,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"frozen\":false}",
+        "study_Script$USER;J7bapgg8J1qzuYwnfFm9V6Iy0OOBAw2Z@tv-scripting": "{}",
+        "savedwatch.KJpEw02obJmX": "{\"auto\":false,\"symbols\":[\"BITMEX:XBTUSD/(BITFINEX:BCHUSD+BITFINEX:ETHUSD+BITFINEX:EOSUSD+BITFINEX:XMRUSD+BITFINEX:DSHUSD+BITFINEX:LTCUSD+280*BITFINEX:XRPUSD+BITFINEX:NEOUSD)\",\"BITMEX:XBTUSD/KRAKEN:BCHUSD\",\"(KRAKEN:BCHXBT+BITFINEX:BCHBTC+BITSTAMP:BCHBTC)/3\"],\"title\":\"c2cindex\"}",
+        "linetooldateandpricerange": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"clonable\":true,\"linecolor\":\"rgba(152, 152, 152, 1)\",\"linewidth\":1,\"font\":\"Verdana\",\"textcolor\":\"rgba( 255, 255, 255, 1)\",\"fontsize\":12,\"fillLabelBackground\":true,\"labelBackgroundColor\":\"rgba( 91, 133, 191, 0.9)\",\"labelBackgroundTransparency\":30,\"fillBackground\":true,\"backgroundColor\":\"rgba(152, 152, 152, 0.16)\",\"backgroundTransparency\":60,\"drawBorder\":false,\"borderColor\":\"rgba( 102, 123, 139, 1)\",\"frozen\":false}",
+        "linetoolarrowmark": "{\"clonable\":true,\"color\":\"rgba( 120, 120, 120, 1)\",\"text\":\"\",\"fontsize\":20,\"font\":\"Verdana\",\"frozen\":false,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":false,\"hoursFrom\":1,\"hoursTo\":24,\"days\":false,\"daysFrom\":1,\"daysTo\":366,\"weeks\":false,\"months\":false}}",
+        "study_StrategyScript$USER;JSMUwW6N4e2lKkMPp0NApSxueGGYZ9D4@tv-scripting": "{}",
+        "onchartmessages.officialData.disabled": "1",
+        "linetoolcallout": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(255, 255, 255, 1)\",\"backgroundColor\":\"rgba(255, 140, 10, 0.68)\",\"transparency\":50,\"linewidth\":3,\"fontsize\":12,\"font\":\"Verdana\",\"bordercolor\":\"rgba(255, 69, 33, 1)\",\"bold\":false,\"italic\":false,\"wordWrap\":false,\"wordWrapWidth\":400,\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "linetoolparallelchannel": "{\"clonable\":true,\"linecolor\":\"rgba(69, 129, 142, 1)\",\"linewidth\":3,\"linestyle\":0,\"extendLeft\":true,\"extendRight\":true,\"fillBackground\":false,\"backgroundColor\":\"rgba(255, 140, 10, 0.03)\",\"transparency\":50,\"showMidline\":true,\"midlinecolor\":\"rgba(69, 129, 142, 1)\",\"midlinewidth\":3,\"midlinestyle\":1,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "trading.chart.proterty": "{\"hideFloatingPanel\":1,\"domVisibility\":0,\"noConfirmEnabled\":0,\"qweqrq\":0,\"showPricesWithZeroVolume\":1,\"orderExecutedSoundParams\":\"{\\\"enabled\\\":0,\\\"name\\\":\\\"alert/alarm_clock\\\"}\"}",
+        "study_Script$USER;pbMOfhznqukul0sJZyni2TjtHfJMLWMK@tv-scripting": "{}",
+        "studyMarket.page": "built-ins",
+        "study_Script$PUB;Cixe43mX96AuYpO8vE7NQv8vnTPokxFb@tv-scripting_1": "{\"styles\":{\"plot_0\":{\"color\":\"rgba(0, 128, 0, 0.23)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"short1\",\"isHidden\":false},\"plot_1\":{\"color\":\"rgba(0, 128, 0, 0.21)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"short2\",\"isHidden\":false},\"plot_10\":{\"color\":\"rgba(255, 0, 0, 0.22)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"long5\",\"isHidden\":false},\"plot_11\":{\"color\":\"rgba(255, 0, 0, 0.21)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"long6\",\"isHidden\":false},\"plot_2\":{\"color\":\"rgba(0, 128, 0, 0.22)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"short3\",\"isHidden\":false},\"plot_3\":{\"color\":\"rgba(0, 128, 0, 0.22)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"short4\",\"isHidden\":false},\"plot_4\":{\"color\":\"rgba(0, 128, 0, 0.21)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"short5\",\"isHidden\":false},\"plot_5\":{\"color\":\"rgba(0, 128, 0, 0.22)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"short6\",\"isHidden\":false},\"plot_6\":{\"color\":\"rgba(255, 0, 0, 0.21)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"long1\",\"isHidden\":false},\"plot_7\":{\"color\":\"rgba(255, 0, 0, 0.21)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"long2\",\"isHidden\":false},\"plot_8\":{\"color\":\"rgba(255, 0, 0, 0.25)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"long3\",\"isHidden\":false},\"plot_9\":{\"color\":\"rgba(255, 0, 0, 0.21)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"long4\",\"isHidden\":false}},\"inputs\":{\"in_0\":3,\"in_1\":5,\"in_10\":50,\"in_11\":60,\"in_2\":8,\"in_3\":10,\"in_4\":12,\"in_5\":15,\"in_6\":30,\"in_7\":35,\"in_8\":40,\"in_9\":45},\"palettes\":{},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"line\"},\"1\":{\"id\":\"plot_1\",\"type\":\"line\"},\"2\":{\"id\":\"plot_2\",\"type\":\"line\"},\"3\":{\"id\":\"plot_3\",\"type\":\"line\"},\"4\":{\"id\":\"plot_4\",\"type\":\"line\"},\"5\":{\"id\":\"plot_5\",\"type\":\"line\"},\"6\":{\"id\":\"plot_6\",\"type\":\"line\"},\"7\":{\"id\":\"plot_7\",\"type\":\"line\"},\"8\":{\"id\":\"plot_8\",\"type\":\"line\"},\"9\":{\"id\":\"plot_9\",\"type\":\"line\"},\"10\":{\"id\":\"plot_10\",\"type\":\"line\"},\"11\":{\"id\":\"plot_11\",\"type\":\"line\"}},\"_metainfoVersion\":45,\"description\":\"GMMA\",\"id\":\"Script$PUB;Cixe43mX96AuYpO8vE7NQv8vnTPokxFb@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"667a13fa5d1b709ef6d007152fdb5201dc5e2ffb\",\"version\":\"1\"},\"scriptIdPart\":\"PUB;Cixe43mX96AuYpO8vE7NQv8vnTPokxFb\",\"shortDescription\":\"GMMA\",\"shortId\":\"Script$PUB;Cixe43mX96AuYpO8vE7NQv8vnTPokxFb\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"Script$PUB;Cixe43mX96AuYpO8vE7NQv8vnTPokxFb@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"Script$PUB;Cixe43mX96AuYpO8vE7NQv8vnTPokxFb@tv-scripting\"}",
+        "study_Script$PUB;1255@tv-scripting_-1": "{\"palettes\":{\"palette_0\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 0, 0, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(0, 255, 0, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 1\"},\"2\":{\"color\":\"rgba(255, 102, 163, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 2\"},\"3\":{\"color\":\"rgba(255, 51, 133, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 3\"},\"4\":{\"color\":\"rgba(255, 0, 102, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 4\"},\"5\":{\"color\":\"rgba(204, 0, 82, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 5\"},\"6\":{\"color\":\"rgba(214, 255, 92, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 6\"},\"7\":{\"color\":\"rgba(209, 255, 71, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 7\"},\"8\":{\"color\":\"rgba(184, 230, 46, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 8\"},\"9\":{\"color\":\"rgba(143, 178, 36, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 9\"}},\"addDefaultColor\":true,\"valToIndex\":{\"0\":0,\"1\":1,\"2\":2,\"3\":3,\"4\":4,\"5\":5,\"6\":6,\"7\":7,\"8\":8,\"9\":9}}},\"styles\":{\"plot_0\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"1\"},\"plot_1\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"2\"},\"plot_10\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"2\"},\"plot_11\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"3\"},\"plot_12\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"4\"},\"plot_13\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"5\"},\"plot_14\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"6\"},\"plot_15\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"7\"},\"plot_16\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"8\"},\"plot_17\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"9\"},\"plot_18\":{\"color\":\"rgba(255, 0, 0, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_19\":{\"color\":\"rgba(0, 255, 0, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_2\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"3\"},\"plot_3\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"4\"},\"plot_4\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"5\"},\"plot_5\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"6\"},\"plot_6\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":false,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"7\"},\"plot_7\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"8\"},\"plot_8\":{\"color\":\"rgba(0, 128, 0, 1)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#008000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"9\"},\"plot_9\":{\"color\":\"rgba(255, 0, 0, 1)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#FF0000\",\"transparency\":0,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"text\":\"1\"},\"plot_20\":{\"visible\":true,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"bar_colorer\",\"histogramBase\":0,\"transparency\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Bar Color\",\"isHidden\":false}},\"inputs\":{\"in_0\":0,\"in_1\":true,\"in_2\":true,\"in_3\":true},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"shapes\"},\"1\":{\"id\":\"plot_1\",\"type\":\"shapes\"},\"2\":{\"id\":\"plot_2\",\"type\":\"shapes\"},\"3\":{\"id\":\"plot_3\",\"type\":\"shapes\"},\"4\":{\"id\":\"plot_4\",\"type\":\"shapes\"},\"5\":{\"id\":\"plot_5\",\"type\":\"shapes\"},\"6\":{\"id\":\"plot_6\",\"type\":\"shapes\"},\"7\":{\"id\":\"plot_7\",\"type\":\"shapes\"},\"8\":{\"id\":\"plot_8\",\"type\":\"shapes\"},\"9\":{\"id\":\"plot_9\",\"type\":\"shapes\"},\"10\":{\"id\":\"plot_10\",\"type\":\"shapes\"},\"11\":{\"id\":\"plot_11\",\"type\":\"shapes\"},\"12\":{\"id\":\"plot_12\",\"type\":\"shapes\"},\"13\":{\"id\":\"plot_13\",\"type\":\"shapes\"},\"14\":{\"id\":\"plot_14\",\"type\":\"shapes\"},\"15\":{\"id\":\"plot_15\",\"type\":\"shapes\"},\"16\":{\"id\":\"plot_16\",\"type\":\"shapes\"},\"17\":{\"id\":\"plot_17\",\"type\":\"shapes\"},\"18\":{\"id\":\"plot_18\",\"type\":\"line\"},\"19\":{\"id\":\"plot_19\",\"type\":\"line\"},\"20\":{\"id\":\"plot_20\",\"palette\":\"palette_0\",\"type\":\"bar_colorer\"}},\"TVScriptMetaInfoExprs\":{\"patchMap\":{\"defaults.styles.plot_0.transparency\":\"rm_17\",\"defaults.styles.plot_1.transparency\":\"rm_17\",\"defaults.styles.plot_10.transparency\":\"rm_17\",\"defaults.styles.plot_11.transparency\":\"rm_17\",\"defaults.styles.plot_12.transparency\":\"rm_17\",\"defaults.styles.plot_13.transparency\":\"rm_17\",\"defaults.styles.plot_14.transparency\":\"rm_17\",\"defaults.styles.plot_15.transparency\":\"rm_17\",\"defaults.styles.plot_16.transparency\":\"rm_17\",\"defaults.styles.plot_17.transparency\":\"rm_17\",\"defaults.styles.plot_2.transparency\":\"rm_17\",\"defaults.styles.plot_3.transparency\":\"rm_17\",\"defaults.styles.plot_4.transparency\":\"rm_17\",\"defaults.styles.plot_5.transparency\":\"rm_17\",\"defaults.styles.plot_6.transparency\":\"rm_17\",\"defaults.styles.plot_7.transparency\":\"rm_17\",\"defaults.styles.plot_8.transparency\":\"rm_17\",\"defaults.styles.plot_9.transparency\":\"rm_17\"},\"tree\":\"transp=##input(defval=0,type=integer,##id='in_0')\\n##root(root_metainfo,rm_0,transp)\\n##root(root_metainfo,rm_1,transp)\\n##root(root_metainfo,rm_2,transp)\\n##root(root_metainfo,rm_3,transp)\\n##root(root_metainfo,rm_4,transp)\\n##root(root_metainfo,rm_5,transp)\\n##root(root_metainfo,rm_6,transp)\\n##root(root_metainfo,rm_7,transp)\\n##root(root_metainfo,rm_8,transp)\\n##root(root_metainfo,rm_9,transp)\\n##root(root_metainfo,rm_10,transp)\\n##root(root_metainfo,rm_11,transp)\\n##root(root_metainfo,rm_12,transp)\\n##root(root_metainfo,rm_13,transp)\\n##root(root_metainfo,rm_14,transp)\\n##root(root_metainfo,rm_15,transp)\\n##root(root_metainfo,rm_16,transp)\\n##root(root_metainfo,rm_17,transp)\\n\"},\"_metainfoVersion\":45,\"description\":\"TD Sequential\",\"id\":\"Script$PUB;1255@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"7003c7a78c74a24491ab71648c51d3b53a1149ea\",\"version\":\"-1\"},\"scriptIdPart\":\"PUB;1255\",\"shortDescription\":\"TD Sequential\",\"shortId\":\"Script$PUB;1255\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"Script$PUB;1255@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"Script$PUB;1255@tv-scripting\"}",
+        "symboledit.exchangefilter": "",
+        "properties_dialog.active_tab.study": "Inputs",
+        "trading.filter_brokers_by_locale": "true",
+        "study_Script$USER;HdYp4dExvpqnj2cWkx37DaTWux4ch3b1@tv-scripting": "{}",
+        "pickerCustomColors": "[\"rgb(33, 33, 33)\",\"rgb(255, 134, 76)\",\"rgb(255, 69, 33)\",\"rgb(255, 140, 10)\",\"rgb(28, 158, 255)\",\"rgb(0, 141, 191)\"]",
+        "screener.selected_type_on_chart": "crypto",
+        "studyMarket.marketTabIsOpen": "false",
+        "widgetbar.widget.hotlist.ipFzuY9MbuI2": "{\"exchangeByLocale\":{\"en\":\"US\",\"ae\":\"DFM\",\"cl\":\"BCS\",\"ee\":\"OMXTSE\",\"ca\":\"TSX\",\"it\":\"MIL\",\"vi_VN\":\"HOSE\",\"ch\":\"SIX\",\"au\":\"ASX\",\"il\":\"TASE\",\"in\":\"BSE\",\"co\":\"BVC\",\"th_TH\":\"SET\",\"id\":\"IDX\",\"es\":\"BME\",\"ru\":\"MOEX\",\"nl\":\"EURONEXTAMS\",\"pt\":\"EURONEXTLIS\",\"no\":\"OSL\",\"tr\":\"BIST\",\"nz\":\"NZX\",\"ng\":\"NSENG\",\"lv\":\"OMXRSE\",\"lt\":\"OMXVSE\",\"pe\":\"BVL\",\"eg\":\"EGX\",\"pl\":\"GPW\",\"be\":\"EURONEXTBRU\",\"fr\":\"EURONEXT\",\"dk\":\"OMXCOP\",\"zh_TW\":\"TWSE\",\"bh\":\"BAHRAIN\",\"ar_AE\":\"TADAWUL\",\"ms_MY\":\"MYX\",\"hk\":\"HKEX\",\"br\":\"BMFBOVESPA\",\"de_DE\":\"XETR\",\"fi\":\"OMXHEX\",\"ja\":\"TSE\",\"is\":\"OMXICE\",\"za\":\"JSE\",\"zh_CN\":\"SZSE\",\"rs\":\"BELEX\",\"us\":\"NASDAQ\",\"sv_SE\":\"OMXSTO\",\"qa\":\"QSE\",\"kr\":\"KRX\",\"ar\":\"BCBA\",\"uk\":\"LSE\",\"sg\":\"SGX\",\"mx\":\"BMV\",\"default\":\"US\",\"eu\":\"EURONEXT\",\"sa\":\"TADAWUL\",\"se\":\"OMXSTO\",\"tw\":\"TWSE\",\"at\":\"VIE\",\"de\":\"XETR\"},\"groupByLocale\":{\"default\":\"volume_gainers\"}}",
+        "alerts.widget.selected_alert_id": "35711261",
+        "study_RSI@tv-basicstudies": "{\"bands\":{\"0\":{\"color\":\"#c0c0c0\",\"linestyle\":2,\"linewidth\":1,\"value\":70,\"visible\":true,\"name\":\"Upper Band\"},\"1\":{\"color\":\"#c0c0c0\",\"linestyle\":2,\"linewidth\":1,\"value\":30,\"visible\":true,\"name\":\"Lower Band\"}},\"bandsBackground\":{\"backgroundColor\":\"rgba(153, 21, 255, 0.1)\",\"fillBackground\":true,\"transparency\":90},\"styles\":{\"RelativeStrengthIndex\":{\"color\":\"rgba(255, 255, 255, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":0,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"RSI\"}},\"inputs\":{\"length\":14,\"source\":\"close\"},\"palettes\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"RelativeStrengthIndex\",\"type\":\"line\"}},\"_metainfoVersion\":44,\"description\":\"Relative Strength Index\",\"id\":\"RSI@tv-basicstudies\",\"is_price_study\":false,\"shortDescription\":\"RSI\",\"description_localized\":\"Relative Strength Index\",\"shortId\":\"RSI\",\"packageId\":\"tv-basicstudies\",\"version\":\"76\",\"fullId\":\"RSI@tv-basicstudies-76\",\"productId\":\"tv-basicstudies\",\"name\":\"RSI@tv-basicstudies\",\"matchPriority\":3,\"matchIndex\":0}",
+        "linetoolriskrewardlong": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba( 88, 88, 88, 1)\",\"linewidth\":1,\"font\":\"Verdana\",\"textcolor\":\"rgba(255, 255, 255, 1)\",\"fontsize\":12,\"fillLabelBackground\":true,\"labelBackgroundColor\":\"rgba( 88, 88, 88, 1)\",\"labelBackgroundTransparency\":0,\"fillBackground\":true,\"stopBackground\":\"rgba(255, 0, 0, 0.08)\",\"profitBackground\":\"rgba(0, 160, 0, 0.1)\",\"stopBackgroundTransparency\":80,\"profitBackgroundTransparency\":80,\"drawBorder\":false,\"borderColor\":\"rgba( 102, 123, 139, 1)\",\"compact\":true,\"riskDisplayMode\":\"money\",\"accountSize\":12000,\"risk\":\"1500\",\"isShort\":false,\"frozen\":false,\"entryPrice\":{},\"stopPrice\":{},\"targetPrice\":{},\"riskSize\":\"1500\",\"qty\":16,\"amountTarget\":16390.4,\"amountStop\":10547.2,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "widgetbar.widget.detail.Dr1Wj3WBXzDB": "{\"depthScale\":57.22367659350216}",
+        "widgetbar.widget.hotlist.dkmT4bReF7jQ": "{\"exchangeByLocale\":{\"en\":\"US\",\"ae\":\"DFM\",\"cl\":\"BCS\",\"ee\":\"OMXTSE\",\"ca\":\"TSX\",\"it\":\"MIL\",\"vi_VN\":\"HOSE\",\"ch\":\"SIX\",\"au\":\"ASX\",\"il\":\"TASE\",\"in\":\"BSE\",\"co\":\"BVC\",\"th_TH\":\"SET\",\"id\":\"IDX\",\"es\":\"BME\",\"ru\":\"MOEX\",\"nl\":\"EURONEXTAMS\",\"pt\":\"EURONEXTLIS\",\"no\":\"OSL\",\"tr\":\"BIST\",\"nz\":\"NZX\",\"ng\":\"NSENG\",\"lv\":\"OMXRSE\",\"lt\":\"OMXVSE\",\"pe\":\"BVL\",\"eg\":\"EGX\",\"pl\":\"GPW\",\"be\":\"EURONEXTBRU\",\"fr\":\"EURONEXT\",\"dk\":\"OMXCOP\",\"zh_TW\":\"TWSE\",\"bh\":\"BAHRAIN\",\"ar_AE\":\"TADAWUL\",\"ms_MY\":\"MYX\",\"hk\":\"HKEX\",\"br\":\"BMFBOVESPA\",\"de_DE\":\"XETR\",\"fi\":\"OMXHEX\",\"ja\":\"TSE\",\"is\":\"OMXICE\",\"za\":\"JSE\",\"zh_CN\":\"SZSE\",\"rs\":\"BELEX\",\"us\":\"NASDAQ\",\"sv_SE\":\"OMXSTO\",\"qa\":\"QSE\",\"kr\":\"KRX\",\"ar\":\"BCBA\",\"uk\":\"LSE\",\"sg\":\"SGX\",\"mx\":\"BMV\",\"default\":\"US\",\"eu\":\"EURONEXT\",\"sa\":\"TADAWUL\",\"se\":\"OMXSTO\",\"tw\":\"TWSE\",\"at\":\"VIE\",\"de\":\"XETR\"},\"groupByLocale\":{\"default\":\"percent_change_gainers\"}}",
+        "screener-crypto.sort_field": "Recommend.All",
+        "editchart.model.symbol": "BITSTAMP:XRPUSD",
+        "Trading.PositionsTable.Filter": "1",
+        "trading.qty.FX_IDC:CADAUD": "1000",
+        "savedwatch.KcTzBecsdkGk": "{\"auto\":false,\"symbols\":[\"(KRAKEN:XBTUSD+COINBASE:BTCUSD+BITSTAMP:BTCUSD)/3\",\"(COINBASE:BCHUSD+BITSTAMP:BCHUSD+KRAKEN:BCHUSD)/3\",\"(BINANCE:BCCBTC+KRAKEN:BCHXBT+POLONIEX:BCHBTC)/3\",\"(BITSTAMP:XRPUSD+KRAKEN:XRPUSD)/2\",\"(POLONIEX:XRPBTC+KRAKEN:XRPXBT+BINANCE:XRPBTC)/3\",\"(COINBASE:ETHUSD+BITSTAMP:ETHUSD+KRAKEN:ETHUSD)/3\",\"(KRAKEN:ETHXBT+POLONIEX:ETHBTC+BINANCE:ETHBTC)/3\",\"0.2*KRAKEN:DASHUSD+131.25*(BITFINEX:XRPUSD+BITFINEX:XLMUSD)+0.035*(BITFINEX:BTCUSD+BITFINEX:BCHUSD+BITFINEX:LTCUSD)+0.35*(BITFINEX:XMRUSD+BITFINEX:ZECUSD)\"],\"title\":\"BitmexIndices\"}",
+        "study_Script$PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm@tv-scripting_1": "{\"styles\":{\"plot_0\":{\"color\":\"rgba(28, 158, 255, 1)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Short MA\",\"isHidden\":false},\"plot_1\":{\"color\":\"rgba(255, 140, 10, 1)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Mid MA\",\"isHidden\":false},\"plot_2\":{\"color\":\"rgba(255, 69, 33, 1)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Long MA\",\"isHidden\":false},\"plot_3\":{\"color\":\"rgba(76, 190, 213, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"6 Short MA\",\"isHidden\":false},\"plot_4\":{\"color\":\"rgba(0, 95, 201, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"6 Mid MA\",\"isHidden\":false},\"plot_5\":{\"color\":\"rgba(0, 6, 92, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"6 Long MA\",\"isHidden\":false},\"plot_6\":{\"color\":\"rgba(203, 236, 243, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"6 Short EMA\",\"isHidden\":false},\"plot_7\":{\"color\":\"rgba(181, 217, 255, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"6 Mid EMA\",\"isHidden\":false},\"plot_8\":{\"color\":\"rgba(190, 193, 255, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"6 Long EMA\",\"isHidden\":false}},\"inputs\":{\"in_0\":50,\"in_1\":100,\"in_2\":200,\"in_3\":true,\"in_4\":\"MA\",\"in_5\":false,\"in_6\":true},\"palettes\":{},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"line\"},\"1\":{\"id\":\"plot_1\",\"type\":\"line\"},\"2\":{\"id\":\"plot_2\",\"type\":\"line\"},\"3\":{\"id\":\"plot_3\",\"type\":\"line\"},\"4\":{\"id\":\"plot_4\",\"type\":\"line\"},\"5\":{\"id\":\"plot_5\",\"type\":\"line\"},\"6\":{\"id\":\"plot_6\",\"type\":\"line\"},\"7\":{\"id\":\"plot_7\",\"type\":\"line\"},\"8\":{\"id\":\"plot_8\",\"type\":\"line\"}},\"_metainfoVersion\":45,\"description\":\"MA\",\"id\":\"Script$PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"1d36993a94903e771f01f2143abc0c82fb0ce3ba\",\"version\":\"1\"},\"scriptIdPart\":\"PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm\",\"shortDescription\":\"MA\",\"shortId\":\"Script$PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"Script$PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"Script$PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm@tv-scripting\"}",
+        "widgetbar.widget.watchlist.zHizsHwgqlyT": "{\"listId\":\"9d2HIaezkwtz\"}",
+        "linetoolicon.recenticons": "[61573,61792,61643,61609,61538,61715,61576,61539,61575,61725]",
+        "editchart.model.style": "9",
+        "screener-forex.filters.tab": "0",
+        "linetoolarrowmarkdown": "{\"clonable\":true,\"color\":\"rgba( 120, 120, 120, 1)\",\"text\":\"Down\",\"fontsize\":20,\"font\":\"Verdana\",\"frozen\":false,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"_isActualInterval\":true,\"fixedSize\":true}",
+        "trading.orderPanelVisible": "false",
+        "alerts.creating.send_push": "false",
+        "study_StrategyScript$USER;Bl7pzeGrsHOv27xkv00i8XUz9WX2o8HK@tv-scripting": "{}",
+        "BarsMarksContainer.visibile": "false",
+        "savedwatch.9d2HIaezkwtz": "{\"auto\":false,\"symbols\":[\"BITSTAMP:BTCUSD\",\"BITSTAMP:XRPUSD\"],\"title\":\"BOT_ALERTS\"}",
+        "study_Script$USER;wirnQ5KkjcywEDCZDfxNUuRePldOz3AZ@tv-scripting": "{}",
+        "study_StrategyScript$USER;GR4LWOnE1R1rLdUtrzr1uWIMFksqinnC@tv-scripting": "{}",
+        "notShowMainWizard": "true",
+        "defaultStudyTemplate": "tmo",
+        "globalNotification_in": "2634",
+        "linetoolhorzline": "{\"clonable\":true,\"linecolor\":\"rgba(255, 0, 0, 1)\",\"linewidth\":2,\"linestyle\":1,\"showPrice\":true,\"showLabel\":false,\"font\":\"Verdana\",\"textcolor\":\"rgba( 21, 119, 96, 1)\",\"fontsize\":12,\"bold\":false,\"italic\":false,\"horzLabelsAlign\":\"center\",\"vertLabelsAlign\":\"top\",\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "alerts.creating.send_sms": "false",
+        "properties_toolbar.position": "{\"left\":269,\"top\":179}",
+        "study_PSAR@tv-basicstudies": "{\"styles\":{\"ParabolicSAR\":{\"color\":\"rgba(58, 108, 168, 0.3)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":6,\"trackPrice\":false,\"transparency\":0,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"ParabolicSAR\"}},\"inputs\":{\"increment\":0.02,\"max value\":0.2,\"start\":0.02},\"palettes\":{},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"ParabolicSAR\",\"type\":\"line\"}},\"_metainfoVersion\":44,\"description\":\"Parabolic SAR\",\"id\":\"PSAR@tv-basicstudies\",\"is_price_study\":true,\"shortDescription\":\"SAR\",\"description_localized\":\"Parabolic SAR\",\"shortId\":\"PSAR\",\"packageId\":\"tv-basicstudies\",\"version\":\"64\",\"fullId\":\"PSAR@tv-basicstudies-64\",\"productId\":\"tv-basicstudies\",\"name\":\"PSAR@tv-basicstudies\",\"matchPriority\":3,\"matchIndex\":0}",
+        "study_StrategyScript$PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65@tv-scripting_1": "{\"palettes\":{\"palette_0\":{\"colors\":{\"0\":{\"color\":\"rgba(0, 255, 0, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(255, 0, 0, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 1\"},\"2\":{\"color\":\"rgba(128, 128, 128, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 2\"}},\"valToIndex\":{\"0\":0,\"1\":1,\"2\":2}},\"palette_1\":{\"colors\":{\"0\":{\"color\":\"rgba(0, 255, 0, 0.65)\",\"style\":0,\"width\":3,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(0,0,0,0)\",\"style\":0,\"width\":3,\"name\":\"Color 1\"}},\"valToIndex\":{\"0\":0,\"3\":1}},\"palette_2\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 0, 0, 0.65)\",\"style\":0,\"width\":3,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(0,0,0,0)\",\"style\":0,\"width\":3,\"name\":\"Color 1\"}},\"valToIndex\":{\"1\":0,\"3\":1}},\"palette_3\":{\"colors\":{\"0\":{\"color\":\"rgba(0, 255, 0, 0.65)\",\"style\":0,\"width\":3,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(0,0,0,0)\",\"style\":0,\"width\":3,\"name\":\"Color 1\"}},\"valToIndex\":{\"0\":0,\"3\":1}},\"palette_4\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 0, 0, 0.65)\",\"style\":0,\"width\":3,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(0,0,0,0)\",\"style\":0,\"width\":3,\"name\":\"Color 1\"}},\"valToIndex\":{\"1\":0,\"3\":1}},\"palette_5\":{\"colors\":{\"0\":{\"color\":\"rgba(0, 255, 0, 0.65)\",\"style\":0,\"width\":3,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(0,0,0,0)\",\"style\":0,\"width\":3,\"name\":\"Color 1\"}},\"valToIndex\":{\"0\":0,\"3\":1}},\"palette_6\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 0, 0, 0.65)\",\"style\":0,\"width\":3,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(0,0,0,0)\",\"style\":0,\"width\":3,\"name\":\"Color 1\"}},\"valToIndex\":{\"1\":0,\"3\":1}}},\"strategy\":{\"orders\":{\"showLabels\":true,\"showQty\":true,\"visible\":true}},\"styles\":{\"plot_1\":{\"color\":\"rgba(28, 158, 255, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Slow Primary Trend Line\",\"isHidden\":false},\"plot_11\":{\"color\":\"#3BB3E4\",\"linestyle\":0,\"linewidth\":3,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_13\":{\"color\":\"#3BB3E4\",\"linestyle\":0,\"linewidth\":3,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_15\":{\"color\":\"#3BB3E4\",\"linestyle\":0,\"linewidth\":3,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_17\":{\"color\":\"#3BB3E4\",\"linestyle\":0,\"linewidth\":3,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_19\":{\"color\":\"rgba(255, 69, 33, 0.65)\",\"location\":\"AboveBar\",\"plottype\":\"shape_triangle_down\",\"textColor\":\"#FF0000\",\"transparency\":35,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"size\":\"normal\"},\"plot_2\":{\"color\":\"rgba(255, 140, 10, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Trend Line - 3\",\"isHidden\":false},\"plot_20\":{\"color\":\"rgba(0, 141, 191, 0.65)\",\"location\":\"BelowBar\",\"plottype\":\"shape_triangle_up\",\"textColor\":\"#0000FF\",\"transparency\":35,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"size\":\"normal\"},\"plot_21\":{\"color\":\"rgba(255, 0, 0, 0.65)\",\"location\":\"AboveBar\",\"plottype\":\"shape_circle\",\"textColor\":\"#FF0000\",\"transparency\":35,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"size\":\"tiny\"},\"plot_22\":{\"color\":\"rgba(28, 158, 255, 0.65)\",\"location\":\"BelowBar\",\"plottype\":\"shape_circle\",\"textColor\":\"#0000FF\",\"transparency\":35,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"size\":\"tiny\"},\"plot_23\":{\"color\":\"rgba(255, 0, 0, 0.65)\",\"location\":\"AboveBar\",\"plottype\":\"shape_circle\",\"textColor\":\"#FF0000\",\"transparency\":35,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"size\":\"small\"},\"plot_24\":{\"color\":\"rgba(28, 158, 255, 0.65)\",\"location\":\"BelowBar\",\"plottype\":\"shape_circle\",\"textColor\":\"#0000FF\",\"transparency\":35,\"visible\":true,\"linestyle\":0,\"linewidth\":2,\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Shapes\",\"isHidden\":false,\"size\":\"small\"},\"plot_3\":{\"color\":\"rgba(255, 69, 33, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Trend Line - 4\",\"isHidden\":false},\"plot_4\":{\"color\":\"rgba(60, 179, 113, 0.11)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"No Trend Zone - Midline\",\"isHidden\":false},\"plot_5\":{\"color\":\"rgba(60, 179, 113, 0.11)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"No Trend Zone - Upperline\",\"isHidden\":false},\"plot_6\":{\"color\":\"rgba(60, 179, 113, 0.09)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"No Trend Zone - Lowerline\",\"isHidden\":false},\"plot_7\":{\"color\":\"#3BB3E4\",\"linestyle\":0,\"linewidth\":3,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_9\":{\"color\":\"#3BB3E4\",\"linestyle\":0,\"linewidth\":3,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_0\":{\"visible\":false,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"bar_colorer\",\"histogramBase\":0,\"transparency\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Bar Color\",\"isHidden\":false}},\"inputs\":{\"in_0\":true,\"in_1\":true,\"in_10\":2,\"in_11\":2,\"in_12\":7,\"in_13\":7,\"in_14\":1,\"in_15\":false,\"in_16\":false,\"in_17\":0,\"in_18\":\"fixed\",\"in_19\":1,\"in_2\":20,\"in_20\":100000,\"in_21\":\"NONE\",\"in_22\":0,\"in_23\":\"percent\",\"in_24\":0,\"in_3\":2,\"in_4\":21,\"in_5\":21,\"in_6\":60,\"in_7\":40,\"in_8\":20,\"in_9\":20},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"palette\":\"palette_0\",\"type\":\"bar_colorer\"},\"1\":{\"id\":\"plot_1\",\"type\":\"line\"},\"2\":{\"id\":\"plot_2\",\"type\":\"line\"},\"3\":{\"id\":\"plot_3\",\"type\":\"line\"},\"4\":{\"id\":\"plot_4\",\"type\":\"line\"},\"5\":{\"id\":\"plot_5\",\"type\":\"line\"},\"6\":{\"id\":\"plot_6\",\"type\":\"line\"},\"7\":{\"id\":\"plot_7\",\"type\":\"line\"},\"8\":{\"id\":\"plot_8\",\"palette\":\"palette_1\",\"target\":\"plot_7\",\"type\":\"colorer\"},\"9\":{\"id\":\"plot_9\",\"type\":\"line\"},\"10\":{\"id\":\"plot_10\",\"palette\":\"palette_2\",\"target\":\"plot_9\",\"type\":\"colorer\"},\"11\":{\"id\":\"plot_11\",\"type\":\"line\"},\"12\":{\"id\":\"plot_12\",\"palette\":\"palette_3\",\"target\":\"plot_11\",\"type\":\"colorer\"},\"13\":{\"id\":\"plot_13\",\"type\":\"line\"},\"14\":{\"id\":\"plot_14\",\"palette\":\"palette_4\",\"target\":\"plot_13\",\"type\":\"colorer\"},\"15\":{\"id\":\"plot_15\",\"type\":\"line\"},\"16\":{\"id\":\"plot_16\",\"palette\":\"palette_5\",\"target\":\"plot_15\",\"type\":\"colorer\"},\"17\":{\"id\":\"plot_17\",\"type\":\"line\"},\"18\":{\"id\":\"plot_18\",\"palette\":\"palette_6\",\"target\":\"plot_17\",\"type\":\"colorer\"},\"19\":{\"id\":\"plot_19\",\"type\":\"shapes\"},\"20\":{\"id\":\"plot_20\",\"type\":\"shapes\"},\"21\":{\"id\":\"plot_21\",\"type\":\"shapes\"},\"22\":{\"id\":\"plot_22\",\"type\":\"shapes\"},\"23\":{\"id\":\"plot_23\",\"type\":\"shapes\"},\"24\":{\"id\":\"plot_24\",\"type\":\"shapes\"}},\"_metainfoVersion\":45,\"description\":\"Knoxville Ultra Divergence version__free__by Sanjay Khatri__Imdia\",\"id\":\"StrategyScript$PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65@tv-scripting\",\"isTVScript\":true,\"isTVScriptStrategy\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"31f070095456fe48315172d77f01146abb1d4f72\",\"version\":\"1\"},\"scriptIdPart\":\"PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65\",\"shortDescription\":\"Knoxville__Ultra__Sanjay Khatri_India\",\"shortId\":\"StrategyScript$PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"StrategyScript$PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"StrategyScript$PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65@tv-scripting\"}",
+        "globalNotification": "3783",
+        "IntervalWidget.intervals": "[\"1\",\"3\",\"5\",\"10\",\"15\",\"30\",\"45\",\"60\",\"120\",\"180\",\"240\",\"360\",\"720\",\"1D\",\"3D\",\"1W\",\"1M\",\"3M\",\"12M\",\"120R\"]",
+        "chart.syncCrosshair": "true",
+        "screener-crypto.fields_order": "[\"name\",\"change\",\"Recommend.All\",\"exchange\"]",
+        "linetoolprojection": "{\"clonable\":true,\"showCoeffs\":true,\"font\":\"Verdana\",\"fillBackground\":true,\"transparency\":80,\"color1\":\"rgba( 0, 128, 0, 0.2)\",\"color2\":\"rgba( 255, 0, 0, 0.2)\",\"linewidth\":1,\"trendline\":{\"visible\":true,\"color\":\"rgba( 128, 128, 128, 1)\",\"linestyle\":0},\"level1\":{\"coeff\":1,\"color\":\"rgba( 128, 128, 128, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"frozen\":true,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"_isActualInterval\":true}",
+        "widgetbar.widget.alerts_manage.CDxUhGtesSlr": "{}",
+        "linetoolghostfeed": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"singleChartOnly\":true,\"clonable\":true,\"averageHL\":225,\"variance\":50,\"candleStyle\":{\"upColor\":\"#6ba583\",\"downColor\":\"#d75442\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#225437\",\"borderDownColor\":\"#5b1a13\",\"wickColor\":\"#737375\"},\"transparency\":50,\"frozen\":true}",
+        "backtesting.lastStrategySelectedScriptIdPart": "PUB;8gsVOmHJbf2d3YpWBOijd03S89r1LE65",
+        "alerts.creating.sound_duration": "0",
+        "linetoolarrow": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":false,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":3,\"weeks\":false,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(28, 158, 255, 1)\",\"linewidth\":2,\"linestyle\":0,\"extendLeft\":false,\"extendRight\":false,\"leftEnd\":0,\"rightEnd\":1,\"font\":\"Verdana\",\"textcolor\":\"rgba( 21, 119, 96, 1)\",\"fontsize\":12,\"bold\":false,\"italic\":false,\"alwaysShowStats\":false,\"showMiddlePoint\":false,\"showPriceRange\":false,\"showBarsRange\":false,\"showDateTimeRange\":false,\"showDistance\":false,\"showAngle\":false,\"statsPosition\":2,\"frozen\":false,\"_isActualInterval\":false,\"fixedSize\":true}",
+        "study_Script$USER;GR4LWOnE1R1rLdUtrzr1uWIMFksqinnC@tv-scripting": "{}",
+        "_phone_verif_dlg_initial": "false",
+        "trading.qty.POLONIEX:BCHUSDT": "0",
+        "linetoolflagmark": "{\"clonable\":true,\"color\":\"rgba( 255, 0, 0, 1)\",\"frozen\":false,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"_isActualInterval\":true,\"fixedSize\":true}",
+        "chart.lastUsedRangeResolution": "120R",
+        "linetoolvertline": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(28, 158, 255, 1)\",\"linewidth\":2,\"linestyle\":0,\"showTime\":true,\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "alerts.creating.no_expiration": "true",
+        "symboledit.dialog_last_entry": "",
+        "study_Script$USER;BxoJ5rS2jwpA2KwmIbUek34rYjGm8mmI@tv-scripting": "{}",
+        "domepanel.visible": "0",
+        "linetoolrectangle": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(255, 140, 10, 1)\",\"fillBackground\":true,\"backgroundColor\":\"rgba(255, 69, 33, 0.33)\",\"linewidth\":1,\"snapTo45Degrees\":true,\"transparency\":50,\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "publish.showIntroText": "false",
+        "screener.filterSetId": "most_capitalized",
+        "ChartDrawingToolbarWidget.visible": "true",
+        "linetooltriangle": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"color\":\"rgba(255, 140, 10, 1)\",\"fillBackground\":true,\"backgroundColor\":\"rgba(255, 140, 10, 0.06)\",\"transparency\":50,\"linewidth\":1,\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "study_Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting_71_0": "{\"filledAreasStyle\":{\"fill_0\":{\"color\":\"#3BB3E4\",\"transparency\":95,\"visible\":true}},\"palettes\":{\"palette_0\":{\"colors\":{\"0\":{\"color\":\"rgba(0, 128, 128, 0.05)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"}},\"addDefaultColor\":true,\"valToIndex\":{\"0\":0}},\"palette_1\":{\"colors\":{\"0\":{\"color\":\"rgba(255, 255, 255, 1)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"}},\"addDefaultColor\":true,\"valToIndex\":{\"1\":0}}},\"styles\":{\"plot_0\":{\"color\":\"rgba(255, 255, 255, 0.65)\",\"linestyle\":0,\"linewidth\":2,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"main MA\",\"isHidden\":false},\"plot_1\":{\"color\":\"rgba(0, 128, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 1 H\",\"isHidden\":false},\"plot_10\":{\"color\":\"rgba(255, 255, 0, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 3 M\",\"isHidden\":false},\"plot_11\":{\"colordown\":\"rgba(255, 0, 0, 1)\",\"colorup\":\"rgba(0, 255, 0, 1)\",\"transparency\":40,\"visible\":true,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"arrows\",\"histogramBase\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Trigger Arrow\",\"isHidden\":false,\"maxHeight\":60,\"minHeight\":50},\"plot_2\":{\"color\":\"rgba(0, 128, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 1 L\",\"isHidden\":false},\"plot_3\":{\"color\":\"rgba(0, 128, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 1 M\",\"isHidden\":false},\"plot_5\":{\"color\":\"rgba(128, 0, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 2 H\",\"isHidden\":false},\"plot_6\":{\"color\":\"rgba(128, 0, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 2 L\",\"isHidden\":false},\"plot_7\":{\"color\":\"rgba(128, 0, 128, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 2 M\",\"isHidden\":false},\"plot_8\":{\"color\":\"rgba(255, 255, 0, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 3 H\",\"isHidden\":false},\"plot_9\":{\"color\":\"rgba(255, 255, 0, 0.65)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"DC 3 L\",\"isHidden\":false},\"plot_12\":{\"visible\":true,\"color\":\"#0496FF\",\"linestyle\":0,\"linewidth\":2,\"plottype\":\"bar_colorer\",\"histogramBase\":0,\"transparency\":0,\"trackPrice\":false,\"joinPoints\":false,\"title\":\"Trigger Bar\",\"isHidden\":false}},\"inputs\":{\"in_0\":13,\"in_1\":\"ema\",\"in_2\":true,\"in_3\":21,\"in_4\":true,\"in_5\":55,\"in_6\":false,\"in_7\":100,\"in_8\":false},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"line\"},\"1\":{\"id\":\"plot_1\",\"type\":\"line\"},\"2\":{\"id\":\"plot_2\",\"type\":\"line\"},\"3\":{\"id\":\"plot_3\",\"type\":\"line\"},\"4\":{\"id\":\"plot_4\",\"palette\":\"palette_0\",\"target\":\"fill_0\",\"type\":\"colorer\"},\"5\":{\"id\":\"plot_5\",\"type\":\"line\"},\"6\":{\"id\":\"plot_6\",\"type\":\"line\"},\"7\":{\"id\":\"plot_7\",\"type\":\"line\"},\"8\":{\"id\":\"plot_8\",\"type\":\"line\"},\"9\":{\"id\":\"plot_9\",\"type\":\"line\"},\"10\":{\"id\":\"plot_10\",\"type\":\"line\"},\"11\":{\"id\":\"plot_11\",\"type\":\"arrows\"},\"12\":{\"id\":\"plot_12\",\"palette\":\"palette_1\",\"type\":\"bar_colorer\"}},\"_metainfoVersion\":45,\"alerts\":{\"conditions\":{\"alert_0\":{\"message\":\"Augmented Renko Signal \",\"pineVar\":\"var_20\",\"title\":\"Renko Signal\"}}},\"description\":\"Renko Rules , Single Period Fixed [Study]\",\"filledAreas\":{\"0\":{\"id\":\"fill_0\",\"isHidden\":false,\"objAId\":\"plot_1\",\"objBId\":\"plot_2\",\"palette\":\"palette_0\",\"title\":\"DC 1 Bg\",\"type\":\"plot_plot\"}},\"id\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"4ee0050b85e140ec38be98d96a4594a3aa8bbeca\",\"version\":\"71.0\"},\"scriptIdPart\":\"USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V\",\"shortDescription\":\"RR,SPF[stdy]\",\"shortId\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting\"}",
+        "study_Script$USER;WEklDlnhQGaH5VWFG2vnp3mJ9L9vlOPF@tv-scripting": "{}",
+        "upsale.shown_popup:2": "1",
+        "chart.cursorPreference": "cursor",
+        "study_Script$STD;MA%1Cross@tv-scripting": "{\"styles\":{\"plot_0\":{\"color\":\"rgba(152, 0, 255, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_1\":{\"color\":\"rgba(120, 63, 4, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":6,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false},\"plot_2\":{\"color\":\"rgba(0, 0, 0, 1)\",\"linestyle\":0,\"linewidth\":3,\"plottype\":3,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Plot\",\"isHidden\":false}},\"inputs\":{},\"palettes\":{},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"line\"},\"1\":{\"id\":\"plot_1\",\"type\":\"line\"},\"2\":{\"id\":\"plot_2\",\"type\":\"line\"}},\"_metainfoVersion\":45,\"description\":\"MA Cross\",\"id\":\"Script$STD;MA%1Cross@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"3d6e1154433bac0633f82b0cafb6d3cc98c03261\",\"version\":\"2.0\"},\"scriptIdPart\":\"STD;MA%1Cross\",\"shortDescription\":\"MA Cross\",\"shortId\":\"Script$STD;MA%1Cross\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"Script$STD;MA%1Cross@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"Script$STD;MA%1Cross@tv-scripting\"}",
+        "sessions": "{\"graphics\":{\"backgrounds\":{\"outOfSession\":{\"color\":\"rgba(255, 229, 153, 0.4)\",\"transparency\":60,\"visible\":false}},\"vertlines\":{\"sessBreaks\":{\"color\":\"#4985e7\",\"style\":2,\"visible\":false,\"width\":1}}}}",
+        "en.screener.market": "america",
+        "linetoolfibtimezone": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"horzLabelsAlign\":\"right\",\"vertLabelsAlign\":\"bottom\",\"clonable\":true,\"baselinecolor\":\"rgba( 128, 128, 128, 1)\",\"linecolor\":\"rgba( 0, 85, 219, 1)\",\"linewidth\":1,\"linestyle\":0,\"showLabels\":true,\"font\":\"Verdana\",\"fillBackground\":false,\"transparency\":80,\"trendline\":{\"visible\":true,\"color\":\"rgba( 128, 128, 128, 1)\",\"linewidth\":1,\"linestyle\":2},\"level1\":{\"coeff\":0,\"color\":\"rgba( 128, 128, 128, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level2\":{\"coeff\":1,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level3\":{\"coeff\":2,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level4\":{\"coeff\":3,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level5\":{\"coeff\":5,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level6\":{\"coeff\":8,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level7\":{\"coeff\":13,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level8\":{\"coeff\":21,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level9\":{\"coeff\":34,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level10\":{\"coeff\":55,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"level11\":{\"coeff\":89,\"color\":\"rgba( 0, 85, 219, 1)\",\"visible\":true,\"linestyle\":0,\"linewidth\":1},\"frozen\":true,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "black_friday.shown_popup_2017": "true",
+        "linetoolinfoline": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(255, 0, 0, 1)\",\"linewidth\":2,\"linestyle\":0,\"extendLeft\":false,\"extendRight\":false,\"leftEnd\":0,\"rightEnd\":0,\"font\":\"Verdana\",\"textcolor\":\"rgba( 21, 119, 96, 1)\",\"fontsize\":12,\"bold\":false,\"italic\":false,\"snapTo45Degrees\":true,\"alwaysShowStats\":true,\"showMiddlePoint\":false,\"showPriceRange\":true,\"showBarsRange\":true,\"showDateTimeRange\":true,\"showDistance\":true,\"showAngle\":true,\"statsPosition\":1,\"frozen\":false}",
+        "savedwatch.85O38u6xukB5": "{\"auto\":false,\"symbols\":[\"FX_IDC:JPYUSD\",\"FX:EURUSD\",\"FX_IDC:MXNUSD\",\"FX:GBPUSD\",\"FX:AUDUSD\",\"FX_IDC:JPYMXN\",\"FX_IDC:CADAUD\",\"FX_IDC:CHFEUR\"],\"title\":\"FIAT\"}",
+        "publishchart.private": "false",
+        "black_friday.shown_popup_2018": "true",
+        "study_Script$STD;Ichimoku%1Cloud@tv-scripting_2_0": "{\"filledAreasStyle\":{\"fill_0\":{\"color\":\"#3BB3E4\",\"transparency\":90,\"visible\":true}},\"palettes\":{\"palette_0\":{\"colors\":{\"0\":{\"color\":\"rgba(39, 78, 19, 0.04)\",\"style\":0,\"width\":1,\"name\":\"Color 0\"},\"1\":{\"color\":\"rgba(255, 0, 0, 0.04)\",\"style\":0,\"width\":1,\"name\":\"Color 1\"}},\"valToIndex\":{\"0\":0,\"1\":1}}},\"styles\":{\"plot_0\":{\"color\":\"rgba(28, 158, 255, 0.79)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Conversion Line\",\"isHidden\":false},\"plot_1\":{\"color\":\"rgba(255, 140, 10, 0.77)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Base Line\",\"isHidden\":false},\"plot_2\":{\"color\":\"rgba(242, 242, 242, 1)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Lagging Span\",\"isHidden\":false},\"plot_3\":{\"color\":\"rgba(0, 128, 0, 0.32)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Lead 1\",\"isHidden\":false},\"plot_4\":{\"color\":\"rgba(102, 0, 0, 0.34)\",\"linestyle\":0,\"linewidth\":1,\"plottype\":0,\"trackPrice\":false,\"transparency\":35,\"visible\":true,\"histogramBase\":0,\"joinPoints\":false,\"title\":\"Lead 2\",\"isHidden\":false}},\"inputs\":{\"in_0\":21,\"in_1\":55,\"in_2\":100,\"in_3\":21},\"bands\":{},\"area\":{},\"graphics\":{},\"showInDataWindow\":true,\"showStudyArguments\":true,\"plots\":{\"0\":{\"id\":\"plot_0\",\"type\":\"line\",\"pinePlotIndex\":0},\"1\":{\"id\":\"plot_1\",\"type\":\"line\",\"pinePlotIndex\":1},\"2\":{\"id\":\"plot_2\",\"type\":\"line\",\"pinePlotIndex\":2},\"3\":{\"id\":\"plot_3\",\"type\":\"line\",\"pinePlotIndex\":3},\"4\":{\"id\":\"plot_4\",\"type\":\"line\",\"pinePlotIndex\":4},\"5\":{\"id\":\"plot_5\",\"palette\":\"palette_0\",\"target\":\"fill_0\",\"type\":\"colorer\",\"pinePlotIndex\":5}},\"_metainfoVersion\":45,\"description\":\"Ichimoku Cloud\",\"filledAreas\":{\"0\":{\"id\":\"fill_0\",\"isHidden\":false,\"objAId\":\"plot_3\",\"objBId\":\"plot_4\",\"palette\":\"palette_0\",\"title\":\"Plots Background\",\"type\":\"plot_plot\"}},\"id\":\"Script$STD;Ichimoku%1Cloud@tv-scripting\",\"isTVScript\":true,\"isTVScriptStub\":false,\"is_hidden_study\":false,\"is_price_study\":true,\"pine\":{\"digest\":\"a5f12629938d53c7b33cdc3cdd7c1569fb3ae9f4\",\"version\":\"2.0\"},\"scriptIdPart\":\"STD;Ichimoku%1Cloud\",\"shortDescription\":\"Ichimoku\",\"shortId\":\"Script$STD;Ichimoku%1Cloud\",\"packageId\":\"tv-scripting\",\"version\":\"72\",\"fullId\":\"Script$STD;Ichimoku%1Cloud@tv-scripting-72\",\"productId\":\"tv-scripting\",\"name\":\"Script$STD;Ichimoku%1Cloud@tv-scripting\"}",
+        "ChartFavoriteDrawingToolbarWidget.visible": "false",
+        "alerts.creating.send_email": "false",
+        "chart.favoriteDrawingsPosition": "{\"left\":0,\"top\":689}",
+        "savedwatch.sP9fAKd6fuOO": "{\"auto\":false,\"symbols\":[\"(8*BITFINEX:XRPUSD+0.0013*(BITFINEX:BCHUSD+BITFINEX:BTCUSD)+0.013*(30*FX:XAGUSD+FX:XAUUSD)+25.5*FX:EURUSD+2195*FX_IDC:JPYUSD+7.5*FX:GBPUSD+400*FX_IDC:MXNUSD+26*FX_IDC:CADUSD)/140\",\"8*BITFINEX:XRPUSD+0.0013*(BITFINEX:BCHUSD+BITFINEX:BTCUSD)+0.013*(30*FX:XAGUSD+FX:XAUUSD)+25.5*FX:EURUSD+2195*FX_IDC:JPYUSD+7.5*FX:GBPUSD+400*FX_IDC:MXNUSD+26*FX_IDC:CADUSD\",\"25.5*FX:EURUSD+2195*FX_IDC:JPYUSD+7.5*FX:GBPUSD+10*FX_IDC:CHFUSD+200*FX_IDC:MXNUSD+13*FX:AUDUSD+13*FX_IDC:CADUSD\",\"0.013*(30*FX:XAGUSD+FX:XAUUSD)\",\"8*BITSTAMP:XRPUSD+0.0013*(BITFINEX:BCHUSD+BITFINEX:BTCUSD)\",\"(8*BITFINEX:XRPUSD+0.0013*(BITFINEX:BCHUSD+BITFINEX:BTCUSD))/(25.5*FX:EURUSD+2195*FX_IDC:JPYUSD+7.5*FX:GBPUSD+400*FX_IDC:MXNUSD+26*FX_IDC:CADUSD)\",\"(8*BITFINEX:XRPUSD+0.0013*(BITFINEX:BCHUSD+BITFINEX:BTCUSD)+0.013*(30*FX:XAGUSD+FX:XAUUSD))/(25.5*FX:EURUSD+2195*FX_IDC:JPYUSD+7.5*FX:GBPUSD+400*FX_IDC:MXNUSD+26*FX_IDC:CADUSD)\",\"(KRAKEN:XBTUSD+BITFINEX:BTCUSD+COINBASE:BTCUSD+BITSTAMP:BTCUSD+GEMINI:BTCUSD+BITTREX:BTCUSD)/6\"],\"title\":\"RLINX\"}",
+        "loadChartDialog.favorites": "{\"10083081\":true,\"10478753\":true,\"10504951\":true}",
+        "savedwatch.HDg6ZCS4Ss3Y": "{\"auto\":false,\"symbols\":[\"KRAKEN:XBTUSD\",\"BITFINEX:BTCUSD\",\"BITSTAMP:BTCUSD\",\"BITFINEX:XRPUSD\",\"KRAKEN:XRPUSD\",\"BITTREX:BCHUSDT\",\"KRAKEN:BCHUSD\",\"KRAKEN:ZECUSD\",\"KRAKEN:XMRUSD\",\"BITFINEX:XMRUSD\",\"KRAKEN:DASHUSD\",\"BITFINEX:DSHUSD\",\"BITFINEX:NEOUSD\",\"BINANCE:NEOUSDT\",\"BINANCE:TUSDUSDT\",\"KRAKEN:USDTUSD\",\"FX_IDC:MXNUSD\",\"OANDA:USDMXN\",\"BITFINEX:LTCUSD\",\"BINANCE:LTCUSDT\",\"BITFINEX:XLMUSD\"],\"title\":\"Pao sop y res\"}",
+        "linetoolbezierquadro": "{\"clonable\":true,\"linecolor\":\"rgba(255, 255, 255, 1)\",\"linewidth\":2,\"fillBackground\":false,\"backgroundColor\":\"rgba( 21, 56, 153, 0.5)\",\"transparency\":50,\"linestyle\":0,\"extendLeft\":false,\"extendRight\":false,\"leftEnd\":0,\"rightEnd\":1,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "study_Script$USER;Bl7pzeGrsHOv27xkv00i8XUz9WX2o8HK@tv-scripting": "{}",
+        "savedwatch.red": "{\"auto\":false,\"symbols\":[\"BITMEX:XBTUSD+BITFINEX:BCHUSD+BITFINEX:ETHUSD+BITFINEX:EOSUSD+BITFINEX:XMRUSD+BITFINEX:DSHUSD+BITFINEX:LTCUSD+280*BITFINEX:XRPUSD+BITFINEX:NEOUSD+BINANCE:ICXUSD\",\"BITMEX:XBTUSD/(BITFINEX:BCHUSD+BITFINEX:ETHUSD+BITFINEX:EOSUSD+BITFINEX:XMRUSD+BITFINEX:DSHUSD+BITFINEX:LTCUSD+280*BITFINEX:XRPUSD+BITFINEX:NEOUSD+BINANCE:ICXUSD)\",\"BITMEX:XBTUSD/(BITFINEX:ETHUSD+BITFINEX:XMRUSD+BITFINEX:DSHUSD+BITFINEX:LTCUSD+128*BITFINEX:XRPUSD)\",\"40000/(FX:XAGUSD*1024+FX:XAUUSD+(BITMEX:XBTUSD+BITFINEX:BTCUSD+POLONIEX:BTCUSDT+BITMEX:XBTUSD)/4+(BITFINEX:BCHUSD+BITFINEX:BCHUSD+POLONIEX:BCHUSDT)/3)\",\"TVC:GOLDSILVER\",\"0.2*KRAKEN:DASHUSD+131.25*(BITFINEX:XRPUSD+BITFINEX:XLMUSD)+0.035*(BITFINEX:BTCUSD+BITFINEX:BCHUSD+BITFINEX:LTCUSD)+0.35*(BITFINEX:XMRUSD+BITFINEX:ZECUSD)\",\"0.035*FX:XAUUSD+0.0175*OANDA:XPDUSD+0.01*OANDA:XPTUSD+0.9375*FX_IDC:XAGUSD\",\"BITMEX:XBTUSD/KRAKEN:BCHUSD\",\"BITSTAMP:BTCUSD\"],\"title\":\"Red list\"}",
+        "loadChartDialog.sort.asc": "0",
+        "linetoolarrowmarkup": "{\"clonable\":true,\"color\":\"rgba( 120, 120, 120, 1)\",\"text\":\"up\",\"fontsize\":20,\"font\":\"Verdana\",\"frozen\":false,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"_isActualInterval\":true,\"fixedSize\":true}",
+        "PublishedChartsTimeline.filter": "private",
+        "linetoolbrush": "{\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true,\"ranges\":true},\"clonable\":true,\"linecolor\":\"rgba(255, 152, 0, 0.54)\",\"linewidth\":4,\"linestyle\":0,\"smooth\":5,\"fillBackground\":false,\"backgroundColor\":\"rgba( 21, 56, 153, 0.5)\",\"transparency\":50,\"leftEnd\":0,\"rightEnd\":0,\"frozen\":false,\"_isActualInterval\":true,\"fixedSize\":true}",
+        "notifications-mark:user": "{}",
+        "bottombacktestingwidget": "{\"miniChartHidden.buyhold\":\"1\",\"activeReport\":\"drawdown\",\"dataType\":\"absolute\",\"miniChartHidden.drawdown\":\"0\"}",
+        "undefined": "{\"PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm\":{\"name\":\"favorite\",\"scriptIdPart\":\"PUB;PqOimneUMC5sh9Vq1tkDavaQ7Awz7Wbm\",\"isSourceCodeClosed\":false}}",
+        "alerts.creating.play_sound": "false",
+        "study_Script$USER;kIIo7gF54j2CCCTAM0z5tJxSKPxQI25J@tv-scripting": "{}",
+        "study_Script$USER;Fwfuv8Y1TolyKdReUuUBK8Ov4nnlZx8V@tv-scripting": "{}",
+        "screener-crypto.filters.tab": "0",
+        "study_Script$USER;Tf7dOJukk2cloCoS6qcoTGIvlw7jA3ji@tv-scripting": "{}",
+        "trading.orderWidgetMode.": "panel",
+        "linetoolarrowmarkright": "{\"clonable\":true,\"color\":\"rgba( 120, 120, 120, 1)\",\"text\":\"iff holds\",\"fontsize\":20,\"font\":\"Verdana\",\"frozen\":false,\"intervalsVisibilities\":{\"seconds\":true,\"secondsFrom\":1,\"secondsTo\":59,\"minutes\":true,\"minutesFrom\":1,\"minutesTo\":59,\"hours\":true,\"hoursFrom\":1,\"hoursTo\":24,\"days\":true,\"daysFrom\":1,\"daysTo\":366,\"weeks\":true,\"months\":true},\"_isActualInterval\":true,\"fixedSize\":true}",
+        "study_Script$USER;2k29D70GnljWFiiXaCYQl8Dpkpap6c5r@tv-scripting": "{}",
+        "alerts.push.showDialog": "true",
+        "showAddSymbolDialog.checkboxState": "false",
+        "screener-crypto.sort_direction": "asc",
+        "editchart.model.interval": "15"
+      },
+      "auth_token": "FsAycTPGOCzImeRjFW1ilUMvayK6KgDygrKlyrcKLNZb32FuDkXevpPPlr7WEjYKQcaw/YSZLY/UgShUefCoICzlwLVgyXCuL7bbqWwWU3AThgdlho0z3d4ilMGxxEbvzP0eaHXZsVWqyQnvdMXkPIi9Vcwb0MI0+az0YuiMxx4=:0HH7LgcQ:1108433:pro_premium:1:!:tv-prostudies,tv-volumebyprice:!:1558490611:86400",
+      "social_registration": true,
+      "has_phone": true,
+      "phone_verified": "True",
+      "after_trial": "1",
+      "is_policy_accepted": true,
+      "is_non_pro_confirmed": true,
+      "do_not_track": false,
+      "is_pro": true,
+      "pro_plan_days_left": 106,
+      "pro_plan_original_name": "pro_premium",
+      "pro_plan": "pro_premium",
+      "pro_plan_billing_cycle": "y",
+      "is_credit_card_verified": true,
+      "new_pro_product_line": "1",
+      "available_offers": {
+        "longer_cycle": {
+          "annualPricePerMonth": 49.95,
+          "curPriceTotal": "719.40",
+          "biennialPricePerMonth": 39.95,
+          "biennialPriceTotal": "958.80",
+          "curPricePerMonth": 59.95,
+          "annualPriceTotal": "599.40"
+        }
+      },
+      "had_pro": true
+    };
+    var lastGlobalNotificationIds = [3783, 3749, 3680, 3643, 3641, 3634, 3498, 3460, 3436, 3432, 3425];
+
+    var stocktwits_consumer_key = '7d9a78e550f7b011';
+
+    var shopConf = {
+      offers: ["tv-prostudies", "tv-volumebyprice"],
+      devIds: [],
+    };
+
+    var featureToggleState = {
+      "broker_ALOR_dev": 0.0,
+      "suspicious_chart_snapshots_detection": 0.0,
+      "followed_idea_updates_notifications": 1.0,
+      "black_friday": 0.0,
+      "bar-replay": 1.0,
+      "detect-squatters": 1.0,
+      "inf_exp_alerts": 1.0,
+      "stocks-earnings-calendar-maintenance": 0.0,
+      "dianomi": 0.0,
+      "new_trading_panel": 1.0,
+      "dividends-adjust": 1.0,
+      "google_play_badge": 1.0,
+      "hide-alert-controls-on-property-page": 1.0,
+      "hide_exchange_in_inputs": 1.0,
+      "header_search_by_symbol_only": 1.0,
+      "user_serializer": 1.0,
+      "idc_agreement_disabled": 0.0,
+      "invisible_recaptcha": 1.0,
+      "check_phone_number_spam": 0.0,
+      "chart_sharing": 1.0,
+      "alert_email_to_sms": 1.0,
+      "black_friday_popup": 0.0,
+      "thin-bars": 0.0,
+      "marketing_email_checkbox": 0.0,
+      "screener_data_use_permissions": 1.0,
+      "broker_POLONIEX": 1.0,
+      "broker_ALOR": 1.0,
+      "if_offer_segments_enabled": 0.0,
+      "chrome_canvas_fix": 1.0,
+      "hide-alert-icon": 1.0,
+      "hide_sos_plus_btn": 1.0,
+      "symbol_search_server_highlight": 1.0,
+      "kr_locale_enabled": 1.0,
+      "saxobank_japan_only": 1.0,
+      "app_store_button": 0.0,
+      "hide_adv_at_mobile_apps": 1.0,
+      "marked_symbols_enabled": 1.0,
+      "paper-maintenance": 0.0,
+      "hide_dup_users_ideas": 1.0,
+      "chart_connections": 0.0,
+      "tv_charts_db": 1.0,
+      "phone_verification_all": 1.0,
+      "snowplow_tracker": 1.0,
+      "hotlist_widget_enabled": 1.0,
+      "gopro_redesign": 1.0,
+      "rude_ideas": 1.0,
+      "cqg_brackets": 1.0,
+      "broker_IBROKER": 1.0,
+      "chart_changed_notification": 1.0,
+      "support-avalanche": 0.0,
+      "broker_MODAL": 1.0,
+      "ir_locale_enabled": 0.0,
+      "safe_format_extensions": 1.0,
+      "il_locale_enabled": 1.0,
+      "hide_FXCM_on_CFD_pages": 1.0,
+      "screener_sf_exchange_check": 0.0,
+      "unsubscribe_inactive_users": 1.0,
+      "pwa": 1.0,
+      "twilio_messaging_service": 1.0,
+      "hide_true_sms_alerts": 1.0,
+      "broker_FOREXCOM": 1.0,
+      "br_locale_enabled": 1.0,
+      "broker_OANDA": 1.0,
+      "cyber_monday": 0.0,
+      "it_locale_enabled": 1.0,
+      "hu_locale_enabled": 0.0,
+      "show_extension_popup": 0.0,
+      "futures-descriptions": 1.0,
+      "tr_locale_enabled": 1.0,
+      "in_locale_enabled": 1.0,
+      "idc_delay_agreement_disabled": 0.0,
+      "broker_SAXOBANK": 1.0,
+      "screener-alerts-maintenance": 0.0,
+      "hide_scale_toolbar_buttons": 0.0,
+      "pre_set_cancellation_answers": 1.0,
+      "app_push_alerts": 1.0,
+      "new_trading_paper_only": 0.0,
+      "preserve-widgetbar-on-new-alert": 1.0,
+      "follow_symbol_email_notifications_disabled": 1.0,
+      "order_ticket_brackets_risk": 1.0,
+      "alert-dangerous-source-check": 1.0,
+      "uk_locale_enabled": 1.0,
+      "black_friday_mainpage": 0.0
+    };
+  </script>
+
+  <script type="text/javascript">
+    window.BUILD_TIME = '2019_05_21-12_04';
+    window.WEBSOCKET_HOST = 'data.tradingview.com';
+    window.WEBSOCKET_PRO_HOST = 'prodata.tradingview.com';
+    window.WEBSOCKET_PORT = '';
+    window.PUSHSTREAM_URL = 'wss://pushstream.tradingview.com';
+    window.CHARTEVENTS_URL = 'https://chartevents-reuters.tradingview.com/';
+    window.EARNINGS_CALENDAR_URL = '//scanner.tradingview.com';
+    window.NEWS_SERVICE_URL = '//news-headlines.tradingview.com';
+    window.SS_HOST = 'symbol-search.tradingview.com';
+    window.SS_URL = '';
+    window.SS_DOMAIN_PARAMETER = 'production';
+    window.DEFAULT_SYMBOL = 'NASDAQ:AAPL';
+    window.COUNTRY_CODE_TO_DEFAULT_EXCHANGE = {
+      "en": "US",
+      "ae": "DFM",
+      "cl": "BCS",
+      "ee": "OMXTSE",
+      "ca": "TSX",
+      "it": "MIL",
+      "vi_VN": "HOSE",
+      "ch": "SIX",
+      "au": "ASX",
+      "il": "TASE",
+      "in": "BSE",
+      "co": "BVC",
+      "th_TH": "SET",
+      "id": "IDX",
+      "es": "BME",
+      "ru": "MOEX",
+      "nl": "EURONEXT_AMS",
+      "pt": "EURONEXT_LIS",
+      "no": "OSL",
+      "tr": "BIST",
+      "nz": "NZX",
+      "ng": "NSENG",
+      "lv": "OMXRSE",
+      "lt": "OMXVSE",
+      "pe": "BVL",
+      "eg": "EGX",
+      "pl": "GPW",
+      "be": "EURONEXTBRU",
+      "fr": "EURONEXT_PAR",
+      "dk": "OMXCOP",
+      "zh_TW": "TWSE",
+      "bh": "BAHRAIN",
+      "ar_AE": "TADAWUL",
+      "ms_MY": "MYX",
+      "hk": "HKEX",
+      "br": "BMFBOVESPA",
+      "de_DE": "FWB",
+      "fi": "OMXHEX",
+      "ja": "TSE",
+      "is": "OMXICE",
+      "za": "JSE",
+      "zh_CN": "SSE",
+      "rs": "BELEX",
+      "us": "NASDAQ",
+      "sv_SE": "OMXSTO",
+      "qa": "QSE",
+      "kr": "KRX",
+      "ar": "BCBA",
+      "uk": "LSE",
+      "sg": "SGX",
+      "mx": "BMV"
+    };
+    window.HOTLISTS_URL = 'https://hotlist.tradingview.com/';
+    window.SCREENER_HOST = 'https://scanner.tradingview.com';
+
+    window.DATA_ISSUES_HOST = 'https://support-middleware.tradingview.com';
+
+    window.TELEMETRY_HOSTS = {
+      "alerts": {
+        "all": "\/\/telemetry.tradingview.com\/alerts"
+      },
+      "calendars": {
+        "all": "\/\/telemetry.tradingview.com\/calendars"
+      },
+      "charts": {
+        "pro": "\/\/telemetry.tradingview.com\/pro",
+        "widget": "\/\/telemetry.tradingview.com\/widget",
+        "free": "\/\/telemetry.tradingview.com\/free"
+      },
+      "pine": {
+        "all": "\/\/telemetry.tradingview.com\/pine"
+      },
+      "site": {
+        "pro": "\/\/telemetry.tradingview.com\/site-pro",
+        "widget": "\/\/telemetry.tradingview.com\/site-widget",
+        "free": "\/\/telemetry.tradingview.com\/site-free"
+      },
+      "trading": {
+        "all": "https:\/\/telemetry.tradingview.com\/trading"
+      },
+      "news": {
+        "all": "\/\/telemetry.tradingview.com\/news"
+      }
+    };
+    window.WS_HOST_PING_REQUIRED = true;
+    window.TELEMETRY_WS_ERROR_LOGS_THRESHOLD = '100';
+    window.TELEMETRY_SERVER_TIME_DIFF_THRESHOLD = '3000';
+    window.RECAPTCHA_SITE_KEY = '6Lcqv24UAAAAAIvkElDvwPxD0R8scDnMpizaBcHQ';
+    window.RECAPTCHA_SITE_KEY_V3 = '6LeQMHgUAAAAAKCYctiBGWYrXN_tvrODSZ7i9dLA';
+
+    window.PINE_URL = '//pine-facade.tradingview.com/pine-facade';
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24278967-1']);
+    _gaq.push(['_setDomainName', 'tradingview.com']);
+    _gaq.push(["_setCustomVar", 1, "usertype", "pro_premium", 2]);
+    _gaq.push(["_setCustomVar", 2, "app", "web", 2]);
+    _gaq.push(['_trackPageview']);
+
+    // kissmetrics queue stub
+    // module itself is loaded later with `async`
+    var _kmq = _kmq || [];
+    _kmq.push(['identify', "rolandolucio@gmail.com"]);
+  </script>
+  <script>
+    var TradingView = TradingView || {};
+    TradingView.onChartPage = true;
+    this.TradingView = this.TradingView || {},
+      function () {
+        "use strict";
+        var t;
+        ! function (t) {
+          t[t.Text = 1] = "Text", t[t.Binary = 2] = "Binary"
+        }(t || (t = {}));
+        var e, n = !1,
+          o = function () {};
+        ! function (t) {
+          t.load = function (t) {
+            if (/loaded|complete/.test(document.readyState) || n) return t();
+            window.addEventListener("load", t, !1)
+          }, t.isArray = function (t) {
+            return "[object Array]" === Object.prototype.toString.call(t)
+          }, t.merge = function (t, e) {
+            for (var n in e) e.hasOwnProperty(n) && (t[n] = e[n])
+          }
+        }(e || (e = {})), e.load(function () {
+          n = !0
+        });
+        var s = function () {
+            function n(t, n) {
+              void 0 === n && (n = {}), this.sessionid = null, this.connected = !1, this._timeout = 0, this._base = t, this._websocketType = t.options.websocketType, this._options = {
+                timeout: 6e4
+              }, e.merge(this._options, n)
+            }
+            return n.prototype.switchWebsocketMode = function (t) {
+              this._binFrame = new Uint8Array([126, 109, 126]), this._websocketType = t, this._socket.binaryType = "arraybuffer"
+            }, n.prototype.connect = function () {
+              var t = this;
+              this._socket = new WebSocket(this._prepareUrl()), this._socket.onmessage = function (e) {
+                t._onData(e.data)
+              }, this._socket.onclose = this._onClose.bind(this), this._socket.onerror = this._onError.bind(this)
+            }, n.prototype.send = function (e) {
+              this._socket && this._socket.send(this._websocketType === t.Binary ? this._binEncode(e) : this._encode(e))
+            }, n.prototype.disconnect = function () {
+              this._clearIdleTimeout(), this._socket && (this._socket.onmessage = o, this._socket.onclose = o, this._socket.onerror = o, this._socket.close())
+            }, n.prototype._clearIdleTimeout = function () {
+              this._timeout && clearTimeout(this._timeout)
+            }, n.prototype._encode = function (t) {
+              for (var o, s = "", i = e.isArray(t) ? t : [t], r = i.length, c = 0; c < r; c++) s += "~m~" + (o = null === i[c] || void 0 === i[c] ? "" : n._stringify(i[c])).length + "~m~" + o;
+              return s
+            }, n.prototype._binEncode = function (t) {
+              for (var o = e.isArray(t) ? t : [t], s = o.length, i = 0; i < s; i++) o[i] = null === o[i] || void 0 === o[i] ? "" : o[i], o[i] = "string" == typeof o[i] ? n._str2ab(o[i]) : o[i];
+              var r = new Uint8Array(0);
+              for (i = 0; i < s; i++) {
+                var c = this._binEncodeMessage(o[i]),
+                  h = new Uint8Array(r.length + c.length);
+                h.set(r, 0), h.set(c, r.byteLength), r = h
+              }
+              return r
+            }, n.prototype._binEncodeMessage = function (t) {
+              var e = n._str2ab(t.byteLength.toString()),
+                o = 3 + e.length + 3 + t.byteLength,
+                s = new Uint8Array(o),
+                i = 0;
+              return s.set(this._binFrame, i), i += this._binFrame.length, s.set(e, i), i += e.length, s.set(this._binFrame, i), i += this._binFrame.length, s.set(new Uint8Array(t), i), i += t.length, s
+            }, n.prototype._decode = function (t) {
+              var e, n, o = [];
+              do {
+                if ("~m~" !== t.substr(0, 3)) return o;
+                e = "", n = "";
+                for (var s = (t = t.substr(3)).length, i = 0; i < s; i++) {
+                  if (n = Number(t.substr(i, 1)), Number(t.substr(i, 1)) !== n) {
+                    t = t.substr(e.length + "~m~".length), e = Number(e);
+                    break
+                  }
+                  e += n
+                }
+                o.push(t.substr(0, e)), t = t.substr(e)
+              } while ("" !== t);
+              return o
+            }, n.prototype._onData = function (e) {
+              var n;
+              this._setTimeout(), this._websocketType === t.Binary ? n = function (t) {
+                for (var e = 0, n = [], o = t.length; e < o;) {
+                  if (e + 3 > o) throw new Error("Invalid buffer length");
+                  if (126 !== t[e] || 109 !== t[e + 1] || 126 !== t[e + 2]) throw new Error("Malformed ~m~ signature");
+                  e += 3;
+                  for (var s = 0; e < o; e++) {
+                    var i = t[e] - 48;
+                    if (i < 0 || i > 9) break;
+                    s = 10 * s + i
+                  }
+                  if (s + e + 3 > o) throw new Error("Invalid buffer length");
+                  if (126 !== t[e] || 109 !== t[e + 1] || 126 !== t[e + 2]) throw new Error("Malformed ~m~ signature");
+                  e += 3, n.push(t.subarray(e, e + s)), e += s
+                }
+                return n
+              }(new Uint8Array(e)) : this._websocketType === t.Text && (n = this._decode(e));
+              var o = n.length;
+              if (n && n.length)
+                for (var s = 0; s < o; s++) this._onMessage(n[s])
+            }, n.prototype._setTimeout = function () {
+              this._clearIdleTimeout(), this._timeout = setTimeout(this._onTimeout.bind(this), this._options.timeout)
+            }, n.prototype._onTimeout = function () {
+              this.disconnect(), this._onDisconnect({
+                code: 4e3,
+                reason: "socket.io timeout",
+                wasClean: !1
+              })
+            }, n.prototype._onMessage = function (e) {
+              this.sessionid ? this._checkIfHeartbeat(e) ? this._onHeartbeat(this._websocketType === t.Binary ? e.subarray(3) : e.slice(3)) : this._checkIfJson(e) ? this._base.onMessage(JSON.parse(e.slice(3))) : this._base.onMessage(e) : (this.sessionid = e, this._onConnect())
+            }, n.prototype._checkIfHeartbeat = function (t) {
+              return this._checkMessageType(t, "h")
+            }, n.prototype._checkIfJson = function (t) {
+              return this._checkMessageType(t, "j")
+            }, n.prototype._checkMessageType = function (e, n) {
+              if (this._websocketType === t.Binary) {
+                var o = n.charCodeAt(0);
+                if (126 === e[0] && e[1] === o && 126 === e[2]) return !0
+              } else if (this._websocketType === t.Text && e.substr(0, 3) === "~" + n + "~") return !0;
+              return !1
+            }, n.prototype._onHeartbeat = function (e) {
+              var o = this._websocketType === t.Binary ? n._ab2str(e) : e;
+              this.send("~h~" + o)
+            }, n.prototype._onConnect = function () {
+              this.connected = !0, this._base.onConnect(), this._setTimeout()
+            }, n.prototype._onDisconnect = function (t) {
+              this._clear(), this._base.onDisconnect(t), this.sessionid = null
+            }, n.prototype._clear = function () {
+              this.connected = !1
+            }, n.prototype._prepareUrl = function () {
+              return (this._base.options.secure ? "wss" : "ws") + "://" + this._base.host + (this._base.options.port ? ":" + this._base.options.port : "") + "/" + this._base.options.resource + "/websocket" + (this.sessionid ? "/" + this.sessionid : "") + "?from=" + encodeURIComponent(window.location.pathname.slice(1, 50)) + "&date=" + encodeURIComponent(window.BUILD_TIME || "")
+            }, n.prototype._onClose = function (t) {
+              this._clearIdleTimeout(), this._onDisconnect(t)
+            }, n.prototype._onError = function (t) {
+              this._clearIdleTimeout(), this._clear(), this._base.emit("error", [t]), this.sessionid = null
+            }, n._stringify = function (t) {
+              return "[object Object]" === Object.prototype.toString.call(t) ? "~j~" + JSON.stringify(t) : String(t)
+            }, n._str2ab = function (t) {
+              for (var e = new Uint8Array(t.length), n = 0; n < t.length; n++) e[n] = t.charCodeAt(n);
+              return e
+            }, n._ab2str = function (t) {
+              for (var e = "", n = 0; n <= t.length - 1; n++) e += String.fromCharCode(t[n]);
+              return e
+            }, n
+          }(),
+          i = function () {
+            function t(t, n) {
+              this._queueStack = [], this.host = t || document.domain, this.options = {
+                secure: !1,
+                document: document,
+                port: document.location.port || 80,
+                resource: "socket.io",
+                connectTimeout: 5e3,
+                tryTransportsOnConnectTimeout: !0
+              }, e.merge(this.options, n), this._connecting = !1, this._events = {}, this.transport = this._getTransport()
+            }
+            return t.prototype.isConnected = function () {
+              return !!this.transport && this.transport.connected
+            }, t.prototype.isConnecting = function () {
+              return this._connecting
+            }, t.prototype.connect = function () {
+              this.isConnected() || (this._connecting && this.disconnect(), this._connecting = !0, this.transport.connect())
+            }, t.prototype.send = function (t) {
+              if (!this.transport || !this.transport.connected) return this._queue(t);
+              this.transport.send(t)
+            }, t.prototype.disconnect = function () {
+              this.transport && this.transport.disconnect()
+            }, t.prototype.on = function (t, e) {
+              t in this._events || (this._events[t] = []), this._events[t].push(e)
+            }, t.prototype.offAll = function () {
+              this._events = {}
+            }, t.prototype.onMessage = function (t) {
+              this.emit("message", [t])
+            }, t.prototype.emit = function (t, e) {
+              if (void 0 === e && (e = []), t in this._events)
+                for (var n = this._events[t].concat(), o = n.length, s = 0; s < o; s++) n[s].apply(this, e)
+            }, t.prototype.onConnect = function () {
+              this.clear(), this._doQueue(), this.emit("connect")
+            }, t.prototype.onDisconnect = function (t) {
+              this.emit("disconnect", [t])
+            }, t.prototype.clear = function () {
+              this._connecting = !1, this._queueStack = []
+            }, t.prototype._queue = function (t) {
+              this._queueStack.push(t)
+            }, t.prototype._doQueue = function () {
+              this._queueStack.length && (this.transport.send(this._queueStack), this._queueStack = [])
+            }, t.prototype._getTransport = function () {
+              return new s(this)
+            }, t
+          }(),
+          r = Number(window.TELEMETRY_WS_ERROR_LOGS_THRESHOLD) || 0;
+        var c = function () {
+          function e(t, e, n) {
+            void 0 === n && (n = {}), this._logsQueue = [], this._telemetryObjectsQueue = [], this._reconnectCount = 0, this._redirectCount = 0, this._errorsCount = 0, this._errorsInfoSent = !1, this._shouldReconnect = !0, this._reconnectTimeouts = [], this._onlineCancellationToken = null, this._port = e, this._suggestedHost = t, this._proHost = n.proHost, this._reconnectHost = n.reconnectHost, this._isSecure = "https:" === location.protocol, this._doConnect(), n.pingRequired && -1 === window.location.search.indexOf("noping") && this._startPing()
+          }
+          return e.prototype.connect = function () {
+            this._shouldReconnect = !0, this._tryReconnect()
+          }, e.prototype.resetCounters = function () {
+            this._reconnectCount = 0, this._redirectCount = 0
+          }, e.prototype.setLogger = function (t, e) {
+            this._logger = t, this._getLogHistory = e, this._flushLogs()
+          }, e.prototype.setTelemetry = function (t) {
+            this._telemetry = t, this._telemetry.reportSent.subscribe(this, this._onTelemetrySent), this._flushTelemetry()
+          }, e.prototype.onReconnect = function (t) {
+            this._onReconnect = t
+          }, e.prototype.isConnected = function () {
+            return !!this._socket && this._socket.isConnected()
+          }, e.prototype.isConnecting = function () {
+            return !!this._socket && this._socket.isConnecting()
+          }, e.prototype.on = function (t, e) {
+            return !!this._socket && ("connect" === t && this._socket.isConnected() ? e() : "disconnect" === t ? this._disconnectCallbacks.push(e) : this._socket.on(t, e), !0)
+          }, e.prototype.getSessionId = function () {
+            return this._socket && this._socket.transport ? this._socket.transport.sessionid : null
+          }, e.prototype.send = function (t) {
+            return !!this._socket && (this._socket.send(t), !0)
+          }, e.prototype.switchWebsocketMode = function (t) {
+            return !(!this._socket || !this._socket.transport) && (this._socket.transport.switchWebsocketMode(t), !0)
+          }, e.prototype.getConnectionDuration = function () {
+            return Date.now() - this._connectionStart
+          }, e.prototype.getHost = function () {
+            return void 0 !== window.user && window.user.pro_plan && window.TradingView.onChartPage && "battle" === window.environment && !this._redirectCount && this._reconnectCount < 3 && -1 === window.location.href.indexOf("ws_host") ? this._proHost || this._suggestedHost : this._reconnectHost && this._reconnectCount > 3 ? this._reconnectHost : this._suggestedHost
+          }, e.prototype.getReconnectCount = function () {
+            return this._reconnectCount
+          }, e.prototype.getRedirectCount = function () {
+            return this._redirectCount
+          }, e.prototype.getConnectionStart = function () {
+            return this._connectionStart
+          }, e.prototype.disconnect = function () {
+            (this.isConnected() || this.isConnecting()) && (this._propagateDisconnect(), this._disconnectCallbacks = [], this._reconnectTimeouts.forEach(clearTimeout), this._reconnectTimeouts = [], this._socket && (this._socket.disconnect(), this._socket.offAll(), this._socket = null))
+          }, e.prototype.isMaxRedirects = function () {
+            return this._redirectCount >= 20
+          }, e.prototype.isMaxReconnects = function () {
+            return this._reconnectCount >= 20
+          }, e.prototype.getPingInfo = function () {
+            return this._pingInfo || null
+          }, e.prototype._onDisconnect = function (t) {
+            var e = "disconnect session:" + this.getSessionId();
+            t && (e += ", code:" + t.code + ", reason:" + t.reason), this._logMessage(0, e), this._reconnectTimeouts.push(setTimeout(this._tryReconnect.bind(this), 5e3)), this._propagateDisconnect(t)
+          }, e.prototype._logMessage = function (t, e) {
+            var n = {
+              method: t,
+              message: e
+            };
+            this._logger ? this._flushLogMessage(n) : (n.message = "[" + (new Date).toISOString() + "] " + n.message, this._logsQueue.push(n))
+          }, e.prototype._flushLogMessage = function (t) {
+            switch (t.method) {
+            case 2:
+              this._logger.logDebug(t.message);
+              break;
+            case 3:
+              this._logger.logError(t.message);
+              break;
+            case 0:
+              this._logger.logInfo(t.message);
+              break;
+            case 1:
+              this._logger.logNormal(t.message)
+            }
+          }, e.prototype._flushLogs = function () {
+            var t = this;
+            this._flushLogMessage({
+              method: 1,
+              message: "messages from queue. Start."
+            }), this._logsQueue.forEach(function (e) {
+              t._flushLogMessage(e)
+            }), this._flushLogMessage({
+              method: 1,
+              message: "messages from queue. End."
+            }), this._logsQueue = []
+          }, e.prototype._sendTelemetry = function (t, e) {
+            var n = {
+              event: t,
+              params: e
+            };
+            this._telemetry ? this._flushTelemetryObject(n) : this._telemetryObjectsQueue.push(n)
+          }, e.prototype._flushTelemetryObject = function (t) {
+            this._telemetry.sendChartReport(t.event, t.params, !1)
+          }, e.prototype._flushTelemetry = function () {
+            var t = this;
+            this._telemetryObjectsQueue.forEach(function (e) {
+              t._flushTelemetryObject(e)
+            }), this._telemetryObjectsQueue = []
+          }, e.prototype._doConnect = function () {
+            this._socket && (this._socket.isConnected() || this._socket.isConnecting()) || (this._onlineCancellationToken && (this._onlineCancellationToken(), this._onlineCancellationToken = null), this._host = this.getHost(), this._socket = new i(this._host, {
+              port: this._port,
+              secure: this._isSecure,
+              websocketType: t.Text
+            }), this._logMessage(0, "Connecting to " + this._host + ":" + this._port), this._bindEvents(), this._disconnectCallbacks = [], this._connectionStart = Date.now(), this._socket.connect())
+          }, e.prototype._propagateDisconnect = function (t) {
+            for (var e = this._disconnectCallbacks.length, n = 0; n < e; n++) this._disconnectCallbacks[n](t || {})
+          }, e.prototype._bindEvents = function () {
+            var t = this;
+            this._socket && (this._socket.on("connect", function () {
+              var e = t.getSessionId();
+              if ("string" == typeof e) {
+                var n = JSON.parse(e);
+                if (n.redirect) return t._redirectCount += 1, t._suggestedHost = n.redirect, t.isMaxRedirects() && t._sendTelemetry("redirect_bailout"), void t._redirect()
+              }
+              t._logMessage(0, "connect session:" + e)
+            }), this._socket.on("disconnect", this._onDisconnect.bind(this)), this._socket.on("close", this._onDisconnect.bind(this)), this._socket.on("error", function (e) {
+              t._logMessage(0, new Date + " session:" + t.getSessionId() + " websocket error:" + JSON.stringify(e)), t._sendTelemetry("websocket_error"), t._errorsCount++, !t._errorsInfoSent && t._errorsCount >= r && (void 0 !== t._lastReconnectCallStack && (t._sendTelemetry("websocket_error_connect_stack", {
+                text: t._lastReconnectCallStack
+              }), delete t._lastReconnectCallStack), void 0 !== t._getLogHistory && t._sendTelemetry("websocket_error_log", {
+                text: t._getLogHistory(50).join("\n")
+              }), t._errorsInfoSent = !0)
+            }))
+          }, e.prototype._redirect = function () {
+            this._socket && (this._socket.disconnect(), this._socket = null), this._onReconnect && this._onReconnect(), this._reconnectWhenOnline()
+          }, e.prototype._tryReconnect = function () {
+            this._lastReconnectCallStack = new Error("WebSocket reconnect stack. Is connected: " + this.isConnected() + ". Should reconnect: " + this._shouldReconnect + ".").stack || "", !this.isConnected() && this._shouldReconnect && (this._reconnectCount += 1, this.disconnect(), this._reconnectWhenOnline())
+          }, e.prototype._reconnectWhenOnline = function () {
+            var t, e, n = this;
+            if (navigator.onLine) return this._logMessage(0, "Network status: online - trying to connect"), this._doConnect(), void(this._onReconnect && this._onReconnect());
+            this._logMessage(0, "Network status: offline - wait until online"), this._onlineCancellationToken = (t = function () {
+              n._logMessage(0, "Network status changed to online - trying to connect"), n._doConnect(), n._onReconnect && n._onReconnect()
+            }, e = function () {
+              window.removeEventListener("online", e), t && t()
+            }, window.addEventListener("online", e), function () {
+              t = null
+            })
+          }, e.prototype._onTelemetrySent = function (t) {
+            "websocket_error" in t && (this._errorsCount = 0, this._errorsInfoSent = !1)
+          }, e.prototype._startPing = function () {
+            var t = this;
+            if (!this._pingIntervalId) {
+              var e = window.location.protocol + "//" + this.getHost() + "/ping",
+                n = 0,
+                o = 0;
+              this._pingIntervalId = setInterval(function () {
+                var s = (new Date).getTime(),
+                  i = new XMLHttpRequest;
+                i.open("GET", e, !0), i.send(), i.onreadystatechange = function () {
+                  i.readyState === XMLHttpRequest.DONE && 200 === i.status && function (e) {
+                    t._pingInfo = t._pingInfo || {
+                      max: 0,
+                      min: 1 / 0,
+                      avg: 0
+                    };
+                    var s = (new Date).getTime() - e;
+                    s > t._pingInfo.max && (t._pingInfo.max = s), s < t._pingInfo.min && (t._pingInfo.min = s), n += s, o++, t._pingInfo.avg = n / o, o >= 10 && t._pingIntervalId && (clearInterval(t._pingIntervalId), delete t._pingIntervalId)
+                  }(s)
+                }
+              }, 1e4)
+            }
+          }, e
+        }();
+        window.WSBackendConnection = new c(window.WEBSOCKET_HOST, window.WEBSOCKET_PORT, {
+          pingRequired: window.WS_HOST_PING_REQUIRED,
+          proHost: window.WEBSOCKET_PRO_HOST,
+          reconnectHost: window.WEBSOCKET_HOST_FOR_RECONNECT
+        }), window.WSBackendConnectionCtor = c
+      }();
+  </script>
+
+</head>
+
+
+<body class="chart-page unselectable">
+
+
+  <div class="loading-indicator" id="loading-indicator"></div>
+  <script type="text/javascript">
+    ! function () {
+      "use strict";
+      var n, e;
+      ! function (n, e) {
+        void 0 === e && (e = {});
+        var t = e.insertAt;
+        if (n && "undefined" != typeof document) {
+          var i = document.head || document.getElementsByTagName("head")[0],
+            r = document.createElement("style");
+          r.type = "text/css", "top" === t && i.firstChild ? i.insertBefore(r, i.firstChild) : i.appendChild(r), r.styleSheet ? r.styleSheet.cssText = n : r.appendChild(document.createTextNode(n))
+        }
+      }("\n/* Thanks to google guys for the original <paper-spinner> =)\n * https://github.com/PolymerElements/paper-spinner */\n.tv-spinner {\n  display: none;\n  position: absolute;\n  width: 1em;\n  height: 1em;\n  top: calc(50% - 0.5em);\n  left: calc(50% - 0.5em);\n  margin: 0 auto;\n  color: #37a6ef;\n  animation: tv-spinner__container-rotate 0.9s linear infinite;\n  will-change: transform;\n  /* The spinner does not have any contents that would have to be\n\t * flipped if the direction changes. Always use ltr so that the\n\t * style works out correctly in both cases. */\n  direction: ltr;\n}\n.tv-spinner--size_mini {\n  font-size: 16px;\n}\n.tv-spinner--size_medium {\n  font-size: 32px;\n}\n.tv-spinner--size_large {\n  font-size: 56px;\n}\n.tv-spinner--size_mini .tv-spinner__width_element:after {\n  border-width: 2px;\n}\n.tv-spinner--size_medium .tv-spinner__width_element:after {\n  border-width: 3px;\n}\n.tv-spinner--size_large .tv-spinner__width_element:after {\n  border-width: 4px;\n}\n.tv-spinner--shown {\n  display: block;\n}\n.tv-spinner__spinner-layer {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  white-space: nowrap;\n  color: currentColor;\n  transform: rotate(90deg);\n  /**\n\t\t * Patch the gap that appear between the two adjacent div.circle-clipper while the\n\t\t * spinner is rotating (appears on Chrome 50, Safari 9.1.1, and Edge).\n\t\t */\n}\n.tv-spinner__spinner-layer::after {\n  content: '';\n  position: absolute;\n  box-sizing: border-box;\n  top: 0;\n  border-width: 0.07em;\n  border-radius: 50%;\n  left: 45%;\n  width: 10%;\n  border-top-style: solid;\n}\n.tv-spinner__background {\n  display: inline-block;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n}\n.tv-spinner__background::after {\n  content: '';\n  position: absolute;\n  box-sizing: border-box;\n  top: 0;\n  left: 0;\n  border-radius: 50%;\n  bottom: 0;\n  width: 100%;\n  border-color: rgba(135, 151, 165, 0.2);\n  border-style: solid;\n}\n.tv-spinner__circle-clipper {\n  display: inline-block;\n  position: relative;\n  width: 50%;\n  height: 100%;\n  overflow: hidden;\n}\n.tv-spinner__circle-clipper::after {\n  content: '';\n  position: absolute;\n  box-sizing: border-box;\n  top: 0;\n  border-radius: 50%;\n  bottom: 0;\n  width: 200%;\n  border-style: solid;\n  border-bottom-color: transparent;\n  animation-duration: 1.4s;\n  animation-timing-function: cubic-bezier(0.36, 0, 0.37, 0.99);\n  animation-iteration-count: 1;\n  will-change: transform;\n}\n.tv-spinner__circle-clipper--left::after {\n  left: 0;\n  border-right-color: transparent;\n  transform: rotate(0deg);\n  animation-name: tv-spinner__left-spin;\n}\n.tv-spinner__circle-clipper--right::after {\n  left: -100%;\n  border-left-color: transparent;\n  transform: rotate(-124deg);\n  animation-name: tv-spinner__right-spin;\n}\n@keyframes tv-spinner__container-rotate {\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes tv-spinner__left-spin {\n  0% {\n    transform: rotate(130deg);\n  }\n  to {\n    transform: rotate(0deg);\n  }\n}\n@keyframes tv-spinner__right-spin {\n  0% {\n    transform: rotate(-130deg);\n  }\n  to {\n    transform: rotate(-124deg);\n  }\n}\n"), "WeakMap" in window && (n = new WeakMap),
+        function (n) {
+          n[n.Element = 1] = "Element", n[n.Document = 9] = "Document"
+        }(e || (e = {}));
+      var t = "large";
+      var i, r = function (t, i) {
+          var r, o = function (t, i) {
+            var r, o;
+            return r = null == i ? document.documentElement : i.nodeType === e.Document ? i.documentElement : i, n && (o = n.get(r)), o || ((o = r.ownerDocument.createRange()).selectNodeContents(r), n && n.set(r, o)), o.createContextualFragment(t)
+          }(t, i);
+          if ("firstElementChild" in o) r = o.firstElementChild;
+          else {
+            r = null;
+            for (var s = 0; s < o.childNodes.length; s++) {
+              var a = o.childNodes[s];
+              if (a.nodeType === e.Element) {
+                r = a;
+                break
+              }
+            }
+          }
+          return null !== r && o.removeChild(r), r
+        }((void 0 === i && (i = ""), '\n\t\t<div class="tv-spinner" role="progressbar">\n\t\t\t<div class="tv-spinner__spinner-layer">\n\t\t\t\t<div class="tv-spinner__background tv-spinner__width_element"></div>\n\t\t\t\t<div class="tv-spinner__circle-clipper tv-spinner__width_element tv-spinner__circle-clipper--left"></div>\x3c!--\n\t\t\t\t--\x3e<div class="tv-spinner__circle-clipper tv-spinner__width_element tv-spinner__circle-clipper--right"></div>\n\t\t\t</div>\n\t\t</div>\n\t')),
+        o = function () {
+          function n(n) {
+            this._shown = !1, this._el = r.cloneNode(!0), this.setSize(n || t)
+          }
+          return n.prototype.spin = function (n) {
+            return this._el.classList.add("tv-spinner--shown"), void 0 === this._container && (this._container = n, n.appendChild(this._el)), this._shown = !0, this
+          }, n.prototype.stop = function (n) {
+            return n && void 0 !== this._container && this._container.removeChild(this._el), this._el.classList.remove("tv-spinner--shown"), this._shown = !1, this
+          }, n.prototype.setStyle = function (n) {
+            var e = this;
+            return Object.keys(n).forEach(function (t) {
+              var i = n[t];
+              void 0 !== i && e._el.style.setProperty(t, i)
+            }), this
+          }, n.prototype.setSize = function (n) {
+            var e = void 0 !== n ? "tv-spinner--size_" + n : "";
+            return this._el.className = "tv-spinner " + e + " " + (this._shown ? "tv-spinner--shown" : ""), this
+          }, n.prototype.getEl = function () {
+            return this._el
+          }, n.prototype.destroy = function () {
+            this.stop(), delete this._el, delete this._container
+          }, n
+        }();
+      window.Spinner = o
+    }();
+
+    var loadingSpinner = new Spinner('large').setStyle({
+      zIndex: String(2e9),
+    });
+    loadingSpinner.getEl().classList.add('spinner');
+    loadingSpinner.spin(document.getElementById('loading-indicator'));
+  </script>
+
+
+  <script type="text/javascript">
+    window.locale = 'en';
+    window.language = 'en';
+  </script>
+  <script crossorigin="anonymous" src="/static/localization/translations/en.431682700225f84c.js" charset="utf-8"></script>
+  <script async src="https://ssl.google-analytics.com/ga.js"></script>
+
+  <script async src="https://i.kissmetrics.com/i.js"></script>
+  <script async src="https://scripts.kissmetrics.com/bcb3a644336aab4eed8109bdb7ad7f1001f0c2ff.2.js"></script>
+
+
+  <script>
+    window.fbAppId = 155037361239837;
+  </script>
+
+
+  <script type="text/javascript">
+    initData.idc_exchanges_list = ["bovespa_futures", "hkex_futures", "sgx", "bvl", "ose", "tfx", "bvc", "tse", "nseng", "szse", "nag", "sgx_futures", "gpw", "dfm", "hsi", "tase", "bme", "qse", "nzx_futures", "bahrain", "six", "euronext_stocks", "bmv", "idx", "tocom", "hkex", "nzx", "belex", "tadawul", "bcba", "egx", "bcs", "euronext", "sgx_stocks", "euronext_futures", "bovespa_stocks", "twse"]
+    initData.idc_delay_exchanges_list = ["bvl", "nzx", "nseng", "belex", "idx", "nag", "egx", "bcs", "nzx_futures", "qse", "ose", "bahrain", "hsi", "tfx", "dfm", "tase", "bvc"]
+
+    initData.block_widgetbar = function (WidgetBar, ContentPageResizer, RootResizer) {};
+
+    initData.block_alert_dispatcher_show_predefined_events = function () {};
+  </script>
+
+
+  <script type="text/javascript">
+    var GSFN;
+    if (GSFN == undefined) {
+      GSFN = {};
+    }
+
+    (function () {
+      var add_js = function (jsid, url) {
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement('script');
+        script.id = jsid;
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+      }
+
+      add_js("fastpass_common", document.location.protocol + "//getsatisfaction.com/javascripts/fastpass.js");
+
+      if (window.onload) {
+        var old_load = window.onload;
+      }
+      window.onload = function () {
+        if (old_load) old_load();
+        add_js("fastpass", "https://getsatisfaction.com/fastpass?oauth_version=1.0&name=RoTrade&oauth_nonce=56013265&oauth_timestamp=1558490611&oauth_signature=epHUroGg1LMy7E174aR8LORkhYc%3D&oauth_consumer_key=0em7rf0xurg1&oauth_signature_method=HMAC-SHA1&email=rolandolucio%40gmail.com&uid=1108433");
+      }
+    })()
+  </script>
+
+  <div class="js-cookie-message cookie-message hidden">
+    <div class="cookie-message-text">
+      This website uses cookies to&nbsp;ensure you get the best experience on&nbsp;our website. To&nbsp;learn more about cookies, including how to&nbsp;control cookies, please read our <a target="_blank" href="/cookies-policy/">Cookies Policy</a>.
+    </div>
+    <div class="cookie-button-wrapper">
+      <span class="js-cookie-button tv-button tv-button--success cookie-button">Got it</span>
+      <span class="js-cookie-button cookie-button cookie-button--mobile"><svg xmlns="http://www.w3.org/2000/svg">
+          <line x2="100%" y2="100%" />
+          <line y1="100%" x2="100%" /></svg></span>
+    </div>
+  </div>
+  <meta name="tv:server-name" content="prod-frontend-web-2" />
+</body>
+
+</html>

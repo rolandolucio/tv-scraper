@@ -1,0 +1,103 @@
+syntax = "proto2";
+
+package tv;
+
+message Msg {
+  optional Commands command_number = 1;
+  optional bytes data = 2;
+
+  enum Commands {
+    chart_create_session = 0;
+    chart_delete_session = 1;
+    resolve_symbol = 2;
+    create_series = 3;
+    create_study = 4;
+    message = 5;
+    timescale_update = 6;
+    du = 7;
+    series_loading = 8;
+    series_completed = 9;
+    series_error = 10;
+    series_deleted = 11;
+    series_timeframe = 12;
+    first_bar_time = 13;
+    study_loading = 14;
+    study_completed = 15;
+    switch_timezone = 16;
+    request_studies_metadata = 17;
+    remove_series = 18;
+    modify_series = 19;
+    request_more_data = 20;
+    get_first_bar_time = 21;
+    create_child_study = 22;
+    remove_study = 23;
+    modify_study = 24;
+    create_pointset = 25;
+    symbol_resolved = 26;
+    study_deleted = 27;
+    protocol_error = 28;
+    critical_error = 29;
+    set_auth_token = 30;
+    studies_metadata = 31;
+    set_data_quality = 32;
+    quote_create_session = 33;
+    quote_set_fields = 34;
+    quote_delete_session = 35;
+    quote_add_symbols = 36;
+    quote_remove_symbols = 37;
+    quote_switch_timezone = 38;
+    quote_fast_symbols = 39;
+    quote_hibernate_all = 40;
+    qsd = 41;
+    quote_list_fields = 42;
+    depth_create_session = 43;
+    depth_delete_session = 44;
+    depth_set_symbol = 45;
+    depth_clear_symbol = 46;
+    depth_set_scale = 47;
+    depth_symbol_success = 48;
+    depth_symbol_error = 49;
+    depth_symbol_cleared = 50;
+    dd = 51;
+    depth_bar_last_value = 52;
+    remove_pointset = 53;
+    study_error = 54;
+    modify_pointset = 55;
+    switch_protocol = 56;
+    symbol_error = 57;
+    request_more_tickmarks = 58;
+    tickmark_update = 59;
+    error_message = 60;
+    wrong_message_type = 61;
+    mock_fire_tick = 62;
+    pointset_error = 63;
+    quote_fire_tick = 64;
+    quote_fire_crash = 65;
+    child_study_rebind = 66;
+  }
+}
+
+message qsd {
+  optional string session = 1;
+  optional string symbol_name = 2;
+  optional string status = 3;
+  optional string values = 4;
+  optional double lp = 5;
+  optional float ch = 6;
+  optional float chp = 7;
+  optional double high_price = 8;
+  optional double low_price = 9;
+  optional double volume = 10;
+  optional double rtc = 11;
+  optional float rch = 12;
+  optional float rchp = 13;
+  optional float bid = 14;
+  optional float ask = 15;
+  optional float bid_size = 16;
+  optional float ask_size = 17;
+  optional string rest = 19;
+}
+
+message set_auth_token {
+  optional string token = 1;
+}
