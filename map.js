@@ -28,6 +28,9 @@ let mya = [
   }, { rule: "optional", type: "float", name: "ask_size", id: 17 }, { rule: "optional", type: "string", name: "rest", id: 19 }
 ];
 
+
+
 mya.map(e => {
-  console.log(`${e.rule} ${e.type} ${e.name} = ${e.id};`);
+  //console.log(`${e.rule} ${e.type} ${e.name} = ${e.id};`);
+  return [e.rule,e.type,e.id];
 });

@@ -14,6 +14,7 @@ const tradingview = require('./tradingview');
   });
   const page = (await browser.pages())[0];
 
+
   const f12 = await page.target()
     .createCDPSession();
   await f12.send('Network.enable');
@@ -31,7 +32,7 @@ const tradingview = require('./tradingview');
   // f12.on('Network.webSocketHandshakeResponseReceived', (data) => {
   //   console.log('webSocketHandshakeResponseReceived \n', data);
   // });
-  
+
   f12.on('Network.webSocketFrameSent', (data) => {
     console.log('webSocketFrameSent \n', data);
   });
