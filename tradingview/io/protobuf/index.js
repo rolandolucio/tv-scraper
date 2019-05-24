@@ -26,6 +26,10 @@ class ProtoBuf {
    */
   constructor({compiled=true}={}){
     this.messages = compiled ? require('./compiled') : protobuf(fs.readFileSync(__dirname+'/tv.proto'));
+    // Messages we have added o discovered so far to the protobuf
+    this.msgsList= [
+      { cmd:41,m:'qsd'}
+    ];
   }
   /**
    *
@@ -48,9 +52,28 @@ class ProtoBuf {
    * @memberof ProtoBuf
    */
   decode(msg, buff) {
-    const obj = this.messages[msg].decode(buff);
-    return obj;
+    /*
+    get root element to fetch command and re-parsed instanceof
+    pretty sure this can be done in a protobuf way
+    have it defined in our commands list?
+    {
+      command_number: 41,
+      data: < buff >
+    }*/
+    if( msg === 'Msg') {
+      const obj = this.messages[msg].decode(buff);
+      const found = this.msgsList.find((e)=>{
+        return e.cmd === obj.command_number;
+      });
+      if( found === undefined){
+        return { m: '__tv_proto_notinlist', p: { cmd:obj.command_number } };
+      }
+      return { m:found.m, p:this.decode(found.m,obj.data)};
+    }else{
+      return this.messages[msg].decode(buff);
+    }
   }
+  
 }
 
 

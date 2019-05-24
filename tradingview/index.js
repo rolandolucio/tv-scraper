@@ -1,7 +1,7 @@
 'use strict';
 
-const user = require('./user');
-const watchlist = require('./watchlist');
+const user = require('./nav/user');
+const watchlist = require('./nav/watchlist');
 
 const delay = (timeout = 1000) => {
   return new Promise((resolve) => {
