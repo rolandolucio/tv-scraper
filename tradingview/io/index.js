@@ -1,8 +1,10 @@
 'use strict';
 /** 
- * 
- */
-/*
+ * This moudule intend is to manage other funcs in namespace
+ * to manage the io, as general reader or writer api
+ * @author Rolando Lucio < https://github.com/rolandolucio >
+ * @namespace tradingview.io
+ * @event
 {
 original socket response:
 type: datasocket || pushstream
@@ -29,12 +31,31 @@ type: datasocket || pushstream
 const protobuf = require('./protobuf');
 const codec = require('./codec');
 
-const io = ({
+/**
+ * Reads the i/o of the TV messages 
+ * and pre-parse to a structure 
+ * acording to proto, codec or json
+ * of disvored structures
+ *
+ * @param {*} {
+ *   source = '00000',
+ *   type,
+ *   opcode,
+ *   payload,
+ *   way = 'undefined', ] //input output
+ * }
+ * @param {*} [config={
+ *   codec: {},
+ *   proto : { compiled: true }
+ * }]
+ * @returns {* } {code,way,source,type,res}
+ */
+const reader = ({
   source = '00000',
   type,
   opcode,
   payload,
-  way = 'input',
+  way = 'undefined',
 },config= {
   codec: {},
   proto : { compiled: true }
@@ -48,15 +69,16 @@ const io = ({
     try {
       const jobj = JSON.parse(payload);
       res.push(jobj);
-    } catch (e) {
+    } catch (err) {
       code = 500;
-      console.error(`unknow pushtream input \n`, payload);
-      console.error(e);
+      //console.error(`unknow pushtream input \n`, payload);
+      console.error(err);
     }
     break;
   case type === 'datasocket' && opcode === 1:
     // txt signed
     type = 'text';
+    /////////????? should proccess encode ->proto? for same obj format?
     try {
       const c = new codec(config.codec);
       const resTxt = c._decode(payload);
@@ -64,10 +86,10 @@ const io = ({
       res= resTxt.map(e => {
         try{
           //console.log(e)
-          return JSON.parse(e);
+          return JSON.parse(e);       
         }catch(err){
           console.warn('signed text element is not a json \n', e);
-          return { m: '__tv_notjson', obj: e }; // __tv_notjson for catching later 
+          return { m: '__tv_notjson', p: e }; // __tv_notjson for catching later 
         }
       });
     } catch (err) {
@@ -101,4 +123,4 @@ const io = ({
   return { code,way, source,type, res };
 };
 
-module.exports = io;
+module.exports = {reader};

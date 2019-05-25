@@ -44,22 +44,19 @@ class ProtoBuf {
     return buff;
   }
   /**
-   *
-   *
+   * get root element to fetch command proto message
+   * @todo pretty sure this can be done in a protobuf way
    * @param {*} msg
+   *
+   * {
+     command_number: 41,
+     data: < buff >
+   }
    * @param {*} buff
    * @returns
    * @memberof ProtoBuf
    */
   decode(msg, buff) {
-    /*
-    get root element to fetch command and re-parsed instanceof
-    pretty sure this can be done in a protobuf way
-    have it defined in our commands list?
-    {
-      command_number: 41,
-      data: < buff >
-    }*/
     if( msg === 'Msg') {
       const obj = this.messages[msg].decode(buff);
       const found = this.msgsList.find((e)=>{
