@@ -48,10 +48,11 @@ const codec = require('./codec');
  *   codec: {},
  *   proto : { compiled: true }
  * }]
- * @returns {* } {code,way,source,type,res}
+ * @returns {*} {code,way,source,type,res}
  */
 const reader = ({
   source = '00000',
+  origin = 'uk',
   type,
   opcode,
   payload,
@@ -111,8 +112,9 @@ const reader = ({
       });
     } catch (err) {
       code = 500;
-      console.error(`unknow protobuff input \n`, payload);
-      console.error(err);
+      res = payload;
+      // console.error(`unknow protobuff input \n`, payload);
+      // console.error(err);
     }
     break;
   default:
@@ -120,7 +122,7 @@ const reader = ({
     console.error(`unknow input \n`, payload);
     break;
   }
-  return { code,way, source,type, res };
+  return { code,way, source,origin,type, res };
 };
 
 module.exports = {reader};

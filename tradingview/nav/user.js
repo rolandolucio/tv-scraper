@@ -17,9 +17,10 @@ const makeUser = (page, delay, user, interfaces, defaultUrl) => {
         await page.type(form.username, email);
         await page.type(form.password, pass);
         await page.click(form.submit);
-        await delay(timeout);
+        console.log(" === === === === === === === Signed IN=== === === === === === === ")
+        await delay(timeout);        
       } catch (e) {
-        console.log('-------------\n', e);
+        console.log('===========Login error========== \n', e);
       }
     }
   };

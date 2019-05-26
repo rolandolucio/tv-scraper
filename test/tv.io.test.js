@@ -1,5 +1,7 @@
 const io = require('./../tradingview/io');
-
+/**  
+* Test That reader preparse properly
+*/
 test('io.reader Signed Text', () => {
   const input = {
     source: 'sokcetReqId',

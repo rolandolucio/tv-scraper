@@ -156,8 +156,10 @@
               id: 2 }, { rule: "optional", type: "string", name: "turnaround", id: 3 }, { rule: "optional", type: "string", name: "reason", id: 4 }, { rule: "optional", type: "string",
                 name: "node", id: 5 }, { rule: "optional", type: "int32", name: "time", id: 6 }
             ] }, { name: "timescale_update", syntax: "proto2", fields: [{ rule: "optional", type: "string", name: "session", id: 1 }, { rule: "optional", type: "timescale",
-              name: "timescale", id: 2 }, { rule: "optional", type: "objects", name: "objects", id: 3 }, { rule: "optional", type: "int32", name: "time", id: 4 }] }, { name: "du",
-            syntax: "proto2", fields: [{ rule: "optional", type: "string", name: "session", id: 1 }, { rule: "optional", type: "objects", name: "objects", id: 2 }] }, { name: "timescale",
+              name: "timescale", id: 2 }, { rule: "optional", type: "objects", name: "objects", id: 3 }, { rule: "optional", type: "int32", name: "time", id: 4 }] }, 
+              { name: "du",
+            syntax: "proto2", 
+            fields: [{ rule: "optional", type: "string", name: "session", id: 1 }, { rule: "optional", type: "objects", name: "objects", id: 2 }] }, { name: "timescale",
             syntax: "proto2", fields: [{ rule: "optional", type: "int32", name: "index", id: 1 }, { rule: "optional", type: "int32", name: "zoffset", id: 2 }, { rule: "repeated",
               type: "double", name: "changes", id: 3 }, { rule: "repeated", type: "marks", name: "marks", id: 4 }, { rule: "repeated", type: "index_diff", name: "index_diff", id: 5 }] },
           { name: "tickmark_update", syntax: "proto2", fields: [{ rule: "optional", type: "string", name: "session", id: 1 }, { rule: "optional", type: "int32", name: "index", id: 2 },
