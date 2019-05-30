@@ -1,6 +1,6 @@
 alerts
 ```json
-{"event":"alert","cmd":"fired","p":{"symbol":"BITSTAMP:BTCUSD","desc":"b;btcusd","res":"15","aid":36057500,"time":1558863486894}}
+{"event":"alert","cmd":"fired","p":{"symbol":"BITSTAMP:BTCUSD","desc":"b;btcusd","res":"15","aid":36057500,"time":1558863486894,"fire_time":123, "bar_time":123}}
 ```
 watchlist
 ```json

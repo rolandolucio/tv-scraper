@@ -1,98 +1,32 @@
 'use strict';
 
 const io = require('./../io');
-
-const parser = (preparsed, debug = 0) => {
-  let parsed = preparsed;
-  let { type, res } = preparsed;
-  let newres = [];
-  switch (type) {
-  case 'json':
-    newres = res.reduce((obj, item) => {
-      switch (true) {
-      case item.text.channel === 'alert':
-        let alert = JSON.parse(item.text.content);
-        if(alert.m === 'event' && alert.p.snd_file === 'alert/fired') {
-
-          obj.push({
-            event: 'alert',
-            cmd: 'fired',
-            p: {
-              symbol: alert.p.sym,
-              desc: alert.p.desc,
-              res: alert.p.res,
-              aid: alert.p.aid,
-              time: Date.now(),
-            }
-          });
-        }
-        break;
-
-      default:
-        break;
-      }
-      return obj;
-    }, []);
-    break;
-  case 'proto':
-    newres = res.reduce((obj, item) => {
-      switch (true) {
-      case item.m === 'qsd' && item.p.lp !== 0 && item.p.high_price === 0 && item.p.low_price === 0:
-        obj.push({
-          event: 'watchlist',
-          cmd: 'update',
-          p: { 
-            symbol: item.p.symbol_name,
-            lp: item.p.lp,
-            volume: item.p.volume,
-            time: Date.now()
-          }
-        });
-        break;
-
-      default:
-        break;
-      }
-      return obj;
-    },[]);
-    break;
-    case 'text':
-      newres = res.reduce((obj, item) => {
-        switch (true) {
-        case item.m === 'qsd':
-          if(typeof item.p[1].n != "undefined" && typeof item.p[1].v.lp != "undefined" && typeof item.p[1].v.volume != "undefined"){
-            obj.push({
-              event: 'watchlist',
-              cmd: 'update',
-              p: {
-                symbol: item.p[1].n,
-                lp: item.p[1].v.lp,
-                volume: item.p[1].v.volume,
-                time: Date.now(),
-                t: 'txt'
-              }
-            });
-          }
-          break;
-
-        default:
-          break;
-        }
-        return obj;
-      }, []);
-      break;
-  default:
-    break;
-  }
-  parsed.res = newres;
-  return parsed;
-};
+const parser =  require('./../parse');
 
 /**
  *
  *
  * @class Sockets
  */
+  //f12.on('Network.webSocketFrameReceived', tv.socket.listener);
+  /*
+  
+  */
+  // let mockup = [{
+  //     requestId: '1000008652.14',
+  //     url: 'wss://data.tradingview.com/socket.io/websocket?from=chart%2Faw518iAg%2F&date=2019_05_21-12_04',
+  //     initiator: { type: 'script', stack: {} }
+  //   },
+  //   {
+  //     requestId: '1000008652.24',
+  //     url: 'wss://pushstream.tradingview.com/message-pipe-ws/public',
+  //     initiator: { type: 'script', stack: { callFrames: 123 } }
+  //   }
+  // ];
+  // mockup.map(i => {
+  //   const socketParsed = socketType(i);
+  //   sockets.push(socketParsed);
+  // });
 class Sockets {
 
   constructor({ sockets } = {}) {

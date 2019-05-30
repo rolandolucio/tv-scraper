@@ -2,8 +2,62 @@
 
 const puppeteer = require('puppeteer');
 const config = require('./config');
-const tradingview = require('./tradingview/nav');
+const tradingview = require('./app/tradingview/nav');
+const assemble = require('./app/signal/assemble');
+// default symbols
+/** @todo may need to change to stream & monad patter for
+ * reliability and performance, for now racing data is fine
+ */
+let watchlist = [{
+    symbol: 'BITSTAMP:BTCUSD',
+    price: 0.000000,
+    volume: 0.000000,
+    updated: 0
+  },
+  {
+    symbol: '(COINBASE:BTCUSD+BITSTAMP:BTCUSD)/2',
+    price: 0.000000,
+    volume: 0.000000,
+    updated: 0
+  },
+  {
+    symbol: 'BITSTAMP:XRPUSD',
+    price: 0.000000,
+    volume: 0.000000,
+    updated: 0
+  },
+];
 
+/**
+ *
+ *
+ * @param {*} [watchlist=[]]
+ * @param {*} data
+ * @returns
+ */
+const wlUpdate = (data, watchlist = []) => {
+  /** 
+   * @todo data validation 
+   */
+  const obj = {
+    symbol: data.symbol,
+    price: data.lp,
+    volume: data.volume,
+    updated: data.time
+  };
+  const i = watchlist.findIndex(item => item.symbol === data.symbol);
+  if(i < 0) {
+    watchlist.push();
+  } else {
+    watchlist[i] = obj;
+  }
+  return watchlist;
+};
+
+
+
+
+let displayC = 0;
 (async () => {
 
   const browser = await puppeteer.launch({
@@ -21,10 +75,8 @@ const tradingview = require('./tradingview/nav');
   await f12.send('Page.enable');
   const tv = tradingview(page, config.tv);
 
-  const sockets = require('./tradingview/socket');
+  const sockets = require('./app/tradingview/socket');
   const sobj = new sockets();
-  
-  
 
   f12.on('Network.webSocketCreated', (data) => {
     sobj.add(data);
@@ -38,54 +90,38 @@ const tradingview = require('./tradingview/nav');
   // f12.on('Network.webSocketHandshakeResponseReceived', (data) => {
   //   console.log('webSocketHandshakeResponseReceived \n', data);
   // });
-
   // f12.on('Network.webSocketFrameSent', (data) => {
   //   // console.log('webSocketFrameSent \n', data);
   // });
   f12.on('Network.webSocketFrameReceived', (data) => {
     //console.log('webSocketFrameReceived \n', data);
     const msg = sobj.listener({
-      requestId:data.requestId,
-      opcode:data.response.opcode,
+      requestId: data.requestId,
+      opcode: data.response.opcode,
       way: 'input',
-      payload: data.response.payloadData
+      payload: data.response.payloadData,
+      //parse:false
     });
-    if( msg.code < 400){ 
-      msg.res.map( (item) => {
-        console.log(JSON.stringify(item));
+    if(msg.code < 400) {
+      msg.res.map((item) => {
+        //console.log(JSON.stringify(item));
+        if(item.event === 'watchlist' && item.cmd === 'update') {
+          watchlist = wlUpdate(item.p, watchlist);
+          // if(displayC % 10 === 0) console.log('======= \n',watchlist);
+          // displayC++;
+        }
+        if(item.event === 'alert' && item.cmd === 'fired') {
+          console.log(assemble(watchlist,item));
+        }
       });
-      
     }
   });
-  //f12.on('Network.webSocketFrameReceived', tv.socket.listener);
-  /*
-  
-  */
-  // let mockup = [{
-  //     requestId: '1000008652.14',
-  //     url: 'wss://data.tradingview.com/socket.io/websocket?from=chart%2Faw518iAg%2F&date=2019_05_21-12_04',
-  //     initiator: { type: 'script', stack: {} }
-  //   },
-  //   {
-  //     requestId: '1000008652.24',
-  //     url: 'wss://pushstream.tradingview.com/message-pipe-ws/public',
-  //     initiator: { type: 'script', stack: { callFrames: 123 } }
-  //   }
-  // ];
-  // mockup.map(i => {
-  //   const socketParsed = socketType(i);
-  //   sockets.push(socketParsed);
-  // });
-
-  
 
 
   await tv.user.signIn();
   await tv.watchlist.open();
   //  console.log(tv);
-  
-  
-  
+
   // await page.screenshot({ path: `./log/captures/${Date.now()}.png` });
 
 })();
