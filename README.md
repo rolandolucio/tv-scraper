@@ -1,4 +1,8 @@
-# tv-scraper
+# tv-scraper draft
+
+-- archive -- 
+Trading View now use webhooks
+----
 
 http clone
 https://github.com/GoogleChrome/puppeteer/issues/3547
